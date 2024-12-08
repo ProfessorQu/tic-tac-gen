@@ -21,8 +21,10 @@ impl Node {
     }
 
     pub fn generate(&mut self) {
+        // Check if end state
         if let Some(result) = self.board.result() {
             self.winner = Some(result);
+
             return;
         }
 

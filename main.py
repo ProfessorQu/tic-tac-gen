@@ -1,1921 +1,589 @@
 a = input('move: ')
-if a == '5':
-    print(" | | \n------\n |O|X\n------\n | | ")
-    a = input('move: ')
-    if a == '2':
-        print(" | |X\n------\n |O|X\n------\n | |O")
-        a = input('move: ')
-        if a == '6':
-            print("O| |X\n------\n |O|X\n------\nX| |O")
-        elif a == '1':
-            print("O|X|X\n------\n |O|X\n------\n | |O")
-        elif a == '0':
-            print("X|O|X\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '7':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| |X\n------\nX|O|X\n------\n | |O")
-        elif a == '7':
-            print("O| |X\n------\n |O|X\n------\n |X|O")
-        else:
-            print('INVALID MOVE')
-    elif a == '6':
-        print(" | | \n------\n |O|X\n------\nX|O| ")
-        a = input('move: ')
-        if a == '3':
-            print("O| | \n------\nX|O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            elif a == '1':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| | \n------\nO|O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O| \n------\nO|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" | |X\n------\n |O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '3':
-                print(" | |X\n------\nO|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '0':
-                    print("X| |X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("X| |X\n------\nO|O|X\n------\nX|O|O")
-                        a = input('move: ')
-                        if a == '1':
-                            print("X|X|X\n------\nO|O|X\n------\nX|O|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\n |O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print(" | |O\n------\n |O|X\n------\nX|O|X")
-            a = input('move: ')
-            if a == '0':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\n |O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '8':
-        print(" | |O\n------\n |O|X\n------\n | |X")
-        a = input('move: ')
-        if a == '1':
-            print("O|X|O\n------\n |O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            elif a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| |O\n------\nO|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            elif a == '7':
-                print("X| |O\n------\nO|O|X\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| |O\n------\nX|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("O| |O\n------\nX|O|X\n------\nO|X|X")
-            elif a == '1':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            elif a == '6':
-                print("O|O|O\n------\nX|O|X\n------\nX| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" | |O\n------\n |O|X\n------\n |X|X")
-            a = input('move: ')
-            if a == '1':
-                print(" |O|O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|O\n------\n |O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|O\n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|O\n------\nX|O|X\n------\n |X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |O\n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O| |O\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|O\n------\n |O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" | |O\n------\nO|O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X| |O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("X| |O\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print(" |X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" | |O\n------\n |O|X\n------\nX|O|X")
-            a = input('move: ')
-            if a == '0':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print(" | | \n------\n |O|X\n------\n |X|O")
-        a = input('move: ')
-        if a == '3':
-            print("O| | \n------\nX|O|X\n------\n |X|O")
-        elif a == '1':
-            print("O|X| \n------\n |O|X\n------\n |X|O")
-        elif a == '2':
-            print("O| |X\n------\n |O|X\n------\n |X|O")
-        elif a == '6':
-            print("O| | \n------\n |O|X\n------\nX|X|O")
-        elif a == '0':
-            print("X| |O\n------\n |O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '3':
-                print("X| |O\n------\nX|O|X\n------\nO|X|O")
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '0':
-        print("X| | \n------\n |O|X\n------\n | |O")
-        a = input('move: ')
-        if a == '3':
-            print("X| | \n------\nX|O|X\n------\nO| |O")
-            a = input('move: ')
-            if a == '7':
-                print("X|O| \n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X| \n------\nX|O|X\n------\nO|O|O")
-            elif a == '2':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("X|O|X\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '6':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X|O\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '6':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|X|O\n------\nX|O|X\n------\nO| |O")
-            elif a == '7':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("X| | \n------\nO|O|X\n------\nX| |O")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("X| |O\n------\n |O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '3':
-                print("X| |O\n------\nX|O|X\n------\nO|X|O")
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print("O| | \n------\nX|O|X\n------\n | | ")
-        a = input('move: ')
-        if a == '8':
-            print("O| | \n------\nX|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("O| | \n------\nX|O|X\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O| | \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X| \n------\nX|O|X\n------\nO| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| | \n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O| | \n------\nX|O|X\n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X| \n------\nX|O|X\n------\n |O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|O| \n------\nX|O|X\n------\n | |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|O| \n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|O| \n------\nX|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O| | \n------\nX|O|X\n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("O| | \n------\nX|O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O| |X\n------\nX|O|X\n------\nO|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|O| \n------\nX|O|X\n------\nX| | ")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            elif a == '8':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '7':
-                print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\nX|O|X\n------\nO| | ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|O|X\n------\nO| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|O|X\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O| |X\n------\nX|O|X\n------\n | | ")
-            a = input('move: ')
-            if a == '6':
-                print("O| |X\n------\nX|O|X\n------\nO| | ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|X\n------\nO| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("O| |X\n------\nX|O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| |X\n------\nX|O|X\n------\n |O| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|X\n------\n |O| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O| |X\n------\nX|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|O|X\n------\nX|O|X\n------\n | | ")
-                a = input('move: ')
-                if a == '6':
-                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("O|O|X\n------\nX|O|X\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '1':
-        print(" |X|O\n------\n |O|X\n------\n | | ")
-        a = input('move: ')
-        if a == '7':
-            print("O|X|O\n------\n |O|X\n------\n |X| ")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '8':
-                print("O|X|O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|X| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" |X|O\n------\n |O|X\n------\nX| |O")
-            a = input('move: ')
-            if a == '0':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\n |O|X\n------\nX|X|O")
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nX| |O")
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|X|O\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '6':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|X|O\n------\nX|O|X\n------\nO| |O")
-            elif a == '7':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|X|O\n------\nX|O|X\n------\n | | ")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '8':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X|O\n------\n |O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            elif a == '7':
-                print("O|X|O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '6':
-    print(" | | \n------\n |O| \n------\nX| | ")
+if a == '3':
+    print(" | | \n------\nX| | \n------\nO| | ")
     a = input('move: ')
     if a == '5':
-        print(" | | \n------\n |O|X\n------\nX| |O")
+        print(" | | \n------\nX| |X\n------\nO| | ")
         a = input('move: ')
-        if a == '2':
-            print("O| |X\n------\n |O|X\n------\nX| |O")
-        elif a == '7':
-            print("O| | \n------\n |O|X\n------\nX|X|O")
-        elif a == '0':
-            print("X| | \n------\nO|O|X\n------\nX| |O")
+        if a == '8':
+            print(" | | \n------\nX| |X\n------\nO| |O")
             a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| | \n------\nX|O|X\n------\nX| |O")
-        elif a == '1':
-            print("O|X| \n------\n |O|X\n------\nX| |O")
-        else:
-            print('INVALID MOVE')
-    elif a == '2':
-        print(" | |X\n------\nO|O| \n------\nX| | ")
-        a = input('move: ')
-        if a == '1':
-            print("O|X|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '8':
-                print("O|X|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | |X\n------\nO|O|X\n------\nX| |O")
-            a = input('move: ')
-            if a == '7':
-                print("O| |X\n------\nO|O|X\n------\nX|X|O")
-            elif a == '0':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nO|O|X\n------\nX| |O")
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print(" | |X\n------\nO|O| \n------\nX| |X")
-            a = input('move: ')
-            if a == '7':
-                print(" | |X\n------\nO|O| \n------\nX|O|X")
+            if a == '1':
+                print(" |X| \n------\nX| |X\n------\nO| |O")
                 a = input('move: ')
                 if a == '0':
-                    print("X| |X\n------\nO|O| \n------\nX|O|X")
+                    print("O|X| \n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|X|X\n------\nO| |O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print(" |X|O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| | \n------\nX| |X\n------\nO| |O")
+                a = input('move: ')
+                if a == '2':
+                    print("X| |O\n------\nX| |X\n------\nO| |O")
                     a = input('move: ')
                     if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '1':
-                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nO|O| \n------\nX| |X")
+                    print("X|O| \n------\nX| |X\n------\nO| |O")
                     a = input('move: ')
                     if a == '7':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                        print("X|O| \n------\nX| |X\n------\nO|X|O")
                         a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        if a == '4':
+                            print("X|O| \n------\nX|O|X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '2':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|O|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                            a = input('move: ')
+                            if a == '7':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O| \n------\nX|X|X\n------\nO| |O")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\nO|O| \n------\nX| |X")
+            elif a == '2':
+                print(" | |X\n------\nX| |X\n------\nO| |O")
                 a = input('move: ')
                 if a == '0':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                    print("O| |X\n------\nX| |X\n------\nO| |O")
                     a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    if a == '1':
+                        print("O|X|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print(" |O|X\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|O|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                            a = input('move: ')
+                            if a == '7':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '7':
-            print(" | |X\n------\nO|O| \n------\nX|X| ")
+        elif a == '0':
+            print("O| | \n------\nX| |X\n------\nO| | ")
             a = input('move: ')
             if a == '1':
-                print(" |O|X\n------\nO|O| \n------\nX|X| ")
+                print("O|X| \n------\nX| |X\n------\nO| | ")
                 a = input('move: ')
-                if a == '5':
-                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
+                if a == '4':
+                    print("O|X| \n------\nX|O|X\n------\nO| | ")
                     a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                    if a == '2':
+                        print("O|X|X\n------\nX|O|X\n------\nO| | ")
                         a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        if a == '7':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("O|X| \n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     elif a == '8':
-                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O| |X\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print("O| | \n------\nX|O| \n------\nX| | ")
-        a = input('move: ')
-        if a == '7':
-            print("O| | \n------\nX|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '1':
-                print("O|O| \n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|O| \n------\nX|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O| |O\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O| |O\n------\nX|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|O\n------\nX|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O| | \n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O| |X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|O| \n------\nX|O|X\n------\nX| | ")
-            a = input('move: ')
-            if a == '8':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            elif a == '7':
-                print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O| | \n------\nX|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\nX|O|O\n------\nX| | ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|O|X\n------\nX|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            elif a == '7':
-                print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '8':
-        print(" | | \n------\n |O| \n------\nX|O|X")
-        a = input('move: ')
-        if a == '1':
-            print(" |X| \n------\nO|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '0':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" | |X\n------\n |O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '3':
-                print(" | |X\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X| |X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\n |O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
-                    elif a == '5':
-                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | |O\n------\n |O|X\n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| | \n------\nO|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            elif a == '5':
-                print("X|O| \n------\nO|O|X\n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| | \n------\nX|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            elif a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '1':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '0':
-        print("X| | \n------\nO|O| \n------\nX| | ")
-        a = input('move: ')
-        if a == '2':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            elif a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X| |O\n------\nO|O|X\n------\nX| | ")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("X| | \n------\nO|O| \n------\nX| |X")
-            a = input('move: ')
-            if a == '1':
-                print("X|O| \n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
-                    elif a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        print("O|X| \n------\nX|O|X\n------\nO| |X")
                         a = input('move: ')
                         if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O| \n------\nO|O| \n------\nX|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X| |O\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '5':
-                    print("X| |O\n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("X|X|O\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("X| | \n------\nO|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '1':
-                print("X|O| \n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                            print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
+                    print("O|X|O\n------\nX| |X\n------\nO| | ")
                     a = input('move: ')
-                    if a == '8':
-                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                    if a == '4':
+                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '7':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        if a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+                    elif a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X| \n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nX|X|X\n------\nO| |O")
+                    elif a == '7':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        elif a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("O|X| \n------\nX| |X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nX| |X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|X|X\n------\nO|O| ")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print("X| |O\n------\nO|O| \n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |O| \n------\nX| |X\n------\nO| | ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O| \n------\nX| |X\n------\nO| | ")
                 a = input('move: ')
-                if a == '5':
-                    print("X| |O\n------\nO|O|X\n------\nX|X| ")
+                if a == '4':
+                    print("X|O| \n------\nX|O|X\n------\nO| | ")
                     a = input('move: ')
-                    if a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
+                    if a == '7':
+                        print("X|O| \n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("X|O| \n------\nX|O|X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|O|X\n------\nX|O|X\n------\nO| | ")
                         a = input('move: ')
                         if a == '8':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                            print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                            a = input('move: ')
+                            if a == '7':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '7':
+                            print("X|O|X\n------\nX|O|X\n------\nO|O| ")
                         else:
                             print('INVALID MOVE')
                     elif a == '8':
-                        print("X| |O\n------\nO|O|X\n------\nX|X|O")
+                        print("X|O| \n------\nX|O|X\n------\nO| |X")
                         a = input('move: ')
-                        if a == '1':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                        if a == '7':
+                            print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X|O| \n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O| \n------\nX|O|X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '2':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O| \n------\nX|X|X\n------\nO| |O")
+                    elif a == '2':
+                        print("X|O|X\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                            a = input('move: ')
+                            if a == '7':
+                                print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O| \n------\nX| |X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nX| |X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|O| \n------\nX| |X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                        elif a == '2':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O| \n------\nX|X|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("X|O|O\n------\nX| |X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '7':
+                        print("X|O|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |O\n------\nX| |X\n------\nO| | ")
+            a = input('move: ')
+            if a == '1':
+                print(" |X|O\n------\nX| |X\n------\nO| | ")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|O\n------\nX| |X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print(" |X|O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print(" | |O\n------\nX| |X\n------\nO| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("O| |O\n------\nX| |X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
+                        elif a == '7':
+                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '1':
-                    print("X|X|O\n------\nO|O| \n------\nX|X| ")
+                    print(" |O|O\n------\nX| |X\n------\nO| |X")
                     a = input('move: ')
-                    if a == '8':
-                        print("X|X|O\n------\nO|O| \n------\nX|X|O")
+                    if a == '0':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
                         a = input('move: ')
-                        if a == '5':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X|O\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '8':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '1':
-        print(" |X| \n------\nO|O| \n------\nX| | ")
-        a = input('move: ')
-        if a == '7':
-            print(" |X| \n------\nO|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '0':
-                print("O|X| \n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X| \n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        if a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print(" |X|O\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '0':
-                    print("X|X|O\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-                    elif a == '8':
-                        print("X|X|O\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print(" |X|O\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print(" |X|O\n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '0':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|X|O\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+            elif a == '0':
+                print("X| |O\n------\nX| |X\n------\nO| | ")
                 a = input('move: ')
                 if a == '8':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print(" |X| \n------\nO|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '5':
-                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    print("X| |O\n------\nX| |X\n------\nO| |O")
                     a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    if a == '1':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("X|O|O\n------\nX| |X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '8':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '5':
-            print(" |X| \n------\nO|O|X\n------\nX| |O")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nO|O|X\n------\nX| |O")
-            elif a == '0':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X| \n------\nO|O|X\n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print(" | | \n------\n |O| \n------\nX|X|O")
-        a = input('move: ')
-        if a == '2':
-            print("O| |X\n------\n |O| \n------\nX|X|O")
-        elif a == '0':
-            print("X| | \n------\nO|O| \n------\nX|X|O")
-            a = input('move: ')
-            if a == '5':
-                print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| | \n------\nX|O| \n------\nX|X|O")
-        elif a == '1':
-            print("O|X| \n------\n |O| \n------\nX|X|O")
-        elif a == '5':
-            print("O| | \n------\n |O|X\n------\nX|X|O")
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '4':
-    print(" | | \n------\n |X| \n------\nO| | ")
-    a = input('move: ')
-    if a == '8':
-        print("O| | \n------\n |X| \n------\nO| |X")
-        a = input('move: ')
-        if a == '7':
-            print("O| | \n------\nO|X| \n------\nO|X|X")
-        elif a == '2':
-            print("O| |X\n------\nO|X| \n------\nO| |X")
-        elif a == '3':
-            print("O| | \n------\nX|X|O\n------\nO| |X")
-            a = input('move: ')
-            if a == '2':
-                print("O| |X\n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O| | \n------\nO|X|X\n------\nO| |X")
-        elif a == '1':
-            print("O|X| \n------\nO|X| \n------\nO| |X")
         else:
             print('INVALID MOVE')
     elif a == '1':
-        print(" |X| \n------\n |X| \n------\nO|O| ")
+        print(" |X| \n------\nX| |O\n------\nO| | ")
         a = input('move: ')
-        if a == '3':
+        if a == '4':
             print(" |X| \n------\nX|X|O\n------\nO|O| ")
             a = input('move: ')
-            if a == '8':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
+            if a == '0':
                 print("X|X| \n------\nX|X|O\n------\nO|O| ")
                 a = input('move: ')
                 if a == '2':
@@ -1934,32 +602,7 @@ elif a == '4':
                     print("O|X|X\n------\nX|X|O\n------\nO|O|X")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\n |X| \n------\nO|O| ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|X\n------\nO|X|X\n------\nO|O| ")
             elif a == '8':
-                print("O|X|X\n------\nO|X| \n------\nO|O|X")
-            elif a == '3':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\n |X| \n------\nO|O|X")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nO|X| \n------\nO|O|X")
-            elif a == '5':
-                print("O|X| \n------\nO|X|X\n------\nO|O|X")
-            elif a == '3':
                 print("O|X| \n------\nX|X|O\n------\nO|O|X")
                 a = input('move: ')
                 if a == '2':
@@ -1968,13 +611,53 @@ elif a == '4':
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '0':
-            print("X|X| \n------\n |X| \n------\nO|O| ")
+        elif a == '7':
+            print(" |X| \n------\nX|O|O\n------\nO|X| ")
             a = input('move: ')
-            if a == '5':
-                print("X|X| \n------\n |X|O\n------\nO|O| ")
+            if a == '0':
+                print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
                 a = input('move: ')
-                if a == '3':
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|X| \n------\nX| |O\n------\nO| | ")
+            a = input('move: ')
+            if a == '4':
+                print("X|X| \n------\nX|O|O\n------\nO| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                    elif a == '8':
+                        print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|X| \n------\nX| |O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '4':
                     print("X|X| \n------\nX|X|O\n------\nO|O| ")
                     a = input('move: ')
                     if a == '2':
@@ -1988,115 +671,209 @@ elif a == '4':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '3':
-                print("X|X| \n------\nO|X| \n------\nO|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|X\n------\nX| |O\n------\nO| | ")
+            a = input('move: ')
+            if a == '4':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
                 a = input('move: ')
-                if a == '2':
-                    print("X|X|X\n------\nO|X| \n------\nO|O| ")
-                elif a == '5':
-                    print("X|X| \n------\nO|X|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nO|X|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|X|O\n------\nO|X|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print("X|X|O\n------\n |X| \n------\nO|O| ")
+            elif a == '8':
+                print("O|X|X\n------\nX| |O\n------\nO|O|X")
                 a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\n |X|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|X|O\n------\nO|X|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|X|O\n------\nO|X|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("X|X|O\n------\nX|X| \n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|X|O\n------\nX|X|O\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|X|O\n------\nX|X|O\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                if a == '4':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '5':
-            print(" |X| \n------\n |X|X\n------\nO|O| ")
+        elif a == '8':
+            print(" |X| \n------\nX|O|O\n------\nO| |X")
             a = input('move: ')
-            if a == '0':
-                print("O|X| \n------\n |X|X\n------\nO|O| ")
+            if a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X| \n------\n |X|X\n------\nO|O|X")
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|O|X")
                     a = input('move: ')
                     if a == '2':
-                        print("O|X|O\n------\n |X|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nX|X|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X| \n------\nO|X|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X| \n------\nX|X|X\n------\nO|O| ")
-                elif a == '2':
-                    print("O|X|X\n------\n |X|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print(" |X|O\n------\n |X|X\n------\nO|O| ")
+            elif a == '7':
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
-                if a == '0':
-                    print("X|X|O\n------\n |X|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|X|O\n------\nO|X|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|X|O\n------\nO|X|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '0':
-        print("X| | \n------\n |X| \n------\nO| |O")
+    elif a == '2':
+        print(" | |X\n------\nX| |O\n------\nO| | ")
         a = input('move: ')
-        if a == '7':
-            print("X|O| \n------\n |X| \n------\nO|X|O")
+        if a == '0':
+            print("X|O|X\n------\nX| |O\n------\nO| | ")
             a = input('move: ')
-            if a == '3':
+            if a == '7':
+                print("X|O|X\n------\nX| |O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '4':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O| |X\n------\nX|X|O\n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O| |X\n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" | |X\n------\nX|O|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |O|X\n------\nX| |O\n------\nO| |X")
+            a = input('move: ')
+            if a == '7':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|O|X\n------\nX|X|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X|X\n------\nX| |O\n------\nO| | ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print(" | | \n------\nX| |O\n------\nO|X| ")
+        a = input('move: ')
+        if a == '4':
+            print(" |O| \n------\nX|X|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
                 print("X|O| \n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
                 if a == '2':
@@ -2104,184 +881,385 @@ elif a == '4':
                 else:
                     print('INVALID MOVE')
             elif a == '2':
-                print("X|O|X\n------\n |X|O\n------\nO|X|O")
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '3':
+                if a == '0':
                     print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+            elif a == '8':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
                 a = input('move: ')
                 if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '3':
-            print("X| | \n------\nX|X| \n------\nO| |O")
+        elif a == '0':
+            print("X|O| \n------\nX| |O\n------\nO|X| ")
             a = input('move: ')
             if a == '2':
-                print("X| |O\n------\nX|X| \n------\nO| |O")
+                print("X|O|X\n------\nX| |O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nX|X| \n------\nO| |O")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X| |O\n------\nX|X| \n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|O\n------\nX|X| \n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|O\n------\nX|X|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                if a == '4':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '1':
-                print("X|O| \n------\nX|X| \n------\nO| |O")
+            elif a == '4':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
                 if a == '2':
-                    print("X|O|X\n------\nX|X| \n------\nO| |O")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nX|X|O\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("X|O|X\n------\nX|X| \n------\nO|O|O")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O| \n------\nX|X| \n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|O\n------\nX|X| \n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|O\n------\nX|X|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '1':
-            print("X|X| \n------\n |X| \n------\nO| |O")
+        elif a == '8':
+            print(" | | \n------\nX|O|O\n------\nO|X|X")
             a = input('move: ')
-            if a == '3':
-                print("X|X| \n------\nO|X| \n------\nO| |O")
+            if a == '0':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
-                if a == '7':
-                    print("X|X| \n------\nO|X| \n------\nO|X|O")
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             elif a == '2':
-                print("X|X|O\n------\n |X| \n------\nO| |O")
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\n |X|X\n------\nO| |O")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|X|O\n------\nO|X|X\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|X|O\n------\nO|X|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("X|X|O\n------\nX|X| \n------\nO| |O")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|X| \n------\n |X|O\n------\nO| |O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|X| \n------\nX|X|O\n------\nO| |O")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|X| \n------\nX|X|O\n------\nO|O|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X| | \n------\nO|X|X\n------\nO| |O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nO|X|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             elif a == '1':
-                print("X|X| \n------\nO|X|X\n------\nO|O|O")
-            elif a == '7':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
                 if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '2':
-            print("X|O|X\n------\n |X| \n------\nO| |O")
+            print(" | |X\n------\nX|O|O\n------\nO|X| ")
             a = input('move: ')
-            if a == '7':
-                print("X|O|X\n------\nO|X| \n------\nO|X|O")
+            if a == '8':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|X\n------\nO|X|X\n------\nO| |O")
+            elif a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
                 a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|X| \n------\nO|O|O")
+            elif a == '1':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X| \n------\nX|O|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '3':
+    elif a == '8':
+        print(" | | \n------\nX| |O\n------\nO| |X")
+        a = input('move: ')
+        if a == '2':
+            print(" |O|X\n------\nX| |O\n------\nO| |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|X\n------\nX| |O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|O|X\n------\nX|X|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X| \n------\nX|O|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O| | \n------\nX|X|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|X|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nX|O|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '7':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X| \n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O| \n------\nX| |O\n------\nO|X|X")
+            a = input('move: ')
+            if a == '4':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX| |O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '4':
         print(" | | \n------\nX|X|O\n------\nO| | ")
         a = input('move: ')
-        if a == '0':
+        if a == '1':
+            print(" |X| \n------\nX|X|O\n------\nO|O| ")
+            a = input('move: ')
+            if a == '2':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '2':
+                    print("X|X|O\n------\nX|X|O\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|X|O\n------\nX|X|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O| | \n------\nX|X|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O| |X\n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O| \n------\nX|X|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |X\n------\nX|X|O\n------\nO| |O")
+            a = input('move: ')
+            if a == '7':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
             print("X| | \n------\nX|X|O\n------\nO| | ")
             a = input('move: ')
             if a == '7':
@@ -2348,23 +1326,148 @@ elif a == '4':
                 if a == '7':
                     print("X|O| \n------\nX|X|O\n------\nO|X| ")
                     a = input('move: ')
-                    if a == '8':
-                        print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
+                    if a == '2':
                         print("X|O|O\n------\nX|X|O\n------\nO|X| ")
                         a = input('move: ')
                         if a == '8':
                             print("X|O|O\n------\nX|X|O\n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|X\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '0':
+        print("X| | \n------\nX| |O\n------\nO| | ")
+        a = input('move: ')
+        if a == '7':
+            print("X| | \n------\nX|O|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("X|X| \n------\nX| |O\n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|X| \n------\nX| |O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '4':
+                    print("X|X| \n------\nX|X|O\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|X|O\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("X|X| \n------\nX|O|O\n------\nO| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("X| | \n------\nX|X|O\n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X| | \n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X| \n------\nX|X|O\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|X|O\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("X| |X\n------\nX|X|O\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|X\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|O| \n------\nX|X|O\n------\nO| | ")
+                a = input('move: ')
+                if a == '2':
                     print("X|O|X\n------\nX|X|O\n------\nO| | ")
                     a = input('move: ')
                     if a == '8':
@@ -2383,1425 +1486,136 @@ elif a == '4':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\nX|X|O\n------\nO| | ")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\nX|X|O\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX|X|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" |O| \n------\nX|X|O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O| | \n------\nX|X|O\n------\nO| |X")
-            a = input('move: ')
-            if a == '2':
-                print("O| |X\n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print(" |X| \n------\nX|X|O\n------\nO|O| ")
-            a = input('move: ')
-            if a == '0':
-                print("X|X| \n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '2':
-                    print("X|X|O\n------\nX|X|O\n------\nO|O| ")
+                elif a == '7':
+                    print("X|O| \n------\nX|X|O\n------\nO|X| ")
                     a = input('move: ')
-                    if a == '8':
-                        print("X|X|O\n------\nX|X|O\n------\nO|O|X")
+                    if a == '2':
+                        print("X|O|O\n------\nX|X|O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX|X|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
             elif a == '2':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                print("X| |O\n------\nX|X|O\n------\nO| | ")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print(" |O| \n------\n |X| \n------\nO|X| ")
-        a = input('move: ')
-        if a == '0':
-            print("X|O| \n------\n |X| \n------\nO|X|O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nO|X| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                if a == '1':
+                    print("X|X|O\n------\nX|X|O\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|X|O\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|X|O\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X| |O\n------\nX|X|O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|O\n------\nX|X|O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX|X|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '8':
-            print("O|O| \n------\n |X| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|O|O\n------\nX|X| \n------\nO|X|X")
-            elif a == '2':
-                print("O|O|X\n------\nO|X| \n------\nO|X|X")
-            elif a == '5':
-                print("O|O| \n------\nO|X|X\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\n |X|O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\n |X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\n |X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" |O| \n------\nO|X|X\n------\nO|X| ")
-            a = input('move: ')
-            if a == '0':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O| \n------\nO|X|X\n------\nO|X|X")
-            elif a == '2':
-                print("O|O|X\n------\nO|X|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print(" |O| \n------\nX|X|O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '0':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '2':
-        print("O| |X\n------\n |X| \n------\nO| | ")
-        a = input('move: ')
-        if a == '3':
-            print("O| |X\n------\nX|X|O\n------\nO| | ")
+            print("X| | \n------\nX|O|O\n------\nO| |X")
             a = input('move: ')
             if a == '7':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX|X|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O| |X\n------\nO|X|X\n------\nO| | ")
-        elif a == '8':
-            print("O| |X\n------\nO|X| \n------\nO| |X")
-        elif a == '1':
-            print("O|X|X\n------\nO|X| \n------\nO| | ")
-        elif a == '7':
-            print("O| |X\n------\nO|X| \n------\nO|X| ")
-        else:
-            print('INVALID MOVE')
-    elif a == '5':
-        print(" | | \n------\nO|X|X\n------\nO| | ")
-        a = input('move: ')
-        if a == '1':
-            print("O|X| \n------\nO|X|X\n------\nO| | ")
-        elif a == '8':
-            print("O| | \n------\nO|X|X\n------\nO| |X")
-        elif a == '0':
-            print("X| | \n------\nO|X|X\n------\nO| |O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nO|X|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X| \n------\nO|X|X\n------\nO|O|O")
-            elif a == '7':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
                 a = input('move: ')
                 if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O| |X\n------\nO|X|X\n------\nO| | ")
-        elif a == '7':
-            print("O| | \n------\nO|X|X\n------\nO|X| ")
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '8':
-    print(" | | \n------\n |O| \n------\n | |X")
-    a = input('move: ')
-    if a == '0':
-        print("X|O| \n------\n |O| \n------\n | |X")
-        a = input('move: ')
-        if a == '5':
-            print("X|O| \n------\n |O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("X|O| \n------\n |O|X\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O| \n------\n |O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("X|O| \n------\nX|O|X\n------\nO| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O| \n------\nO|O|X\n------\n | |X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O| \n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("X|O|X\n------\n |O| \n------\n | |X")
-            a = input('move: ')
-            if a == '3':
-                print("X|O|X\n------\nO|O| \n------\n | |X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O|X\n------\nO|O| \n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\n |O| \n------\nO| |X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O| \n------\nO| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nX|O| \n------\nO|O|X")
-                    elif a == '5':
-                        print("X|O|X\n------\nX|O|O\n------\nO| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O|X\n------\n |O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("X|O| \n------\n |O| \n------\nX| |X")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|O\n------\n |O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|O\n------\n |O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("X|O|O\n------\nX|O| \n------\nX| |X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O| \n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O| \n------\nO|O| \n------\nX|X|X")
-                elif a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\n |O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O| \n------\nX|O|O\n------\nX| |X")
-                elif a == '2':
-                    print("X|O|X\n------\n |O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("X|O| \n------\nX|O| \n------\nO| |X")
-            a = input('move: ')
-            if a == '5':
-                print("X|O| \n------\nX|O|X\n------\nO|O|X")
-            elif a == '2':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
-            elif a == '7':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("X|O| \n------\n |O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '5':
-                print("X|O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '2':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
                     print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print(" | | \n------\n |O| \n------\nO|X|X")
-        a = input('move: ')
-        if a == '1':
-            print("O|X| \n------\n |O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nO|O| \n------\nO|X|X")
-            elif a == '3':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '5':
-                print("O|X| \n------\nO|O|X\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" | |X\n------\n |O|O\n------\nO|X|X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X| |X\n------\nO|O|O\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | | \n------\n |O|X\n------\nO|X|X")
-            a = input('move: ')
-            if a == '1':
-                print(" |O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O| \n------\n |O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" | | \n------\nO|O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print(" |X| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X| \n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X| | \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| | \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X| \n------\n |O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X| \n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O| | \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| | \n------\nO|O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print("X| |X\n------\nO|O| \n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
             elif a == '1':
-                print("X|X|O\n------\nO|O| \n------\nO|X|X")
-            elif a == '5':
-                print("X| | \n------\nO|O|X\n------\nO|X|X")
+                print("X|X| \n------\nX|O|O\n------\nO| |X")
                 a = input('move: ')
-                if a == '1':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|O|X")
                     a = input('move: ')
                     if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print(" |O| \n------\nX|O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '5':
-                print(" |O| \n------\nX|O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '6':
-        print(" | | \n------\n |O| \n------\nX|O|X")
-        a = input('move: ')
-        if a == '2':
-            print(" | |X\n------\n |O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" | |X\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X| |X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| | \n------\nX|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            elif a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '1':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print(" |X| \n------\n |O|O\n------\nX|O|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|X| \n------\nO|O|O\n------\nX|O|X")
             elif a == '2':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | |O\n------\n |O|X\n------\nX|O|X")
-            a = input('move: ')
-            if a == '0':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| | \n------\nO|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nO|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '2':
-        print(" | |X\n------\n |O|O\n------\n | |X")
-        a = input('move: ')
-        if a == '3':
-            print(" |O|X\n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '0':
                 print("X|O|X\n------\nX|O|O\n------\nO| |X")
                 a = input('move: ')
                 if a == '7':
                     print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '6':
-                print(" |O|X\n------\nX|O|O\n------\nX| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X|O|X\n------\nX| |O\n------\nO| | ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
                 a = input('move: ')
-                if a == '0':
-                    print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
+                if a == '7':
                     print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" | |X\n------\n |O|O\n------\n |X|X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
-                    elif a == '6':
-                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\n |X|X")
-                    elif a == '6':
-                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '0':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| |X\n------\nO|O|O\n------\n | |X")
-        elif a == '1':
-            print("O|X|X\n------\n |O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX| |X")
             elif a == '7':
-                print("O|X|X\n------\nO|O|O\n------\n |X|X")
-            elif a == '3':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" | |X\n------\n |O|O\n------\nX| |X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\nX| |X")
-                    elif a == '7':
-                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\n |O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '3':
-                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X|O|X\n------\n |O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '1':
-        print("O|X| \n------\n |O| \n------\n | |X")
-        a = input('move: ')
-        if a == '5':
-            print("O|X|O\n------\n |O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|X| \n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+            elif a == '4':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
                 a = input('move: ')
                 if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X| \n------\n |O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O|X| \n------\n |O| \n------\n |X|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X| \n------\nO|O| \n------\n |X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nO|O| \n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nO|O| \n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X| \n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X| \n------\nO|O|X\n------\nO|X|X")
-                    elif a == '2':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X| \n------\nO|O| \n------\nX|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|O\n------\n |O| \n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O| \n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nX|O| \n------\nO|X|X")
-                    elif a == '5':
-                        print("O|X|O\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X|O\n------\n |O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X| \n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X| \n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\n |O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX| |X")
-            elif a == '7':
-                print("O|X|X\n------\nO|O|O\n------\n |X|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print(" | | \n------\nX|O| \n------\n |O|X")
-        a = input('move: ')
-        if a == '0':
-            print("X| | \n------\nX|O| \n------\nO|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nX|O| \n------\nO|O|X")
-            elif a == '5':
-                print("X|O| \n------\nX|O|X\n------\nO|O|X")
-            elif a == '2':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O| | \n------\nX|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '1':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" | |X\n------\nX|O|O\n------\n |O|X")
-            a = input('move: ')
-            if a == '6':
-                print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X| |X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("X| |X\n------\nX|O|O\n------\nO|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\nX|O| \n------\n |O|X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | | \n------\nX|O|X\n------\n |O|X")
-            a = input('move: ')
-            if a == '6':
-                print(" | | \n------\nX|O|X\n------\nO|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X| | \n------\nX|O|X\n------\nO|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print(" |X| \n------\nX|O|X\n------\nO|O|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| | \n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O| | \n------\nX|O|X\n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    elif a == '2':
-                        print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X| \n------\nX|O|X\n------\n |O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '5':
-        print(" | |O\n------\n |O|X\n------\n | |X")
+    else:
+        print('INVALID MOVE')
+elif a == '5':
+    print(" | |O\n------\n | |X\n------\n | | ")
+    a = input('move: ')
+    if a == '1':
+        print(" |X|O\n------\nO| |X\n------\n | | ")
         a = input('move: ')
-        if a == '1':
+        if a == '8':
             print(" |X|O\n------\nO|O|X\n------\n | |X")
             a = input('move: ')
-            if a == '7':
+            if a == '6':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
                 print(" |X|O\n------\nO|O|X\n------\n |X|X")
                 a = input('move: ')
                 if a == '0':
@@ -3815,1543 +1629,240 @@ elif a == '8':
                     print('INVALID MOVE')
             elif a == '0':
                 print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            elif a == '6':
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" |X|O\n------\nO|O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
                 print(" |X|O\n------\nO|O|X\n------\nX|O|X")
                 a = input('move: ')
                 if a == '0':
                     print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| |O\n------\nX|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("O|O|O\n------\nX|O|X\n------\nX| |X")
-            elif a == '7':
-                print("O| |O\n------\nX|O|X\n------\nO|X|X")
-            elif a == '1':
-                print("O|X|O\n------\nX|O|X\n------\nO| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" | |O\n------\n |O|X\n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
             elif a == '0':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
                 a = input('move: ')
-                if a == '1':
+                if a == '8':
                     print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '3':
-                print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" | |O\n------\n |O|X\n------\n |X|X")
-            a = input('move: ')
-            if a == '3':
-                print(" | |O\n------\nO|O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '1':
-                    print(" |X|O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X| |O\n------\nO|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("X| |O\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|O\n------\n |O|X\n------\n |X|X")
+            elif a == '7':
+                print(" |X|O\n------\nO|O|X\n------\nX|X|O")
                 a = input('move: ')
                 if a == '0':
-                    print("X|O|O\n------\n |O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|O\n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|O\n------\nX|O|X\n------\n |X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |O\n------\n |O|X\n------\n |X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\n |O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O| |O\n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O| |O\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| |O\n------\nO|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            elif a == '7':
-                print("X| |O\n------\nO|O|X\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '2':
-    print(" | |X\n------\n |O| \n------\n | | ")
-    a = input('move: ')
-    if a == '3':
-        print(" |O|X\n------\nX|O| \n------\n | | ")
-        a = input('move: ')
-        if a == '0':
-            print("X|O|X\n------\nX|O| \n------\nO| | ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
-            elif a == '7':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print(" |O|X\n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print(" |O|X\n------\nX|O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '0':
-                    print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" |O|X\n------\nX|O| \n------\n |X|O")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|O|X\n------\nX|O| \n------\nX|X|O")
-            elif a == '5':
-                print("O|O|X\n------\nX|O|X\n------\n |X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|O|X\n------\nX|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            elif a == '5':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" |O|X\n------\nX|O|X\n------\n | | ")
-            a = input('move: ')
-            if a == '0':
-                print("O|O|X\n------\nX|O|X\n------\n | | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|O|X\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print(" |O|X\n------\nX|O|X\n------\nO| | ")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|X\n------\nO| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nX|O|X\n------\nO|O| ")
-                    elif a == '8':
-                        print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print(" |O|X\n------\nX|O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print(" |O|X\n------\nX|O|X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print(" | |X\n------\n |O|O\n------\n |X| ")
-        a = input('move: ')
-        if a == '8':
-            print(" | |X\n------\n |O|O\n------\n |X|X")
-            a = input('move: ')
-            if a == '1':
-                print(" |O|X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\n |X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
-                    elif a == '6':
-                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print(" | |X\n------\nX|O|O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" | |X\n------\n |O|O\n------\nX|X| ")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\n |O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\n |O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-                    elif a == '8':
-                        print("X|O|X\n------\n |O|O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| |X\n------\nO|O|O\n------\n |X| ")
-        elif a == '1':
-            print("O|X|X\n------\n |O|O\n------\n |X| ")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '3':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nO|O|O\n------\n |X|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '6':
-        print(" | |X\n------\nO|O| \n------\nX| | ")
-        a = input('move: ')
-        if a == '8':
-            print(" | |X\n------\nO|O| \n------\nX| |X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print(" | |X\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X| |X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" | |X\n------\nO|O|X\n------\nX| |O")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| |X\n------\nO|O|X\n------\nX|X|O")
-            elif a == '1':
-                print("O|X|X\n------\nO|O|X\n------\nX| |O")
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '8':
-                print("O|X|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" | |X\n------\nO|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '1':
-                print(" |O|X\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-                    elif a == '8':
-                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '0':
-                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O| |X\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O| |X\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '0':
-        print("X|O|X\n------\n |O| \n------\n | | ")
-        a = input('move: ')
-        if a == '7':
-            print("X|O|X\n------\nO|O| \n------\n |X| ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|O|X\n------\nO|O| \n------\n |X|X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("X|O|X\n------\n |O| \n------\n | |X")
-            a = input('move: ')
-            if a == '3':
-                print("X|O|X\n------\nO|O| \n------\n | |X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O|X\n------\nO|O| \n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\n |O| \n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\n |O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("X|O|X\n------\nX|O| \n------\nO| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O|X\n------\nX|O| \n------\nO|O|X")
-                    elif a == '5':
-                        print("X|O|X\n------\nX|O|O\n------\nO| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("X|O|X\n------\nX|O| \n------\nO| | ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
-            elif a == '7':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X|O|X\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '3':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|O|X\n------\n |O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            elif a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '1':
-        print("O|X|X\n------\n |O| \n------\n | | ")
-        a = input('move: ')
-        if a == '3':
-            print("O|X|X\n------\nX|O|O\n------\n | | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|X|X\n------\n |O|X\n------\n | | ")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|X\n------\nO|O|X\n------\n | | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nO|O|X\n------\nO|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\n |O|X\n------\nO| | ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|X\n------\nO| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("O|X|X\n------\n |O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|X\n------\nO|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|X\n------\n |O|X\n------\n |O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|X\n------\n |O| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X|X\n------\n |O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nO|O|O\n------\n |X|X")
-            elif a == '3':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O|X|X\n------\nO|O| \n------\n |X| ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X|X\n------\nO|O| \n------\nO|X|X")
-            elif a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '8':
-        print(" | |X\n------\n |O|O\n------\n | |X")
-        a = input('move: ')
-        if a == '1':
-            print("O|X|X\n------\n |O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("O|X|X\n------\nO|O|O\n------\n |X|X")
-            elif a == '6':
-                print("O|X|X\n------\nO|O|O\n------\nX| |X")
-            elif a == '3':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print(" | |X\n------\n |O|O\n------\nX| |X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\nX| |X")
-                    elif a == '7':
-                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\n |O|O\n------\nX| |X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\n |O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| |X\n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print(" | |X\n------\n |O|O\n------\n |X|X")
-            a = input('move: ')
-            if a == '0':
-                print("O| |X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O| |X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|X|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
-                    elif a == '6':
-                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print(" |O|X\n------\n |O|O\n------\n |X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\n |O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O|X\n------\nO|O|O\n------\n |X|X")
-                    elif a == '6':
-                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print(" |O|X\n------\nX|O|O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X| |X\n------\nO|O|O\n------\n | |X")
-        else:
-            print('INVALID MOVE')
-    elif a == '5':
-        print(" | |X\n------\n |O|X\n------\n | |O")
-        a = input('move: ')
-        if a == '0':
-            print("X|O|X\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '6':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O| |X\n------\nX|O|X\n------\n | |O")
-        elif a == '6':
-            print("O| |X\n------\n |O|X\n------\nX| |O")
-        elif a == '7':
-            print("O| |X\n------\n |O|X\n------\n |X|O")
-        elif a == '1':
-            print("O|X|X\n------\n |O|X\n------\n | |O")
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '3':
-    print("O| | \n------\nX| | \n------\n | | ")
-    a = input('move: ')
-    if a == '6':
-        print("O|O| \n------\nX| | \n------\nX| | ")
-        a = input('move: ')
-        if a == '4':
-            print("O|O| \n------\nX|X| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|O| \n------\nX|X| \n------\nX|O| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X| \n------\nX|O| ")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|O| \n------\nX|O|X\n------\nX| | ")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            elif a == '8':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '7':
-                print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|O| \n------\nX| | \n------\nX| |X")
-            a = input('move: ')
-            if a == '4':
-                print("O|O| \n------\nX|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O| \n------\nX|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("O|O| \n------\nX|O| \n------\nX|X|X")
-                elif a == '2':
-                    print("O|O|X\n------\nX|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
-                    elif a == '5':
-                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O|O| \n------\nX| | \n------\nX|X| ")
-            a = input('move: ')
-            if a == '4':
-                print("O|O| \n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O| \n------\nX|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|O|X\n------\nX|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            elif a == '5':
-                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '2':
-        print("O| |X\n------\nX| |O\n------\n | | ")
-        a = input('move: ')
-        if a == '6':
-            print("O| |X\n------\nX|O|O\n------\nX| | ")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| |X\n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O| |X\n------\nX| |O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\nX| |O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '4':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O| |X\n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("O|X|X\n------\nX|O|O\n------\n | | ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '4':
-            print("O| |X\n------\nX|X|O\n------\nO| | ")
+            print(" |X|O\n------\nO|X|X\n------\n |O| ")
             a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+            if a == '6':
+                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
                 a = input('move: ')
                 if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
                 else:
                     print('INVALID MOVE')
             elif a == '8':
-                print("O|O|X\n------\nX|X|O\n------\nO| |X")
+                print("O|X|O\n------\nO|X|X\n------\n |O|X")
                 a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                if a == '6':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|X|O\n------\nO|O|X\n------\n | | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("X|X|O\n------\nO|O|X\n------\nO| |X")
+            elif a == '6':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
                 a = input('move: ')
                 if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |X|O\n------\nO|O|X\n------\n |X| ")
+            a = input('move: ')
+            if a == '6':
+                print(" |X|O\n------\nO|O|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print(" |X|O\n------\nO|O|X\n------\n |X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '5':
-        print("O| | \n------\nX| |X\n------\n | | ")
+    elif a == '3':
+        print(" | |O\n------\nX| |X\n------\n | | ")
         a = input('move: ')
         if a == '6':
-            print("O| | \n------\nX| |X\n------\nO| | ")
+            print(" | |O\n------\nX| |X\n------\nO| | ")
             a = input('move: ')
-            if a == '1':
-                print("O|X| \n------\nX| |X\n------\nO| | ")
+            if a == '0':
+                print("X| |O\n------\nX| |X\n------\nO| | ")
                 a = input('move: ')
-                if a == '7':
-                    print("O|X| \n------\nX| |X\n------\nO|O| ")
+                if a == '1':
+                    print("X|O|O\n------\nX| |X\n------\nO| | ")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX| |X\n------\nO|O| ")
+                    if a == '4':
+                        print("X|O|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '8':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        if a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
                             a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
                             else:
                                 print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X| |O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|O\n------\nX| |X\n------\nO| | ")
+                a = input('move: ')
+                if a == '8':
+                    print(" |X|O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X|O\n------\nX| |X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
                         else:
                             print('INVALID MOVE')
                     elif a == '4':
-                        print("O|X| \n------\nX|X|X\n------\nO|O| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\nX| |X\n------\nO| | ")
-                    a = input('move: ')
-                    if a == '7':
+                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '7':
                         print("O|X|O\n------\nX| |X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '8':
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
                             print("O|X|O\n------\nX| |X\n------\nO|X|O")
                             a = input('move: ')
                             if a == '4':
                                 print("O|X|O\n------\nX|X|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
-                    elif a == '8':
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print(" | |O\n------\nX| |X\n------\nO| |X")
+                a = input('move: ')
+                if a == '1':
+                    print(" |O|O\n------\nX| |X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        elif a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O| |O\n------\nX| |X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '1':
                         print("O|X|O\n------\nX| |X\n------\nO| |X")
                         a = input('move: ')
                         if a == '4':
@@ -5367,261 +1878,17 @@ elif a == '3':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '4':
-                    print("O|X| \n------\nX|O|X\n------\nO| | ")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X| \n------\nX|O|X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|X|X\n------\nX|O|X\n------\nO| | ")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X| \n------\nX|O|X\n------\nO| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                            a = input('move: ')
-                            if a == '2':
-                                print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X| \n------\nX| |X\n------\nO| |O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX| |X\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("O|X| \n------\nX| |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X| \n------\nX|X|X\n------\nO| |O")
-                    else:
-                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '1':
-            print("O|O| \n------\nX| |X\n------\n | | ")
+        elif a == '0':
+            print("O| |O\n------\nX| |X\n------\n | | ")
             a = input('move: ')
-            if a == '6':
-                print("O|O| \n------\nX| |X\n------\nX| | ")
+            if a == '1':
+                print("O|X|O\n------\nX| |X\n------\n | | ")
                 a = input('move: ')
-                if a == '7':
-                    print("O|O| \n------\nX| |X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|O| \n------\nX|X|X\n------\nX|O| ")
-                    elif a == '8':
-                        print("O|O| \n------\nX| |X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|O|X\n------\nX| |X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                        elif a == '8':
-                            print("O|O|X\n------\nX| |X\n------\nX|O|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|O|X\n------\nX|X|X\n------\nX|O|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '4':
-                    print("O|O| \n------\nX|O|X\n------\nX| | ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O| \n------\nX|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("O|O| \n------\nX|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nX| | ")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX|O|X\n------\nX|O| ")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O| | \n------\nX| |X\n------\n | |O")
-            a = input('move: ')
-            if a == '6':
-                print("O| | \n------\nX| |X\n------\nX| |O")
-                a = input('move: ')
-                if a == '2':
-                    print("O| |O\n------\nX| |X\n------\nX| |O")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|X|O\n------\nX| |X\n------\nX| |O")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|X|O\n------\nX| |X\n------\nX|O|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nX|O|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nX| |O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("O|O| \n------\nX| |X\n------\nX| |O")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O| \n------\nX| |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|O| \n------\nX|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|O|X\n------\nX| |X\n------\nX| |O")
-                        a = input('move: ')
-                        if a == '7':
-                            print("O|O|X\n------\nX| |X\n------\nX|O|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|O|X\n------\nX|X|X\n------\nX|O|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|O|X\n------\nX|O|X\n------\nX| |O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|O| \n------\nX|X|X\n------\nX| |O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O| |X\n------\nX| |X\n------\n | |O")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O|X\n------\nX| |X\n------\n | |O")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O|X\n------\nX| |X\n------\nX| |O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|O|X\n------\nX|O|X\n------\nX| |O")
-                        elif a == '7':
-                            print("O|O|X\n------\nX| |X\n------\nX|O|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|O|X\n------\nX|X|X\n------\nX|O|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O| |X\n------\nX| |X\n------\nO| |O")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|X|X\n------\nX| |X\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X| \n------\nX| |X\n------\n | |O")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X| \n------\nX| |X\n------\nO| |O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX| |X\n------\nO| |O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O|X\n------\nO| |O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X| \n------\nX|X|X\n------\nO| |O")
-                    elif a == '7':
-                        print("O|X| \n------\nX| |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
+                if a == '8':
                     print("O|X|O\n------\nX| |X\n------\n | |O")
                     a = input('move: ')
                     if a == '6':
@@ -5640,20 +1907,10 @@ elif a == '3':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O| |O\n------\nX| |X\n------\n | | ")
-            a = input('move: ')
-            if a == '8':
-                print("O| |O\n------\nX| |X\n------\n | |X")
-                a = input('move: ')
-                if a == '6':
-                    print("O| |O\n------\nX| |X\n------\nO| |X")
+                elif a == '6':
+                    print("O|X|O\n------\nX| |X\n------\nO| | ")
                     a = input('move: ')
-                    if a == '1':
+                    if a == '8':
                         print("O|X|O\n------\nX| |X\n------\nO| |X")
                         a = input('move: ')
                         if a == '4':
@@ -5665,6 +1922,46 @@ elif a == '3':
                                 print("O|X|O\n------\nX|X|X\n------\nO|O|X")
                             else:
                                 print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '7':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O| |O\n------\nX| |X\n------\n | |X")
+                a = input('move: ')
+                if a == '6':
+                    print("O| |O\n------\nX| |X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
                         else:
                             print('INVALID MOVE')
                     else:
@@ -5697,45 +1994,276 @@ elif a == '3':
                     print("O|O|O\n------\nX| |X\n------\nX| | ")
                 else:
                     print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\nX| |X\n------\n | | ")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |O|O\n------\nX| |X\n------\n | | ")
+            a = input('move: ')
+            if a == '8':
+                print(" |O|O\n------\nX| |X\n------\n | |X")
                 a = input('move: ')
                 if a == '6':
-                    print("O|X|O\n------\nX| |X\n------\nO| | ")
+                    print(" |O|O\n------\nX| |X\n------\nO| |X")
                     a = input('move: ')
-                    if a == '4':
-                        print("O|X|O\n------\nX|X|X\n------\nO| | ")
-                    elif a == '8':
-                        print("O|X|O\n------\nX| |X\n------\nO| |X")
+                    if a == '0':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
                         a = input('move: ')
-                        if a == '7':
-                            print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                        if a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        elif a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
                             a = input('move: ')
                             if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
                             else:
                                 print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO| |X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '7':
-                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
+                elif a == '0':
+                    print("O|O|O\n------\nX| |X\n------\n | |X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|O\n------\nX| |X\n------\n | | ")
+                a = input('move: ')
+                if a == '4':
+                    print("X|O|O\n------\nX|O|X\n------\n | | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|O\n------\nX|O|X\n------\n |X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nX|O|X\n------\n |X|O")
+                            a = input('move: ')
+                            if a == '6':
+                                print("X|O|O\n------\nX|O|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '6':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|O|O\n------\nX|O|X\n------\n | |X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("X|O|O\n------\nX|O|X\n------\nX| | ")
+                    else:
+                        print('INVALID MOVE')
                 elif a == '8':
+                    print("X|O|O\n------\nX| |X\n------\n | |O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|O\n------\nX| |X\n------\nX| |O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O|O\n------\nX| |X\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|O\n------\nX| |X\n------\nX|O| ")
+                    elif a == '8':
+                        print("X|O|O\n------\nX| |X\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("X|O|O\n------\nX| |X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O|O\n------\nX| |X\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO| |X")
+                        elif a == '7':
+                            print("X|O|O\n------\nX| |X\n------\nO|O|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|O|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|O|O\n------\nX|X|X\n------\nO| | ")
+                    elif a == '7':
+                        print("X|O|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("X|O|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |O|O\n------\nX| |X\n------\nX| | ")
+                a = input('move: ')
+                if a == '8':
+                    print(" |O|O\n------\nX| |X\n------\nX| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|O|O\n------\nX| |X\n------\nX| |O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|O|O\n------\nX| |X\n------\nX| | ")
+                elif a == '4':
+                    print(" |O|O\n------\nX|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |O|O\n------\nX|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|O|O\n------\nX|O|X\n------\nX| |X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|O|O\n------\nX|O|X\n------\nX| | ")
+                    elif a == '7':
+                        print(" |O|O\n------\nX|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print(" |O|O\n------\nX|O|X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '0':
+                                print("X|O|O\n------\nX|O|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '0':
+                            print("O|O|O\n------\nX|O|X\n------\nX|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print(" |O|O\n------\nX| |X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |O|O\n------\nX| |X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|O|O\n------\nX| |X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|O|O\n------\nX| |X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" | |O\n------\nX| |X\n------\n | |O")
+            a = input('move: ')
+            if a == '0':
+                print("X| |O\n------\nX| |X\n------\n | |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X| |O\n------\nX| |X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X| |O\n------\nX| |X\n------\nX|O|O")
+                    elif a == '1':
+                        print("X|X|O\n------\nX| |X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|X|O\n------\nX| |X\n------\nO|O|O")
+                        elif a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\n |O|O")
+                            a = input('move: ')
+                            if a == '6':
+                                print("X|X|O\n------\nX|O|X\n------\nX|O|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("X| |O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("X|O|O\n------\nX| |X\n------\n | |O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|O\n------\nX| |X\n------\nX| |O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("X| |O\n------\nX|O|X\n------\n | |O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X| |O\n------\nX|O|X\n------\nX| |O")
+                    elif a == '7':
+                        print("X| |O\n------\nX|O|X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X| |O\n------\nX|O|X\n------\nO|X|O")
+                        elif a == '1':
+                            print("X|O|O\n------\nX|O|X\n------\n |X|O")
+                            a = input('move: ')
+                            if a == '6':
+                                print("X|O|O\n------\nX|O|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("X|X|O\n------\nX|O|X\n------\n | |O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        elif a == '7':
+                            print("X|X|O\n------\nX|O|X\n------\n |O|O")
+                            a = input('move: ')
+                            if a == '6':
+                                print("X|X|O\n------\nX|O|X\n------\nX|O|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|O\n------\nX| |X\n------\n | |O")
+                a = input('move: ')
+                if a == '0':
                     print("O|X|O\n------\nX| |X\n------\n | |O")
                     a = input('move: ')
                     if a == '6':
@@ -5754,341 +2282,441 @@ elif a == '3':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
+                elif a == '6':
+                    print(" |X|O\n------\nX| |X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nX| |X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|X\n------\nO| |O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '8':
-        print("O| | \n------\nX|O| \n------\n | |X")
+    elif a == '6':
+        print(" | |O\n------\nO| |X\n------\nX| | ")
         a = input('move: ')
-        if a == '2':
-            print("O| |X\n------\nX|O|O\n------\n | |X")
+        if a == '7':
+            print(" | |O\n------\nO| |X\n------\nX|X|O")
             a = input('move: ')
-            if a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+            if a == '0':
+                print("X|O|O\n------\nO| |X\n------\nX|X|O")
                 a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O| |X\n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O| | \n------\nX|O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '1':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O| | \n------\nX|O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                if a == '4':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
             elif a == '1':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '5':
-                print("O| | \n------\nX|O|X\n------\nO|X|X")
+                print(" |X|O\n------\nO|O|X\n------\nX|X|O")
                 a = input('move: ')
-                if a == '1':
-                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '1':
-            print("O|X| \n------\nX|O| \n------\n |O|X")
+            print(" |X|O\n------\nO|O|X\n------\nX| | ")
             a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+            if a == '8':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
                 a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+            elif a == '0':
+                print("X|X|O\n------\nO|O|X\n------\nX| |O")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                if a == '7':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+            elif a == '7':
+                print(" |X|O\n------\nO|O|X\n------\nX|X|O")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '5':
-            print("O| | \n------\nX|O|X\n------\n | |X")
+        elif a == '4':
+            print(" |O|O\n------\nO|X|X\n------\nX| | ")
             a = input('move: ')
-            if a == '1':
-                print("O|O| \n------\nX|O|X\n------\n | |X")
+            if a == '7':
+                print("O|O|O\n------\nO|X|X\n------\nX|X| ")
+            elif a == '0':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
                 a = input('move: ')
                 if a == '7':
-                    print("O|O| \n------\nX|O|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|O| \n------\nX|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '6':
-                print("O| | \n------\nX|O|X\n------\nO| |X")
+            elif a == '8':
+                print("O|O|O\n------\nO|X|X\n------\nX| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| |O\n------\nO| |X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
                 a = input('move: ')
-                if a == '1':
-                    print("O|X| \n------\nX|O|X\n------\nO| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("O| | \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O| | \n------\nX|O|X\n------\n |O|X")
+            elif a == '4':
+                print("X| |O\n------\nO|X|X\n------\nX|O|O")
                 a = input('move: ')
                 if a == '1':
-                    print("O|X| \n------\nX|O|X\n------\n |O|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O| | \n------\nX|O|X\n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
-                    elif a == '2':
-                        print("O| |O\n------\nX|O|X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" | |O\n------\nO| |X\n------\nX|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|O\n------\nO| |X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O| |O\n------\nO|X|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '1':
-        print("O|X| \n------\nX|O| \n------\n | | ")
+    elif a == '7':
+        print("O| |O\n------\n | |X\n------\n |X| ")
         a = input('move: ')
-        if a == '5':
-            print("O|X| \n------\nX|O|X\n------\nO| | ")
+        if a == '8':
+            print("O| |O\n------\n | |X\n------\n |X|X")
             a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|O|X\n------\nO| | ")
+            if a == '3':
+                print("O| |O\n------\nO| |X\n------\n |X|X")
                 a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                if a == '4':
+                    print("O| |O\n------\nO|X|X\n------\n |X|X")
                     a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    if a == '6':
+                        print("O| |O\n------\nO|X|X\n------\nO|X|X")
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|O|X\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                elif a == '1':
+                    print("O|X|O\n------\nO| |X\n------\n |X|X")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    if a == '6':
+                        print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                    elif a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
+                elif a == '6':
+                    print("O| |O\n------\nO| |X\n------\nX|X|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
             else:
                 print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\nX|O| \n------\nO| | ")
+        elif a == '1':
+            print("O|X|O\n------\n | |X\n------\n |X| ")
             a = input('move: ')
-            if a == '5':
-                print("O|X|X\n------\nX|O|X\n------\nO| | ")
+            if a == '8':
+                print("O|X|O\n------\n | |X\n------\n |X|O")
                 a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                if a == '6':
+                    print("O|X|O\n------\n | |X\n------\nX|X|O")
                     a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    if a == '3':
+                        print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|O\n------\nX| |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+            elif a == '6':
+                print("O|X|O\n------\n | |X\n------\nO|X| ")
                 a = input('move: ')
                 if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\nX|O| \n------\nO| |X")
-            a = input('move: ')
-            if a == '5':
-                print("O|X| \n------\nX|O|X\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                    print("O|X|O\n------\n | |X\n------\nO|X|X")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    if a == '3':
+                        print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+            elif a == '3':
+                print("O|X|O\n------\nO| |X\n------\n |X| ")
                 a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                if a == '8':
+                    print("O|X|O\n------\nO| |X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                    elif a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|O\n------\nO| |X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '7':
-            print("O|X| \n------\nX|O| \n------\nO|X| ")
+        elif a == '3':
+            print("O| |O\n------\nX| |X\n------\n |X| ")
             a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+            if a == '6':
+                print("O| |O\n------\nX| |X\n------\nO|X| ")
                 a = input('move: ')
                 if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                    print("O| |O\n------\nX| |X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX| |X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                    elif a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             elif a == '8':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                print("O| |O\n------\nX| |X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("O| |O\n------\nX| |X\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX| |X\n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\nX| |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O| |O\n------\n |X|X\n------\n |X| ")
+            a = input('move: ')
+            if a == '8':
+                print("O| |O\n------\n |X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |O\n------\nX|X|X\n------\n |X|O")
+                elif a == '6':
+                    print("O| |O\n------\n |X|X\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O| |O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O| |O\n------\nO|X|X\n------\n |X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O| |O\n------\nO|X|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O| |O\n------\nO|X|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O| |O\n------\nO|X|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nO|X|X\n------\nX|X| ")
+                    elif a == '8':
+                        print("O| |O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O| |O\n------\n |X|X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O| |O\n------\n |X|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O| |O\n------\nO|X|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O| |O\n------\nX|X|X\n------\nO|X| ")
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '6':
-            print("O|X|O\n------\nX|O| \n------\nX| | ")
+            print("O| |O\n------\n | |X\n------\nX|X| ")
             a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+            if a == '3':
+                print("O| |O\n------\nO| |X\n------\nX|X| ")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|O\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                if a == '1':
+                    print("O|X|O\n------\nO| |X\n------\nX|X| ")
                     a = input('move: ')
-                    if a == '8':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                    if a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                elif a == '4':
+                    print("O| |O\n------\nO|X|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O| |O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("O|O|O\n------\nO|X|X\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
@@ -6096,41 +2724,865 @@ elif a == '3':
         else:
             print('INVALID MOVE')
     elif a == '4':
-        print("O| | \n------\nX|X|O\n------\n | | ")
+        print(" | |O\n------\nO|X|X\n------\n | | ")
         a = input('move: ')
-        if a == '7':
-            print("O|O| \n------\nX|X|O\n------\n |X| ")
+        if a == '1':
+            print(" |X|O\n------\nO|X|X\n------\n |O| ")
             a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+            if a == '6':
+                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
                 a = input('move: ')
                 if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\nO|X|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O|O\n------\nO|X|X\n------\n |X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|O\n------\nO|X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O|O\n------\nO|X|X\n------\n |X|X")
+            elif a == '6':
+                print("O|O|O\n------\nO|X|X\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" |O|O\n------\nO|X|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|O|O\n------\nO|X|X\n------\nX|X| ")
+            elif a == '8':
+                print("O|O|O\n------\nO|X|X\n------\nX| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| |O\n------\nO|X|X\n------\n | |O")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
                 else:
                     print('INVALID MOVE')
             elif a == '6':
-                print("O|O|O\n------\nX|X|O\n------\nX|X| ")
+                print("X| |O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|O\n------\nO|X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O| |O\n------\nO|X|X\n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("O|O|O\n------\nO|X|X\n------\nX| |X")
+            elif a == '7':
+                print("O| |O\n------\nO|X|X\n------\nO|X|X")
+            elif a == '1':
+                print("O|X|O\n------\nO|X|X\n------\nO| |X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '8':
+        print("O| |O\n------\n | |X\n------\n | |X")
+        a = input('move: ')
+        if a == '1':
+            print("O|X|O\n------\n | |X\n------\n |O|X")
+            a = input('move: ')
+            if a == '4':
+                print("O|X|O\n------\nO|X|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|O\n------\nO| |X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O| |O\n------\nX| |X\n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("O| |O\n------\nX| |X\n------\nO| |X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX| |X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nX|O|X\n------\nO| |X")
+                    elif a == '7':
+                        print("O|X|O\n------\nX| |X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O| |O\n------\nO|X|X\n------\n | |X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|O\n------\nO|X|X\n------\nO| |X")
+            elif a == '6':
+                print("O|O|O\n------\nO|X|X\n------\nX| |X")
+            elif a == '7':
+                print("O| |O\n------\nO|X|X\n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("O| |O\n------\n | |X\n------\nX| |X")
+            a = input('move: ')
+            if a == '3':
+                print("O| |O\n------\nO| |X\n------\nX| |X")
+                a = input('move: ')
+                if a == '4':
+                    print("O| |O\n------\nO|X|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nO|X|X\n------\nX| |X")
+                    elif a == '7':
+                        print("O| |O\n------\nO|X|X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\nO| |X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("O|X|O\n------\nO| |X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("O| |O\n------\n | |X\n------\n |X|X")
+            a = input('move: ')
+            if a == '3':
+                print("O| |O\n------\nO| |X\n------\n |X|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O| |O\n------\nO| |X\n------\nX|X|X")
+                elif a == '4':
+                    print("O| |O\n------\nO|X|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O| |O\n------\nO|X|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\nO| |X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '0':
+        print("X| |O\n------\nO| |X\n------\n | | ")
+        a = input('move: ')
+        if a == '4':
+            print("X| |O\n------\nO|X|X\n------\n | |O")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|O\n------\nO|X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| |O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("X|X|O\n------\nO| |X\n------\n |O| ")
+            a = input('move: ')
+            if a == '4':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
             elif a == '8':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                print("X|X|O\n------\nO|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("X| |O\n------\nO|O|X\n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nO| |X")
+            elif a == '7':
+                print("X| |O\n------\nO|O|X\n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X| |O\n------\nO| |X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '8':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("X| |O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO| |X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '4':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X| |O\n------\nO|O|X\n------\n |X| ")
+            a = input('move: ')
+            if a == '6':
+                print("X| |O\n------\nO|O|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("X| |O\n------\nO|O|X\n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '4':
+    print(" | | \n------\n |X| \n------\n | |O")
+    a = input('move: ')
+    if a == '6':
+        print(" | |O\n------\n |X| \n------\nX| |O")
+        a = input('move: ')
+        if a == '7':
+            print(" | |O\n------\n |X| \n------\nX|X|O")
+            a = input('move: ')
+            if a == '0':
+                print("O| |O\n------\n |X| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |O\n------\nX|X| \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX|X| \n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O| |O\n------\n |X|X\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O| |O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" | |O\n------\nO|X| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X| |O\n------\nO|X| \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|O\n------\nO|X| \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print(" | |O\n------\nO|X|X\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print(" |O|O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O| |O\n------\nO|X|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X|O\n------\n |X| \n------\nX|O|O")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X|O\n------\nX|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | |O\n------\nO|X|X\n------\nX| |O")
+            a = input('move: ')
+            if a == '1':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| |O\n------\nO|X| \n------\nX| |O")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|O\n------\nO|X| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print(" | |O\n------\nX|X| \n------\nX| |O")
+            a = input('move: ')
+            if a == '0':
+                print("O| |O\n------\nX|X| \n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("O| |O\n------\nX|X| \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX|X| \n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\nX|X| \n------\nX| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O|O\n------\nX|X| \n------\nX| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|O\n------\nX|X| \n------\nX| |O")
+                elif a == '7':
+                    print(" |O|O\n------\nX|X| \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|O\n------\nX|X| \n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print(" | |O\n------\nX|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '1':
+                    print(" |X|O\n------\nX|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X| |O\n------\nX|X| \n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '2':
+        print(" | |X\n------\n |X| \n------\nO| |O")
+        a = input('move: ')
+        if a == '3':
+            print(" | |X\n------\nX|X|O\n------\nO| |O")
+            a = input('move: ')
+            if a == '7':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X|X\n------\n |X| \n------\nO| |O")
+            a = input('move: ')
+            if a == '0':
+                print("O|X|X\n------\n |X| \n------\nO| |O")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|X| \n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nX|X| \n------\nO|O|O")
+                    elif a == '5':
+                        print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X|X\n------\n |X|X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|X|X\n------\nO| |O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X|X\n------\nO|X| \n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|X\n------\nO|X| \n------\nO| |O")
+                elif a == '5':
+                    print(" |X|X\n------\nO|X|X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nO|X|X\n------\nO| |O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |X|X\n------\n |X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '3':
+                    print(" |X|X\n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|X|X\n------\n |X|O\n------\nO| |O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | |X\n------\n |X|X\n------\nO| |O")
+            a = input('move: ')
+            if a == '1':
+                print(" |O|X\n------\n |X|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\n |X|X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|X|X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print(" |O|X\n------\n |X|X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O|O|X\n------\n |X|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|O|X\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |X\n------\n |X|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("O| |X\n------\n |X|X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O| |X\n------\nO|X|X\n------\nO|X|O")
+                    elif a == '1':
+                        print("O|O|X\n------\n |X|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|O|X\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O| |X\n------\nX|X|X\n------\nO| |O")
+                elif a == '1':
+                    print("O|X|X\n------\n |X|X\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|X|X\n------\nO| |O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O|X\n------\n |X| \n------\nO| |O")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\n |X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|X| \n------\nO|O|O")
+            elif a == '5':
+                print("X|O|X\n------\nO|X|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O|X\n------\n |X| \n------\nO|X|O")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nO|X| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print(" |O| \n------\n |X| \n------\n |X|O")
+        a = input('move: ')
+        if a == '5':
+            print(" |O| \n------\nO|X|X\n------\n |X|O")
+            a = input('move: ')
+            if a == '2':
+                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
                 a = input('move: ')
                 if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |O|X\n------\n |X| \n------\nO|X|O")
+            a = input('move: ')
+            if a == '5':
+                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\n |X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '6':
-            print("O| | \n------\nX|X|O\n------\nX| | ")
+            print(" |O| \n------\n |X| \n------\nX|X|O")
             a = input('move: ')
-            if a == '1':
-                print("O|O| \n------\nX|X|O\n------\nX| | ")
+            if a == '0':
+                print("O|O| \n------\n |X| \n------\nX|X|O")
                 a = input('move: ')
-                if a == '7':
-                    print("O|O| \n------\nX|X|O\n------\nX|X| ")
+                if a == '3':
+                    print("O|O| \n------\nX|X| \n------\nX|X|O")
                     a = input('move: ')
                     if a == '2':
-                        print("O|O|O\n------\nX|X|O\n------\nX|X| ")
-                    elif a == '8':
+                        print("O|O|O\n------\nX|X| \n------\nX|X|O")
+                    elif a == '5':
                         print("O|O| \n------\nX|X|O\n------\nX|X|O")
                         a = input('move: ')
                         if a == '2':
@@ -6141,24 +3593,24 @@ elif a == '3':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O| | \n------\nX|X|O\n------\nX|O| ")
+            elif a == '3':
+                print(" |O| \n------\nO|X| \n------\nX|X|O")
                 a = input('move: ')
-                if a == '1':
-                    print("O|X| \n------\nX|X|O\n------\nX|O| ")
+                if a == '0':
+                    print("X|O| \n------\nO|X| \n------\nX|X|O")
                     a = input('move: ')
                     if a == '2':
-                        print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+                        print("X|O|O\n------\nO|X| \n------\nX|X|O")
                         a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                        if a == '5':
+                            print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X| \n------\nX|X|O\n------\nX|O|O")
+                    elif a == '5':
+                        print("X|O| \n------\nO|X|O\n------\nX|X|O")
                         a = input('move: ')
                         if a == '2':
-                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                            print("X|O|X\n------\nO|X|O\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
@@ -6167,413 +3619,147 @@ elif a == '3':
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '2':
-            print("O| |X\n------\nX|X|O\n------\nO| | ")
+        elif a == '3':
+            print(" |O| \n------\nX|X|O\n------\n |X|O")
             a = input('move: ')
-            if a == '8':
-                print("O|O|X\n------\nX|X|O\n------\nO| |X")
+            if a == '2':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+            elif a == '6':
+                print(" |O| \n------\nX|X|O\n------\nX|X|O")
                 a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                if a == '0':
+                    print("O|O| \n------\nX|X|O\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|X\n------\nX|X|O\n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+            elif a == '0':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\nX|X|O\n------\n |O| ")
+        elif a == '0':
+            print("X|O| \n------\n |X| \n------\nO|X|O")
             a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+            if a == '3':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             elif a == '2':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                print("X|O|X\n------\n |X|O\n------\nO|X|O")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O| | \n------\nX|X|O\n------\nO| |X")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|X|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|O| \n------\nX|X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print("O| | \n------\nX|O| \n------\n |X| ")
-        a = input('move: ')
-        if a == '8':
-            print("O| | \n------\nX|O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                if a == '3':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             elif a == '5':
-                print("O| | \n------\nX|O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O| |X\n------\nX|O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '5':
-                print("O| |X\n------\nX|O|X\n------\nO|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O| |X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O| | \n------\nX|O|X\n------\nO|X| ")
-            a = input('move: ')
-            if a == '2':
-                print("O| |X\n------\nX|O|X\n------\nO|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O|X\n------\nX|O|X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O| | \n------\nX|O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O| | \n------\nX|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '5':
-                print("O| | \n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O| |X\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("O|O| \n------\nX|O| \n------\nX|X| ")
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
                 a = input('move: ')
                 if a == '2':
-                    print("O|O|X\n------\nX|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|O| \n------\nX|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O| |O\n------\nX|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '1':
-                    print("O|X|O\n------\nX|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O| |O\n------\nX|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '1':
-                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '1':
-            print("O|X| \n------\nX|O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '8':
-                print("O|X|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '1':
-    print("O|X| \n------\n | | \n------\n | | ")
-    a = input('move: ')
-    if a == '2':
-        print("O|X|X\n------\nO| | \n------\n | | ")
-        a = input('move: ')
-        if a == '8':
-            print("O|X|X\n------\nO| | \n------\nO| |X")
-        elif a == '5':
-            print("O|X|X\n------\nO| |X\n------\nO| | ")
-        elif a == '6':
-            print("O|X|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X|X\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("O|X|X\n------\nO|O|X\n------\nX| | ")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("O|X|X\n------\nO| | \n------\nO|X| ")
-        elif a == '4':
-            print("O|X|X\n------\nO|X| \n------\nO| | ")
         else:
             print('INVALID MOVE')
     elif a == '5':
-        print("O|X| \n------\n | |X\n------\n |O| ")
+        print(" | | \n------\nO|X|X\n------\n | |O")
         a = input('move: ')
-        if a == '3':
-            print("O|X| \n------\nX|O|X\n------\n |O| ")
+        if a == '6':
+            print(" | |O\n------\nO|X|X\n------\nX| |O")
             a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+            if a == '0':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
                 a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+            elif a == '1':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|X\n------\n |O| ")
+            elif a == '7':
+                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
-                    else:
-                        print('INVALID MOVE')
+                if a == '0':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '2':
-            print("O|X|X\n------\n | |X\n------\n |O| ")
+            print(" | |X\n------\nO|X|X\n------\n | |O")
             a = input('move: ')
-            if a == '6':
-                print("O|X|X\n------\n | |X\n------\nO|O| ")
+            if a == '1':
+                print(" |O|X\n------\nO|X|X\n------\n | |O")
                 a = input('move: ')
-                if a == '4':
-                    print("O|X|X\n------\n |X|X\n------\nO|O| ")
+                if a == '0':
+                    print("X|O|X\n------\nO|X|X\n------\n | |O")
                     a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                    if a == '6':
+                        print("X|O|X\n------\nO|X|X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|O|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X|X\n------\nX| |X\n------\nO|O| ")
+                elif a == '7':
+                    print(" |O|X\n------\nO|X|X\n------\n |X|O")
                     a = input('move: ')
-                    if a == '4':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                    if a == '0':
+                        print("O|O|X\n------\nO|X|X\n------\n |X|O")
                         a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        if a == '6':
+                            print("O|O|X\n------\nO|X|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|X|X\n------\nO|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|X\n------\nO| |X\n------\n |O| ")
+            elif a == '0':
+                print("O| |X\n------\nO|X|X\n------\n | |O")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nO| |X\n------\nX|O| ")
+                if a == '1':
+                    print("O|X|X\n------\nO|X|X\n------\n | |O")
                     a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO| |X\n------\nX|O|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '4':
-                    print("O|X|X\n------\nO|X|X\n------\n |O| ")
-                    a = input('move: ')
-                    if a == '8':
+                    if a == '7':
                         print("O|X|X\n------\nO|X|X\n------\n |O|O")
                         a = input('move: ')
                         if a == '6':
@@ -6581,672 +3767,48 @@ elif a == '1':
                         else:
                             print('INVALID MOVE')
                     elif a == '6':
-                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                        print("O|X|X\n------\nO|X|X\n------\nO| |O")
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("O|X|X\n------\n |O|X\n------\n |O| ")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X|X\n------\nX|O|X\n------\n |O| ")
+                elif a == '7':
+                    print("O| |X\n------\nO|X|X\n------\n |X|O")
                     a = input('move: ')
                     if a == '6':
-                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        print("O| |X\n------\nO|X|X\n------\nO|X|O")
+                    elif a == '1':
+                        print("O|O|X\n------\nO|X|X\n------\n |X|O")
                         a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        if a == '6':
+                            print("O|O|X\n------\nO|X|X\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X|O\n------\n | |X\n------\n |O|X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("O|X|O\n------\nO|X|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X| \n------\n |O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '4':
-            print("O|X| \n------\nO|X|X\n------\n |O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nO|X|X\n------\nO|O| ")
-            elif a == '6':
-                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nO|X|X\n------\nO|O|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '6':
-        print("O|X| \n------\n | | \n------\nX|O| ")
-        a = input('move: ')
-        if a == '4':
-            print("O|X|O\n------\n |X| \n------\nX|O| ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X|O\n------\nO|X| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|X| \n------\nX|O| \n------\nX|O| ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|X| \n------\n |O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\n |O| \n------\nX|O| ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|X\n------\n |O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\n |O| \n------\nX|O|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '8':
-        print("O|X| \n------\n | | \n------\n |O|X")
-        a = input('move: ')
-        if a == '2':
-            print("O|X|X\n------\n | |O\n------\n |O|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|X\n------\nX| |O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '4':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("O|X|X\n------\n |X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|X|O\n------\n | |X\n------\n |O|X")
-            a = input('move: ')
-            if a == '4':
-                print("O|X|O\n------\nO|X|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|O\n------\n |O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '4':
-            print("O|X| \n------\n |X| \n------\nO|O|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|X| \n------\nX|X|O\n------\nO|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nO|X| \n------\nO|O|X")
-            elif a == '5':
-                print("O|X| \n------\nO|X|X\n------\nO|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X| \n------\n | |O\n------\nX|O|X")
-            a = input('move: ')
-            if a == '4':
-                print("O|X|O\n------\n |X|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX| |O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '4':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\n |O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|X| \n------\nX|O| \n------\n |O|X")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\nX|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|O\n------\nX|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print("O|X| \n------\nX| |O\n------\n | | ")
-        a = input('move: ')
-        if a == '7':
-            print("O|X| \n------\nX|O|O\n------\n |X| ")
-            a = input('move: ')
-            if a == '6':
-                print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\nX| |O\n------\n |O| ")
-            a = input('move: ')
-            if a == '4':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\nX|O|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X| \n------\nX|O|O\n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\nX|O|O\n------\n | |X")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|O|O\n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X| \n------\nX|O|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                elif a == '6':
+                    print("O| |X\n------\nO|X|X\n------\nX| |O")
                 else:
                     print('INVALID MOVE')
             elif a == '7':
-                print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                print(" | |X\n------\nO|X|X\n------\n |O|O")
                 a = input('move: ')
-                if a == '2':
-                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '4':
-            print("O|X| \n------\nX|X|O\n------\n |O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\nX|X|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '4':
-        print("O|X| \n------\n |X| \n------\n |O| ")
-        a = input('move: ')
-        if a == '5':
-            print("O|X| \n------\nO|X|X\n------\n |O| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\nO|X|X\n------\nO|O| ")
-            elif a == '8':
-                print("O|X| \n------\nO|X|X\n------\nO|O|X")
-            elif a == '6':
-                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X|O\n------\n |X| \n------\nX|O| ")
-            a = input('move: ')
-            if a == '3':
-                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\n |X|O\n------\nX|O|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|X| \n------\nX|X|O\n------\n |O| ")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|O\n------\nX|X|O\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\nO|X| \n------\n |O|X")
-            a = input('move: ')
-            if a == '6':
-                print("O|X|O\n------\nO|X| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X| \n------\nO|X|X\n------\nO|O|X")
-            elif a == '2':
-                print("O|X|X\n------\nO|X| \n------\nO|O|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|X\n------\n |X| \n------\n |O| ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|X\n------\n |X|O\n------\n |O| ")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nX|X|O\n------\n |O| ")
+                if a == '0':
+                    print("X| |X\n------\nO|X|X\n------\n |O|O")
                     a = input('move: ')
                     if a == '6':
-                        print("O|X|X\n------\nX|X|O\n------\nO|O| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|X\n------\nX|X|O\n------\n |O|O")
+                        print("X| |X\n------\nO|X|X\n------\nO|O|O")
+                    elif a == '1':
+                        print("X|O|X\n------\nO|X|X\n------\n |O|O")
                         a = input('move: ')
                         if a == '6':
-                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                            print("X|O|X\n------\nO|X|X\n------\nX|O|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X|X\n------\n |X|O\n------\n |O|X")
+                elif a == '1':
+                    print(" |X|X\n------\nO|X|X\n------\n |O|O")
                     a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\n |X|O\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nX|X|O\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|X\n------\nO|X|O\n------\n |O|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO|X|O\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|X|X\n------\n |X| \n------\n |O|O")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X|X\n------\n |X|X\n------\n |O|O")
-                    a = input('move: ')
-                    if a == '3':
+                    if a == '0':
                         print("O|X|X\n------\nO|X|X\n------\n |O|O")
                         a = input('move: ')
                         if a == '6':
@@ -7255,7 +3817,152 @@ elif a == '1':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '3':
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nO|X|X\n------\nO| |O")
+            a = input('move: ')
+            if a == '7':
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nO|X|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X| \n------\nO|X|X\n------\nO|O|O")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O| \n------\nO|X|X\n------\n |X|O")
+            a = input('move: ')
+            if a == '2':
+                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X| \n------\nO|X|X\n------\n |O|O")
+            a = input('move: ')
+            if a == '0':
+                print("X|X| \n------\nO|X|X\n------\nO|O|O")
+            elif a == '6':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |X|X\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '1':
+        print(" |X| \n------\n |X| \n------\n |O|O")
+        a = input('move: ')
+        if a == '5':
+            print(" |X| \n------\nO|X|X\n------\n |O|O")
+            a = input('move: ')
+            if a == '2':
+                print(" |X|X\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nO|X|X\n------\nO|O|O")
+            elif a == '6':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" |X|O\n------\n |X| \n------\nX|O|O")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|O\n------\nO|X|X\n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X|O\n------\nX|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print(" |X| \n------\nX|X| \n------\n |O|O")
+            a = input('move: ')
+            if a == '0':
+                print("O|X| \n------\nX|X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '2':
                     print("O|X|X\n------\nX|X| \n------\n |O|O")
                     a = input('move: ')
                     if a == '6':
@@ -7269,17 +3976,111 @@ elif a == '1':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X| \n------\nX|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X| \n------\nX|X|O\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |X|O\n------\nX|X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nX|X| \n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print(" |X|O\n------\nX|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|O\n------\nX|X| \n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|X| \n------\n |X| \n------\n |O|O")
+            a = input('move: ')
+            if a == '3':
+                print("X|X| \n------\nO|X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X| \n------\nO|X| \n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|X| \n------\nO|X|O\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|X|O\n------\nO|X| \n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |X|X\n------\n |X| \n------\n |O|O")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|X\n------\n |X|O\n------\n |O|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|X\n------\n |X|O\n------\n |O|O")
+                elif a == '3':
+                    print(" |X|X\n------\nX|X|O\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nX|X|O\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             elif a == '3':
-                print("O|X|X\n------\nO|X| \n------\n |O| ")
+                print(" |X|X\n------\nO|X| \n------\n |O|O")
                 a = input('move: ')
                 if a == '5':
-                    print("O|X|X\n------\nO|X|X\n------\n |O| ")
+                    print(" |X|X\n------\nO|X|X\n------\n |O|O")
                     a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
-                    elif a == '8':
+                    if a == '0':
                         print("O|X|X\n------\nO|X|X\n------\n |O|O")
                         a = input('move: ')
                         if a == '6':
@@ -7288,191 +4089,1176 @@ elif a == '1':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X|X\n------\nO|X| \n------\n |O|X")
+                elif a == '0':
+                    print("X|X|X\n------\nO|X| \n------\n |O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O|X|X\n------\n |X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|X| \n------\n |O|O")
                     a = input('move: ')
                     if a == '6':
-                        print("O|X|X\n------\nO|X| \n------\nO|O|X")
+                        print("O|X|X\n------\nX|X| \n------\nO|O|O")
                     elif a == '5':
-                        print("O|X|X\n------\nO|X|O\n------\n |O|X")
+                        print("O|X|X\n------\nX|X|O\n------\n |O|O")
                         a = input('move: ')
                         if a == '6':
-                            print("O|X|X\n------\nO|X|O\n------\nX|O|X")
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|X\n------\nO|X| \n------\nX|O| ")
+                elif a == '5':
+                    print("O|X|X\n------\n |X|X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
             print('INVALID MOVE')
-    elif a == '7':
-        print("O|X| \n------\n | | \n------\n |X| ")
+    elif a == '0':
+        print("X| |O\n------\n |X| \n------\n | |O")
         a = input('move: ')
-        if a == '3':
-            print("O|X| \n------\nO| | \n------\n |X| ")
+        if a == '1':
+            print("X|X|O\n------\n |X| \n------\n | |O")
             a = input('move: ')
             if a == '6':
-                print("O|X| \n------\nO| | \n------\nX|X| ")
+                print("X|X|O\n------\n |X| \n------\nO| |O")
                 a = input('move: ')
                 if a == '5':
-                    print("O|X| \n------\nO| |O\n------\nX|X| ")
+                    print("X|X|O\n------\n |X|X\n------\nO| |O")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
+                    if a == '3':
+                        print("X|X|O\n------\nO|X|X\n------\nO| |O")
                         a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                        if a == '7':
+                            print("X|X|O\n------\nO|X|X\n------\nO|X|O")
                         else:
                             print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X| \n------\nO|X|O\n------\nX|X| ")
                     else:
                         print('INVALID MOVE')
-                elif a == '4':
-                    print("O|X| \n------\nO|O| \n------\nX|X| ")
+                elif a == '3':
+                    print("X|X|O\n------\nX|X| \n------\nO| |O")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nO|O| \n------\nX|X| ")
+                    if a == '7':
+                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|X|O\n------\nO|X| \n------\n | |O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X| \n------\nX| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|X|O\n------\nO|X| \n------\nX|O|O")
                         a = input('move: ')
                         if a == '5':
-                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                            print("X|X|O\n------\nO|X|X\n------\nX|O|O")
                         else:
                             print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X| \n------\nO|O|X\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("X|X|O\n------\nO|X|X\n------\n | |O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|X|O\n------\nO|X|X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X| |O\n------\nO|X|X\n------\n | |O")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|X|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|O\n------\nO|X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X|O|O\n------\n |X| \n------\n |X|O")
+            a = input('move: ')
+            if a == '6':
+                print("X|O|O\n------\nO|X| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|O\n------\nO|X|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|O\n------\nX|X| \n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|O\n------\nX|X| \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X| |O\n------\nX|X| \n------\n | |O")
+            a = input('move: ')
+            if a == '1':
+                print("X|O|O\n------\nX|X| \n------\n | |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nX|X| \n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|O\n------\nX|X| \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("X|O|O\n------\nX|X| \n------\nX| |O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| |O\n------\nX|X| \n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X| |O\n------\nX|X| \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|O\n------\nX|X| \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("X|X|O\n------\nX|X| \n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X| |O\n------\nX|X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |O\n------\nX|X| \n------\nX|O|O")
+                elif a == '1':
+                    print("X|X|O\n------\nX|X| \n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|X|O\n------\nX|X| \n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X| |O\n------\nO|X| \n------\nX| |O")
+            a = input('move: ')
+            if a == '5':
+                print("X|O|O\n------\nO|X|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|O\n------\nO|X| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|X| \n------\nX|O|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|X|X\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print(" | | \n------\nX|X|O\n------\n | |O")
+        a = input('move: ')
+        if a == '1':
+            print(" |X| \n------\nX|X|O\n------\n | |O")
+            a = input('move: ')
+            if a == '0':
+                print("O|X| \n------\nX|X|O\n------\n | |O")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X| \n------\nX|X|O\n------\nX| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X| \n------\nX|X|O\n------\nX|O|O")
                         a = input('move: ')
                         if a == '2':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |X| \n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X| \n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|X| \n------\nX|X|O\n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print(" |X|X\n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O| \n------\nX|X|O\n------\n |X|O")
+            a = input('move: ')
+            if a == '2':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |O| \n------\nX|X|O\n------\nX|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|O| \n------\nX|X|O\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|X\n------\nX|X|O\n------\nX|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |X\n------\nX|X|O\n------\nO| |O")
+            a = input('move: ')
+            if a == '7':
+                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nX|X|O\n------\nO| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" | | \n------\nX|X|O\n------\nX| |O")
+            a = input('move: ')
+            if a == '1':
+                print(" |O| \n------\nX|X|O\n------\nX| |O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O| \n------\nX|X|O\n------\nX| |O")
+                elif a == '7':
+                    print(" |O| \n------\nX|X|O\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O| \n------\nX|X|O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|O|X\n------\nX|X|O\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| | \n------\nX|X|O\n------\nX| |O")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X| \n------\nX|X|O\n------\nX| |O")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X| \n------\nX|X|O\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("O| | \n------\nX|X|O\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O| \n------\nX|X|O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|O|X\n------\nX|X|O\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print(" | | \n------\nX|X|O\n------\nX|O|O")
+                a = input('move: ')
+                if a == '1':
+                    print(" |X| \n------\nX|X|O\n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X| \n------\nX|X|O\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X| | \n------\nX|X|O\n------\nX|O|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nX|X|O\n------\nO| |O")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\nX|X|O\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X| \n------\nX|X|O\n------\nO|O|O")
+            elif a == '7':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '7':
+    print(" | | \n------\n | | \n------\nO|X| ")
+    a = input('move: ')
+    if a == '4':
+        print(" |O| \n------\n |X| \n------\nO|X| ")
+        a = input('move: ')
+        if a == '3':
+            print(" |O| \n------\nX|X|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|O| \n------\n |X| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '5':
+                print("O|O| \n------\nO|X|X\n------\nO|X|X")
+            elif a == '2':
+                print("O|O|X\n------\nO|X| \n------\nO|X|X")
+            elif a == '3':
+                print("O|O|O\n------\nX|X| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |O|X\n------\nO|X| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nO|X| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O|X\n------\nO|X| \n------\nO|X|X")
+            elif a == '5':
+                print("O|O|X\n------\nO|X|X\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" |O| \n------\nO|X|X\n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nO|X|X\n------\nO|X| ")
+            elif a == '8':
+                print("O|O| \n------\nO|X|X\n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O| \n------\n |X| \n------\nO|X|O")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\n |X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O| \n------\nO|X|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print(" |O| \n------\nX| | \n------\nO|X| ")
+        a = input('move: ')
+        if a == '0':
+            print("X|O| \n------\nX| |O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '4':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print(" |O| \n------\nX|X|O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("O|O| \n------\nX|X|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O| \n------\nX|X|O\n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" |O| \n------\nX|O|X\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print(" |O| \n------\nX|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            elif a == '2':
+                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |O|X\n------\nX|O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|O| \n------\nX| | \n------\nO|X|X")
+            a = input('move: ')
+            if a == '4':
+                print("O|O|O\n------\nX|X| \n------\nO|X|X")
+            elif a == '2':
+                print("O|O|X\n------\nX| |O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|O| \n------\nX| |X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '2':
+        print("O| |X\n------\n | | \n------\nO|X| ")
+        a = input('move: ')
+        if a == '3':
+            print("O| |X\n------\nX| |O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '4':
+                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X|X\n------\nO| | \n------\nO|X| ")
+        elif a == '4':
+            print("O| |X\n------\nO|X| \n------\nO|X| ")
+        elif a == '5':
+            print("O| |X\n------\nO| |X\n------\nO|X| ")
+        elif a == '8':
+            print("O| |X\n------\nO| | \n------\nO|X|X")
+        else:
+            print('INVALID MOVE')
+    elif a == '0':
+        print("X| | \n------\n |O| \n------\nO|X| ")
+        a = input('move: ')
+        if a == '1':
+            print("X|X| \n------\n |O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '3':
+                print("X|X| \n------\nO|O| \n------\nO|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X| \n------\nO|O|X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+                    elif a == '8':
+                        print("X|X| \n------\nO|O|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '8':
-                    print("O|X| \n------\nO| | \n------\nX|X|O")
+                    print("X|X| \n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("X|X|X\n------\nO|O| \n------\nO|X| ")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("X| | \n------\nO|O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '5':
+                print("X| | \n------\nO|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X| |X\n------\nO|O| \n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
                     a = input('move: ')
                     if a == '5':
-                        print("O|X| \n------\nO| |X\n------\nX|X|O")
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X|O| \n------\nX|O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X|O|X\n------\n |O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|X\n------\n |O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X|O| \n------\n |O|X\n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O| \n------\n |O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            elif a == '2':
+                print("X|O|X\n------\n |O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print("O| | \n------\n | |X\n------\nO|X| ")
+        a = input('move: ')
+        if a == '2':
+            print("O| |X\n------\nO| |X\n------\nO|X| ")
+        elif a == '1':
+            print("O|X| \n------\nO| |X\n------\nO|X| ")
+        elif a == '3':
+            print("O| | \n------\nX| |X\n------\nO|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("O| |O\n------\nX| |X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                    elif a == '8':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
                         a = input('move: ')
                         if a == '4':
-                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O| |O\n------\nX| |X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX| |X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|O| \n------\nX| |X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '4':
+                    print("O|O| \n------\nX|X|X\n------\nO|X| ")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O| | \n------\nX| |X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X| \n------\nX| |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O| |X\n------\nX| |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|O|X\n------\nX|X|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O| | \n------\nO|X|X\n------\nO|X| ")
+        elif a == '8':
+            print("O| | \n------\nO| |X\n------\nO|X|X")
+        else:
+            print('INVALID MOVE')
+    elif a == '1':
+        print(" |X| \n------\n | | \n------\nO|X| ")
+        a = input('move: ')
+        if a == '3':
+            print(" |X| \n------\nO| | \n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print(" |X| \n------\nO| | \n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print(" |X|O\n------\nO| | \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nO| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                        elif a == '5':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
                             a = input('move: ')
                             if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print(" |X|O\n------\nO| |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print(" |X| \n------\nO| |O\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print(" |X|X\n------\nO| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X| \n------\nO| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X| \n------\nO|O|O\n------\nO|X|X")
+                        elif a == '2':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X| \n------\nO| | \n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |X| \n------\nO| |X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '2':
+                    print(" |X|O\n------\nO| |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |X|O\n------\nO| |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X|O\n------\nO| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X| \n------\nO| |X\n------\nO|X| ")
+                elif a == '8':
+                    print(" |X| \n------\nO| |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X| \n------\nO| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|X| \n------\nO|O|X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     elif a == '2':
-                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                        print(" |X|X\n------\nO| |X\n------\nO|X|O")
                         a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                        if a == '4':
+                            print(" |X|X\n------\nO|O|X\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            if a == '0':
+                                print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
+                        elif a == '0':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
                         else:
                             print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X| \n------\nO|X| \n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\nO| | \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|X|O\n------\nO|X| \n------\nX|X| ")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '5':
-                print("O|X| \n------\nO| |X\n------\n |X| ")
+            elif a == '0':
+                print("X|X| \n------\nO| | \n------\nO|X| ")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X| \n------\nO| |X\n------\nO|X| ")
-                elif a == '8':
-                    print("O|X| \n------\nO| |X\n------\n |X|O")
+                if a == '2':
+                    print("X|X|O\n------\nO| | \n------\nO|X| ")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                    if a == '4':
+                        print("X|X|O\n------\nO|X| \n------\nO|X| ")
+                    elif a == '8':
+                        print("X|X|O\n------\nO| | \n------\nO|X|X")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nO| |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                        if a == '4':
+                            print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                        elif a == '5':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
                             a = input('move: ')
                             if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|X|O\n------\nO| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
                         elif a == '4':
-                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
+                            print("X|X|O\n------\nO|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\nO| |X\n------\n |X| ")
+                elif a == '5':
+                    print("X|X| \n------\nO| |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("X|X| \n------\nO|X|O\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X|X| \n------\nO| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("X|X| \n------\nO|X| \n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("X|X| \n------\nO|O| \n------\nO|X| ")
                     a = input('move: ')
                     if a == '8':
-                        print("O|X|O\n------\nO| |X\n------\n |X|X")
+                        print("X|X| \n------\nO|O| \n------\nO|X|X")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                            a = input('move: ')
-                            if a == '6':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '6':
-                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        if a == '2':
+                            print("X|X|O\n------\nO|O| \n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|O\n------\nO| |X\n------\nX|X| ")
+                    elif a == '2':
+                        print("X|X|X\n------\nO|O| \n------\nO|X| ")
+                    elif a == '5':
+                        print("X|X| \n------\nO|O|X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        if a == '8':
+                            print("X|X| \n------\nO|O|X\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            if a == '2':
+                                print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
-                        elif a == '8':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
+                        elif a == '2':
+                            print("X|X|O\n------\nO|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     else:
@@ -7480,89 +5266,122 @@ elif a == '1':
                 else:
                     print('INVALID MOVE')
             elif a == '2':
-                print("O|X|X\n------\nO| | \n------\n |X| ")
+                print(" |X|X\n------\nO| | \n------\nO|X| ")
                 a = input('move: ')
-                if a == '6':
-                    print("O|X|X\n------\nO| | \n------\nO|X| ")
-                elif a == '8':
-                    print("O|X|X\n------\nO| | \n------\n |X|O")
+                if a == '4':
+                    print(" |X|X\n------\nO|O| \n------\nO|X| ")
                     a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                    if a == '0':
+                        print("X|X|X\n------\nO|O| \n------\nO|X| ")
+                    elif a == '8':
+                        print(" |X|X\n------\nO|O| \n------\nO|X|X")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        if a == '0':
+                            print("O|X|X\n------\nO|O| \n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                    elif a == '5':
+                        print(" |X|X\n------\nO|O|X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
-                        elif a == '5':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                        if a == '8':
+                            print(" |X|X\n------\nO|O|X\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            if a == '0':
+                                print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
+                        elif a == '0':
+                            print("O|X|X\n------\nO|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '5':
-                    print("O|X|X\n------\nO| |O\n------\n |X| ")
+                    print(" |X|X\n------\nO| |O\n------\nO|X| ")
                     a = input('move: ')
                     if a == '8':
-                        print("O|X|X\n------\nO| |O\n------\n |X|X")
+                        print(" |X|X\n------\nO| |O\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '6':
+                        if a == '0':
                             print("O|X|X\n------\nO| |O\n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
+                    elif a == '0':
+                        print("X|X|X\n------\nO| |O\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X|X\n------\nO| | \n------\nO|X| ")
+                elif a == '8':
+                    print(" |X|X\n------\nO| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print(" |X|X\n------\nO| |X\n------\nO|X|O")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                        elif a == '8':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                        if a == '0':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        elif a == '4':
+                            print(" |X|X\n------\nO|O|X\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            if a == '0':
+                                print("X|X|X\n------\nO|O|X\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X|X\n------\nO| | \n------\nO|X|O")
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '8':
-                print("O|X| \n------\nO| | \n------\n |X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("O|X| \n------\n | | \n------\nO|X| ")
+            a = input('move: ')
+            if a == '3':
+                print("O|X| \n------\nX| | \n------\nO|X| ")
                 a = input('move: ')
-                if a == '4':
-                    print("O|X| \n------\nO|O| \n------\n |X|X")
+                if a == '5':
+                    print("O|X| \n------\nX| |O\n------\nO|X| ")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nO|O| \n------\n |X|X")
+                    if a == '8':
+                        print("O|X| \n------\nX| |O\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO|O| \n------\nO|X|X")
+                        if a == '2':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nO|O| \n------\nX|X|X")
-                    elif a == '5':
-                        print("O|X| \n------\nO|O|X\n------\n |X|X")
+                    elif a == '4':
+                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X| \n------\nO|O|X\n------\nO|X|X")
-                        elif a == '2':
-                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        if a == '8':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '6':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                             else:
                                 print('INVALID MOVE')
                         else:
@@ -7570,53 +5389,79 @@ elif a == '1':
                     else:
                         print('INVALID MOVE')
                 elif a == '2':
-                    print("O|X|O\n------\nO| | \n------\n |X|X")
+                    print("O|X|O\n------\nX| | \n------\nO|X| ")
                     a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO| | \n------\nX|X|X")
+                    if a == '4':
+                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
                     elif a == '5':
-                        print("O|X|O\n------\nO| |X\n------\n |X|X")
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
-                        elif a == '4':
-                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        if a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '6':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("O|X| \n------\nX|O| \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nX|O| \n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                             else:
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X| \n------\nO| |O\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X| \n------\nO| |O\n------\nX|X|X")
-                    elif a == '2':
-                        print("O|X|X\n------\nO| |O\n------\n |X|X")
+                    elif a == '8':
+                        print("O|X| \n------\nX|O| \n------\nO|X|X")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        if a == '5':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '2':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X| \n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X| \n------\nO| | \n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|X| \n------\n | | \n------\n |X|O")
-            a = input('move: ')
-            if a == '3':
-                print("O|X| \n------\nX| | \n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
+                elif a == '8':
                     print("O|X| \n------\nX| | \n------\nO|X|O")
                     a = input('move: ')
                     if a == '2':
@@ -7651,827 +5496,57 @@ elif a == '1':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X| \n------\nX| |O\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX| |O\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX| |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\nX| | \n------\n |X|O")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\nX| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|O\n------\nX| | \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|X|X\n------\n | | \n------\n |X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X|X\n------\nO| | \n------\n |X|O")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nO| | \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
-                        elif a == '5':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X|X\n------\nO| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|X\n------\n | | \n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nX| | \n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X|X\n------\n | |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X|X\n------\n | |O\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nX| |O\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|X\n------\n | |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|X| \n------\n | |X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X| \n------\n | |X\n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\n | |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X| \n------\nX| |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\n | |X\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|O\n------\nX| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|O\n------\n | |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X| \n------\nO| |X\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X| \n------\nO| |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|X|X\n------\nO| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|X| \n------\n | | \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("O|X| \n------\n | |O\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X| \n------\nX| |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|X|X\n------\n | |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X| \n------\nO| | \n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|X| \n------\nO|X| \n------\nX|X|O")
-                    elif a == '2':
-                        print("O|X|X\n------\nO| | \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
-                        elif a == '5':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X| \n------\nO| |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\n | | \n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\n | |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|O\n------\nX| | \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("O|X|O\n------\n | | \n------\n |X| ")
-            a = input('move: ')
-            if a == '5':
-                print("O|X|O\n------\n | |X\n------\n |X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|O\n------\n | |X\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\n | |X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|O\n------\nX| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X|O\n------\nO| |X\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nO| |X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '8':
-                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|O\n------\nO| |X\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
-                        elif a == '4':
-                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
-                            a = input('move: ')
-                            if a == '6':
-                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|O\n------\n | |X\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-                        elif a == '8':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|O\n------\n | |X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X|O\n------\nX| | \n------\n |X| ")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X|O\n------\nX| | \n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
-                    elif a == '5':
-                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-                        elif a == '8':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|O\n------\nX| | \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X|O\n------\nX| | \n------\n |X|O")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\nX| |X\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X|O\n------\nX| | \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '5':
-                    print("O|X|O\n------\nX| |O\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nX| |O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|X| \n------\n | |O\n------\n |X| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|X|X\n------\n | |O\n------\n |X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|X|X\n------\n | |O\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\n | |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|X\n------\nX| |O\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|X|X\n------\nO| |O\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|X\n------\nO| |O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|X|X\n------\n | |O\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '8':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|X\n------\n | |O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
-                        elif a == '4':
-                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '3':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|X| \n------\nX| |O\n------\n |X| ")
-                a = input('move: ')
-                if a == '6':
-                    print("O|X| \n------\nX| |O\n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("O|X| \n------\nX| |O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '2':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '2':
-                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
-                    elif a == '2':
-                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '4':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '4':
-                    print("O|X| \n------\nX|O|O\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX|O|O\n------\n |X| ")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X| \n------\nX|O|O\n------\n |X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|O\n------\nX|O|O\n------\n |X|X")
-                            a = input('move: ')
-                            if a == '6':
-                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '6':
-                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '2':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX|O|O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\nX| |O\n------\n |X| ")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|X|O\n------\nX| |O\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X| \n------\nX| |O\n------\n |X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX| |O\n------\n |X|O")
-                        a = input('move: ')
-                        if a == '6':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|X| \n------\nX| |O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|X| \n------\n | | \n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("O|X| \n------\n | | \n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|X| \n------\nO| | \n------\nO|X|X")
-                elif a == '5':
-                    print("O|X| \n------\n | |O\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|X| \n------\nX| |O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '2':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '2':
-                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|X|X\n------\n | |O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '3':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|X|O\n------\n | | \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|O\n------\n | |X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|O\n------\nX| | \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
-                        elif a == '5':
-                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
             elif a == '2':
                 print("O|X|X\n------\n | | \n------\nO|X| ")
                 a = input('move: ')
-                if a == '3':
+                if a == '8':
+                    print("O|X|X\n------\n | | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|X\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
                     print("O|X|X\n------\nO| | \n------\nO|X| ")
                 elif a == '5':
                     print("O|X|X\n------\n | |O\n------\nO|X| ")
                     a = input('move: ')
-                    if a == '3':
+                    if a == '8':
+                        print("O|X|X\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '3':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
                         print("O|X|X\n------\nX| |O\n------\nO|X| ")
                         a = input('move: ')
                         if a == '4':
@@ -8482,46 +5557,6 @@ elif a == '1':
                             else:
                                 print('INVALID MOVE')
                         elif a == '8':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X|X\n------\n | |O\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
-                            a = input('move: ')
-                            if a == '3':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        elif a == '3':
-                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X|X\n------\n | | \n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|X|X\n------\n | |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '3':
-                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '3':
-                        print("O|X|X\n------\nX| | \n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
-                        elif a == '5':
                             print("O|X|X\n------\nX| |O\n------\nO|X|O")
                             a = input('move: ')
                             if a == '4':
@@ -8593,86 +5628,53 @@ elif a == '1':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '3':
-                print("O|X| \n------\nX| | \n------\nO|X| ")
+            elif a == '8':
+                print("O|X| \n------\n | | \n------\nO|X|X")
                 a = input('move: ')
-                if a == '4':
-                    print("O|X| \n------\nX|O| \n------\nO|X| ")
+                if a == '5':
+                    print("O|X| \n------\n | |O\n------\nO|X|X")
                     a = input('move: ')
-                    if a == '2':
-                        print("O|X|X\n------\nX|O| \n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
-                            a = input('move: ')
-                            if a == '8':
-                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
-                            else:
-                                print('INVALID MOVE')
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("O|X| \n------\nX|O|X\n------\nO|X| ")
+                    if a == '3':
+                        print("O|X| \n------\nX| |O\n------\nO|X|X")
                         a = input('move: ')
                         if a == '2':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|X| \n------\nX|O| \n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
                             print("O|X| \n------\nX|O|O\n------\nO|X|X")
                             a = input('move: ')
                             if a == '2':
                                 print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                             else:
                                 print('INVALID MOVE')
-                        elif a == '2':
-                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("O|X| \n------\nX| | \n------\nO|X|O")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|X| \n------\nX|X| \n------\nO|X|O")
-                    elif a == '5':
-                        print("O|X| \n------\nX| |X\n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '4':
-                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
-                        elif a == '2':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
-                            a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
-                            else:
-                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     elif a == '2':
-                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        print("O|X|X\n------\n | |O\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
-                        elif a == '5':
-                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
                             a = input('move: ')
-                            if a == '4':
-                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            if a == '3':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                             else:
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X| \n------\nO| | \n------\nO|X|X")
                 elif a == '2':
-                    print("O|X|O\n------\nX| | \n------\nO|X| ")
+                    print("O|X|O\n------\n | | \n------\nO|X|X")
                     a = input('move: ')
-                    if a == '8':
+                    if a == '3':
                         print("O|X|O\n------\nX| | \n------\nO|X|X")
                         a = input('move: ')
                         if a == '5':
@@ -8686,25 +5688,189 @@ elif a == '1':
                             print("O|X|O\n------\nX|O| \n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
-                    elif a == '4':
-                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
                     elif a == '5':
-                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '4':
-                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" |X| \n------\n | |O\n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|X| \n------\n | |O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '3':
+                    print("X|X| \n------\nO| |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("X|X| \n------\nO|X|O\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("X|X| \n------\n |O|O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nX|O|O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
                         elif a == '8':
-                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
                             a = input('move: ')
-                            if a == '4':
-                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
                             else:
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '5':
+                elif a == '2':
+                    print("X|X|O\n------\n | |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X|O\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X|X|O\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X|X| \n------\n | |O\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nX| |O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X| \n------\nX| |O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print(" |X| \n------\nX| |O\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X| \n------\nX| |O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print(" |X| \n------\nX|O|O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print(" |X|X\n------\nX|O|O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print(" |X|X\n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '0':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print(" |X| \n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X| \n------\nX|O|O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                        elif a == '8':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print(" |X|O\n------\nX| |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |X|O\n------\nX| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X|O\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
                     print("O|X| \n------\nX| |O\n------\nO|X| ")
                     a = input('move: ')
                     if a == '2':
@@ -8726,17 +5892,466 @@ elif a == '1':
                                 print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
                     elif a == '8':
                         print("O|X| \n------\nX| |O\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '4':
+                        if a == '2':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
                             print("O|X| \n------\nX|O|O\n------\nO|X|X")
                             a = input('move: ')
                             if a == '2':
                                 print("O|X|X\n------\nX|O|O\n------\nO|X|X")
                             else:
                                 print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |X| \n------\n | | \n------\nO|X|O")
+            a = input('move: ')
+            if a == '0':
+                print("X|X| \n------\n | | \n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|X| \n------\nO| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("X|X| \n------\nO|X| \n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("X|X| \n------\n |O| \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nX|O| \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
                         elif a == '2':
+                            print("X|X|O\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("X|X|O\n------\n | | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X|O\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|X|O\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("X|X| \n------\n | |O\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nX| |O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X| \n------\nX| | \n------\nO|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print(" |X|O\n------\nX| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print(" |X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("X|X|O\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X| \n------\nX| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nX|X| \n------\nO|X|O")
+                    elif a == '2':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print(" |X| \n------\nX| |O\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X| \n------\nX| |O\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X| \n------\nX|O|O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '2':
+                                print("X|X|X\n------\nX|O|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |X|O\n------\n | | \n------\nO|X| ")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|O\n------\n | |X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print(" |X|O\n------\n | |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print(" |X|O\n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print(" |X|O\n------\nO| |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nO| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print(" |X|O\n------\nO| |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X|O\n------\n | |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\n | | \n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\n | | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|X|O\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("X|X|O\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("X|X|O\n------\n | |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|X|O\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("X|X|O\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("X|X|O\n------\nO| | \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|X|O\n------\nO| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|X|O\n------\nO| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("X|X|O\n------\nO| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("X|X|O\n------\nO|X| \n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print(" |X|O\n------\n | | \n------\nO|X|X")
+                a = input('move: ')
+                if a == '5':
+                    print(" |X|O\n------\n | |O\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print(" |X|O\n------\nX| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print(" |X|O\n------\nO| | \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nO| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X|O\n------\nO| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("X|X|O\n------\nO|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print(" |X|O\n------\nO| |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("O|X|O\n------\n | | \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        elif a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |X|O\n------\nX| | \n------\nO|X| ")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|O\n------\nX| | \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        elif a == '5':
                             print("O|X|O\n------\nX| |O\n------\nO|X|X")
                             a = input('move: ')
                             if a == '4':
@@ -8746,776 +6361,71 @@ elif a == '1':
                         else:
                             print('INVALID MOVE')
                     elif a == '4':
-                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    else:
-        print('INVALID MOVE')
-elif a == '7':
-    print(" |O| \n------\n | | \n------\n |X| ")
-    a = input('move: ')
-    if a == '0':
-        print("X|O| \n------\n | | \n------\nO|X| ")
-        a = input('move: ')
-        if a == '8':
-            print("X|O| \n------\n |O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("X|O|X\n------\n |O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|X\n------\n |O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X|O| \n------\n |O|X\n------\nO|X| ")
-            a = input('move: ')
-            if a == '3':
-                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '2':
-                print("X|O|X\n------\n |O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("X|O| \n------\nX| | \n------\nO|X|O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nX| |O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '4':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '4':
-            print("X|O| \n------\n |X| \n------\nO|X|O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\n |X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '5':
-        print(" |O| \n------\n | |X\n------\n |X|O")
-        a = input('move: ')
-        if a == '4':
-            print(" |O| \n------\nO|X|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '2':
-                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|O\n------\nO|X|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print(" |O|O\n------\nO|X|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\n |O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|O|X\n------\nX|O|X\n------\n |X|O")
-            elif a == '6':
-                print("O|O|X\n------\n |O|X\n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print(" |O| \n------\nX|O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '6':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            elif a == '2':
-                print("O|O|X\n------\nX|O|X\n------\n |X|O")
-            elif a == '0':
-                print("X|O| \n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O| \n------\nO| |X\n------\n |X|O")
-            a = input('move: ')
-            if a == '6':
-                print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("X|O| \n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|O| \n------\n | |X\n------\nX|X|O")
-            a = input('move: ')
-            if a == '4':
-                print("O|O| \n------\n |X|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O| \n------\nO|X|X\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nO|X|X\n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("O|O|X\n------\n | |X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nO| |X\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|O|X\n------\nO|X|X\n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '2':
-        print(" |O|X\n------\n | | \n------\nO|X| ")
-        a = input('move: ')
-        if a == '3':
-            print(" |O|X\n------\nX|O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '4':
-            print(" |O|X\n------\n |X|O\n------\nO|X| ")
-            a = input('move: ')
-            if a == '3':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\n |X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("O|O|X\n------\n |X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O|X\n------\n | | \n------\nO|X|O")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\n |O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("X|O|X\n------\n |X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" |O|X\n------\n | |X\n------\nO|X|O")
-            a = input('move: ')
-            if a == '4':
-                print(" |O|X\n------\nO|X|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\nO| |X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '4':
-                    print("X|O|X\n------\nO|X|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print(" |O|X\n------\n | |O\n------\nO|X|X")
-            a = input('move: ')
-            if a == '0':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("O|O|X\n------\n |X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '6':
-        print(" |O| \n------\n | | \n------\nX|X|O")
-        a = input('move: ')
-        if a == '4':
-            print(" |O| \n------\n |X| \n------\nX|X|O")
-            a = input('move: ')
-            if a == '3':
-                print(" |O| \n------\nO|X| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O| \n------\nO|X| \n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|O\n------\nO|X| \n------\nX|X|O")
+                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
+                    elif a == '5':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '5':
-                            print("X|O|O\n------\nO|X|X\n------\nX|X|O")
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print(" |X|O\n------\nX| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '0':
+                        print("X|X|O\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("X|X|O\n------\nX|O| \n------\nO|X|O")
                         else:
                             print('INVALID MOVE')
                     elif a == '5':
-                        print("X|O| \n------\nO|X|O\n------\nX|X|O")
+                        print(" |X|O\n------\nX| |X\n------\nO|X|O")
                         a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|X|O\n------\nX|X|O")
+                        if a == '0':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O|O| \n------\n |X| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O| \n------\nX|X| \n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|O\n------\nX|X| \n------\nX|X|O")
-                    elif a == '5':
-                        print("O|O| \n------\nX|X|O\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|X|O\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O| \n------\nO| | \n------\nX|X|O")
-            a = input('move: ')
-            if a == '4':
-                print("X|O|O\n------\nO|X| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|O\n------\nO| |X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '4':
-                    print("X|O|O\n------\nO|X|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|O| \n------\nX| | \n------\nX|X|O")
-            a = input('move: ')
-            if a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            elif a == '4':
-                print("O|O|O\n------\nX|X| \n------\nX|X|O")
-            elif a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\n |O| \n------\nX|X|O")
-            a = input('move: ')
-            if a == '3':
-                print("O|O|X\n------\nX|O| \n------\nX|X|O")
-            elif a == '0':
-                print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|O|X\n------\n |O|X\n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|O| \n------\n | |X\n------\nX|X|O")
-            a = input('move: ')
-            if a == '4':
-                print("O|O| \n------\n |X|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O| \n------\nO|X|X\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nO|X|X\n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            elif a == '2':
-                print("O|O|X\n------\n | |X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nO| |X\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|O|X\n------\nO|X|X\n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '4':
-        print("O|O| \n------\n |X| \n------\n |X| ")
-        a = input('move: ')
-        if a == '2':
-            print("O|O|X\n------\n |X| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("O|O|X\n------\nO|X| \n------\nO|X|X")
-            elif a == '3':
-                print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                a = input('move: ')
-                if a == '8':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("O|O|X\n------\nO|X|X\n------\nO|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("O|O| \n------\nX|X| \n------\n |X| ")
-            a = input('move: ')
-            if a == '6':
-                print("O|O| \n------\nX|X| \n------\nO|X| ")
-                a = input('move: ')
-                if a == '2':
-                    print("O|O|X\n------\nX|X| \n------\nO|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|O|X\n------\nX|X|O\n------\nO|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("O|O|X\n------\nX|X| \n------\nO|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("O|O|X\n------\nX|X|X\n------\nO|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("O|O| \n------\nO|X|X\n------\n |X| ")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nO|X|X\n------\nO|X| ")
-            elif a == '8':
-                print("O|O| \n------\nO|X|X\n------\nO|X|X")
-            elif a == '6':
-                print("O|O|O\n------\nO|X|X\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|O| \n------\n |X| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '3':
-                print("O|O| \n------\nO|X| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O| \n------\nO|X|X\n------\nX|X| ")
+                elif a == '5':
+                    print(" |X|O\n------\nX| |O\n------\nO|X| ")
                     a = input('move: ')
                     if a == '8':
-                        print("O|O| \n------\nO|X|X\n------\nX|X|O")
+                        print(" |X|O\n------\nX| |O\n------\nO|X|X")
                         a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nO|X|X\n------\nX|X|O")
+                        if a == '0':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
                         else:
                             print('INVALID MOVE')
-                    elif a == '2':
-                        print("O|O|O\n------\nO|X|X\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("O|O|X\n------\nO|X| \n------\nX|X| ")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("O|O| \n------\n |X| \n------\n |X|X")
-            a = input('move: ')
-            if a == '3':
-                print("O|O| \n------\nO|X| \n------\n |X|X")
-                a = input('move: ')
-                if a == '5':
-                    print("O|O| \n------\nO|X|X\n------\n |X|X")
-                    a = input('move: ')
-                    if a == '6':
-                        print("O|O| \n------\nO|X|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '6':
-                    print("O|O| \n------\nO|X| \n------\nX|X|X")
-                elif a == '2':
-                    print("O|O|X\n------\nO|X| \n------\n |X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("O|O|X\n------\nO|X|O\n------\n |X|X")
+                    elif a == '0':
+                        print("X|X|O\n------\nX| |O\n------\nO|X| ")
                         a = input('move: ')
-                        if a == '6':
-                            print("O|O|X\n------\nO|X|O\n------\nX|X|X")
+                        if a == '4':
+                            print("X|X|O\n------\nX|O|O\n------\nO|X| ")
                         else:
                             print('INVALID MOVE')
-                    elif a == '6':
-                        print("O|O|X\n------\nO|X| \n------\nO|X|X")
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print(" |O| \n------\nX| | \n------\n |X|O")
-        a = input('move: ')
-        if a == '4':
-            print(" |O| \n------\nX|X|O\n------\n |X|O")
-            a = input('move: ')
-            if a == '0':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print(" |O| \n------\nX|X|O\n------\nX|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("O|O| \n------\nX|X|O\n------\nX|X|O")
-                    a = input('move: ')
-                    if a == '2':
-                        print("O|O|X\n------\nX|X|O\n------\nX|X|O")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("O|O| \n------\nX| | \n------\nX|X|O")
-            a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nX|O| \n------\nX|X|O")
-            elif a == '4':
-                print("O|O|O\n------\nX|X| \n------\nX|X|O")
-            elif a == '5':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\nX| | \n------\nO|X|O")
-            a = input('move: ')
-            if a == '5':
-                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print(" |O|X\n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print(" |O| \n------\nX|O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '0':
-                print("X|O| \n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("O|O| \n------\nX|O|X\n------\nX|X|O")
-            elif a == '2':
-                print("O|O|X\n------\nX|O|X\n------\n |X|O")
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O| \n------\nX| | \n------\nO|X|O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O| \n------\nX|O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print("X|O| \n------\nX|X|O\n------\nO|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nX|X|O\n------\nO|X|O")
                 else:
                     print('INVALID MOVE')
             else:
@@ -9523,157 +6433,9 @@ elif a == '7':
         else:
             print('INVALID MOVE')
     elif a == '8':
-        print(" |O| \n------\n | | \n------\nO|X|X")
+        print("O| | \n------\n | | \n------\nO|X|X")
         a = input('move: ')
-        if a == '5':
-            print(" |O| \n------\n | |X\n------\nO|X|X")
-            a = input('move: ')
-            if a == '3':
-                print(" |O| \n------\nO| |X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O| \n------\nO| |X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '4':
-                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '2':
-                        print("X|O|O\n------\nO| |X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '4':
-                            print("X|O|O\n------\nO|X|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '4':
-                    print(" |O| \n------\nO|X|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print(" |O|O\n------\nO|X|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '0':
-                            print("X|O|O\n------\nO|X|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '0':
-                        print("O|O| \n------\nO|X|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("O|O| \n------\n | |X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '4':
-                    print("O|O| \n------\n |X|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("O|O| \n------\nO|X|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '3':
-                    print("O|O| \n------\nX| |X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '4':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '4':
-                print(" |O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print(" |O| \n------\nX|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '0':
-                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '0':
-                    print("X|O| \n------\n |O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '3':
-                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print(" |O|X\n------\n | |O\n------\nO|X|X")
-            a = input('move: ')
-            if a == '4':
-                print("O|O|X\n------\n |X|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("O|O|X\n------\nX|X|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '0':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '0':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '0':
-            print("X|O| \n------\n |O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '5':
-                print("X|O| \n------\n |O|X\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
-            elif a == '2':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
+        if a == '3':
             print("O|O| \n------\nX| | \n------\nO|X|X")
             a = input('move: ')
             if a == '4':
@@ -9699,17 +6461,1113 @@ elif a == '7':
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
+        elif a == '1':
+            print("O|X| \n------\nO| | \n------\nO|X|X")
+        elif a == '5':
+            print("O| | \n------\nO| |X\n------\nO|X|X")
+        elif a == '2':
+            print("O| |X\n------\nO| | \n------\nO|X|X")
         elif a == '4':
-            print("O|O| \n------\n |X| \n------\nO|X|X")
+            print("O| | \n------\nO|X| \n------\nO|X|X")
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '2':
+    print(" | |X\n------\n |O| \n------\n | | ")
+    a = input('move: ')
+    if a == '0':
+        print("X|O|X\n------\n |O| \n------\n | | ")
+        a = input('move: ')
+        if a == '8':
+            print("X|O|X\n------\n |O| \n------\n | |X")
             a = input('move: ')
-            if a == '2':
-                print("O|O|X\n------\nO|X| \n------\nO|X|X")
-            elif a == '5':
-                print("O|O| \n------\nO|X|X\n------\nO|X|X")
+            if a == '6':
+                print("X|O|X\n------\n |O| \n------\nO| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O| \n------\nO| |X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nX|O| \n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O|X\n------\n |O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             elif a == '3':
-                print("O|O|O\n------\nX|X| \n------\nO|X|X")
+                print("X|O|X\n------\nO|O| \n------\n | |X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O|X\n------\nO|O| \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
+        elif a == '6':
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '7':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X|O|X\n------\n |O|X\n------\n | |O")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X|O|X\n------\n |O| \n------\n |X|O")
+            a = input('move: ')
+            if a == '5':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X|O|X\n------\nX|O| \n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            elif a == '5':
+                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '1':
+        print("O|X|X\n------\n |O| \n------\n | | ")
+        a = input('move: ')
+        if a == '6':
+            print("O|X|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|X|X\n------\n |O|X\n------\n | | ")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|X\n------\nO|O|X\n------\n | | ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nO|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("O|X|X\n------\nO|O|X\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO|O|X\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\n |O|X\n------\nO| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\n |O|X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|X\n------\nO|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nX|O|X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|X\n------\n |O|X\n------\n |O| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\n |O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nX|O|X\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|X|X\n------\nX|O|O\n------\n | | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("O|X|X\n------\nO|O| \n------\n |X| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '8':
+                print("O|X|X\n------\nO|O| \n------\nO|X|X")
+            elif a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|X|X\n------\n |O|O\n------\n | |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nO|O|O\n------\n |X|X")
+            elif a == '3':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX| |X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print(" |O|X\n------\nX|O| \n------\n | | ")
+        a = input('move: ')
+        if a == '5':
+            print(" |O|X\n------\nX|O|X\n------\n | | ")
+            a = input('move: ')
+            if a == '6':
+                print(" |O|X\n------\nX|O|X\n------\nO| | ")
+                a = input('move: ')
+                if a == '7':
+                    print(" |O|X\n------\nX|O|X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print(" |O|X\n------\nX|O|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\nX|O|X\n------\nO| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O|O|X\n------\nX|O|X\n------\n | | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|O|X\n------\nX|O|X\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|O|X\n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("O|O|X\n------\nX|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|X\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '5':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |O|X\n------\nX|O|O\n------\n | |X")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" |O|X\n------\nX|O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O|X\n------\nX|O| \n------\nO| | ")
+            a = input('move: ')
+            if a == '5':
+                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            elif a == '8':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            elif a == '7':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O|X\n------\nX|O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |O|X\n------\nX|O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '8':
+        print(" | |X\n------\n |O|O\n------\n | |X")
+        a = input('move: ')
+        if a == '7':
+            print(" | |X\n------\n |O|O\n------\n |X|X")
+            a = input('move: ')
+            if a == '0':
+                print("O| |X\n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |X\n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|X\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
+                    elif a == '6':
+                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O|X\n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\n |X|X")
+                    elif a == '6':
+                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| |X\n------\nO|O|O\n------\n | |X")
+        elif a == '1':
+            print("O|X|X\n------\n |O|O\n------\n | |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nO|O|O\n------\n |X|X")
+            elif a == '3':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" | |X\n------\n |O|O\n------\nX| |X")
+            a = input('move: ')
+            if a == '1':
+                print(" |O|X\n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |X\n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O| |X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print(" | |X\n------\nX|O|O\n------\n |O|X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| |X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |X\n------\nX|O|O\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '6':
+        print(" |O|X\n------\n |O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '8':
+            print(" |O|X\n------\n |O| \n------\nX| |X")
+            a = input('move: ')
+            if a == '3':
+                print(" |O|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O|O|X\n------\n |O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|O|X\n------\nX|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print(" |O|X\n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|O|X\n------\nX|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '7':
+                print("O|O|X\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O|X\n------\n |O| \n------\nX|X|O")
+            a = input('move: ')
+            if a == '5':
+                print("O|O|X\n------\n |O|X\n------\nX|X|O")
+            elif a == '0':
+                print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|O|X\n------\nX|O| \n------\nX|X|O")
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" |O|X\n------\n |O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '0':
+                print("O|O|X\n------\n |O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("O|O|X\n------\n |O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print(" | |X\n------\nO|O| \n------\n |X| ")
+        a = input('move: ')
+        if a == '1':
+            print("O|X|X\n------\nO|O| \n------\n |X| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("O|X|X\n------\nO|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | |X\n------\nO|O|X\n------\n |X|O")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|X\n------\nO|O|X\n------\n |X|O")
+            elif a == '0':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O| |X\n------\nO|O|X\n------\nX|X|O")
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" | |X\n------\nO|O| \n------\n |X|X")
+            a = input('move: ')
+            if a == '1':
+                print(" |O|X\n------\nO|O| \n------\n |X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|O| \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print(" | |X\n------\nO|O| \n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print(" |X|X\n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nO|O| \n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X| |X\n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |X\n------\nO|O| \n------\n |X|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O| |X\n------\nO|O| \n------\nX|X|X")
+                elif a == '1':
+                    print("O|X|X\n------\nO|O| \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO|O| \n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O|X\n------\nO|O| \n------\n |X| ")
+            a = input('move: ')
+            if a == '6':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\n |X|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" | |X\n------\nO|O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '1':
+                print(" |O|X\n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+                    elif a == '8':
+                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |X\n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O| |X\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print(" | |X\n------\n |O|X\n------\n | |O")
+        a = input('move: ')
+        if a == '0':
+            print("X|O|X\n------\n |O|X\n------\n | |O")
+            a = input('move: ')
+            if a == '6':
+                print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|O|X\n------\n |O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("O| |X\n------\n |O|X\n------\nX| |O")
+        elif a == '1':
+            print("O|X|X\n------\n |O|X\n------\n | |O")
+        elif a == '3':
+            print("O| |X\n------\nX|O|X\n------\n | |O")
+        elif a == '7':
+            print("O| |X\n------\n |O|X\n------\n |X|O")
         else:
             print('INVALID MOVE')
     else:
@@ -9720,7 +7578,75 @@ elif a == '0':
     if a == '2':
         print("X|O|X\n------\n |O| \n------\n | | ")
         a = input('move: ')
-        if a == '8':
+        if a == '3':
+            print("X|O|X\n------\nX|O| \n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            elif a == '8':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X|O|X\n------\n |O| \n------\n |X|O")
+            a = input('move: ')
+            if a == '3':
+                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X|O|X\n------\n |O|X\n------\n | |O")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nO|O|X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O|X\n------\nO| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
             print("X|O|X\n------\n |O| \n------\n | |X")
             a = input('move: ')
             if a == '3':
@@ -9750,7 +7676,26 @@ elif a == '0':
             elif a == '6':
                 print("X|O|X\n------\n |O| \n------\nO| |X")
                 a = input('move: ')
-                if a == '3':
+                if a == '7':
+                    print("X|O|X\n------\n |O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
                     print("X|O|X\n------\nX|O| \n------\nO| |X")
                     a = input('move: ')
                     if a == '7':
@@ -9762,6 +7707,138 @@ elif a == '0':
                             print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                         else:
                             print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '8':
+        print("X|O| \n------\n |O| \n------\n | |X")
+        a = input('move: ')
+        if a == '6':
+            print("X|O| \n------\n |O| \n------\nX| |X")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|O\n------\n |O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|O\n------\n |O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("X|O|O\n------\nX|O| \n------\nX| |X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O| \n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O| \n------\nO|O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    elif a == '2':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O| \n------\nO|O| \n------\nX|X|X")
+                elif a == '2':
+                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O| \n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("X|O| \n------\nX|O|O\n------\nX| |X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X|O| \n------\n |O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O| \n------\n |O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X|O|X\n------\n |O| \n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("X|O|X\n------\n |O| \n------\nO| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O| \n------\nO| |X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nX|O| \n------\nO|O|X")
                     else:
                         print('INVALID MOVE')
                 elif a == '7':
@@ -9785,9 +7862,130 @@ elif a == '0':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nO|O| \n------\n | |X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O|X\n------\nO|O| \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X|O| \n------\n |O|X\n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("X|O| \n------\n |O|X\n------\nO| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O| \n------\nX|O|X\n------\nO| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O| \n------\n |O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O| \n------\nO|O|X\n------\n | |X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|O| \n------\nO|O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '3':
+            print("X|O| \n------\nX|O| \n------\nO| |X")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            elif a == '7':
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '5':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print("X| | \n------\nX|O| \n------\nO| | ")
+        a = input('move: ')
+        if a == '1':
+            print("X|X| \n------\nX|O| \n------\nO| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|X| \n------\nX|O| \n------\nO|O| ")
+                a = input('move: ')
+                if a == '2':
+                    print("X|X|X\n------\nX|O| \n------\nO|O| ")
+                elif a == '5':
+                    print("X|X| \n------\nX|O|X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nX|O|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X|X| \n------\nX|O| \n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|X| \n------\nX|O|O\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|X|O\n------\nX|O| \n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
             print("X|O|X\n------\nX|O| \n------\nO| | ")
             a = input('move: ')
             if a == '8':
@@ -9795,32 +7993,6 @@ elif a == '0':
             elif a == '5':
                 print("X|O|X\n------\nX|O|X\n------\nO|O| ")
             elif a == '7':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("X|O|X\n------\n |O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\n |O|O\n------\nO|X|X")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|X\n------\n |O|X\n------\nO|X|O")
-                a = input('move: ')
-                if a == '3':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
                 print("X|O|X\n------\nX|O|O\n------\nO|X| ")
                 a = input('move: ')
                 if a == '8':
@@ -9829,41 +8001,42 @@ elif a == '0':
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '6':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
+        elif a == '5':
+            print("X|O| \n------\nX|O|X\n------\nO| | ")
             a = input('move: ')
-            if a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            if a == '8':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            elif a == '7':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
             else:
                 print('INVALID MOVE')
-        elif a == '5':
-            print("X|O|X\n------\n |O|X\n------\n | |O")
+        elif a == '7':
+            print("X|O| \n------\nX|O| \n------\nO|X| ")
             a = input('move: ')
-            if a == '3':
-                print("X|O|X\n------\nX|O|X\n------\nO| |O")
+            if a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
                 a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
                 else:
                     print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("X|O| \n------\nX|O| \n------\nO| |X")
+            a = input('move: ')
+            if a == '5':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
             elif a == '7':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O|X\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
             else:
                 print('INVALID MOVE')
         else:
@@ -9871,170 +8044,25 @@ elif a == '0':
     elif a == '6':
         print("X| | \n------\nO|O| \n------\nX| | ")
         a = input('move: ')
-        if a == '7':
-            print("X| | \n------\nO|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '1':
-                print("X|O| \n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '8':
-                        print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-                    elif a == '8':
-                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X| |O\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
-                    print("X| |O\n------\nO|O|X\n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '1':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
-                        a = input('move: ')
-                        if a == '8':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
-                    print("X|X|O\n------\nO|O| \n------\nX|X| ")
-                    a = input('move: ')
-                    if a == '8':
-                        print("X|X|O\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '2':
-            print("X|O|X\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            elif a == '8':
-                print("X|O|X\n------\nO|O| \n------\nX|O|X")
-            elif a == '7':
-                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X|O\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-            elif a == '8':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X| | \n------\nO|O|X\n------\nX|O| ")
-            a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|O| \n------\nO|O|X\n------\nX|O|X")
-            elif a == '2':
-                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
+        if a == '8':
             print("X| | \n------\nO|O| \n------\nX| |X")
             a = input('move: ')
-            if a == '1':
-                print("X|O| \n------\nO|O| \n------\nX| |X")
+            if a == '2':
+                print("X| |O\n------\nO|O| \n------\nX| |X")
                 a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX| |X")
+                if a == '1':
+                    print("X|X|O\n------\nO|O| \n------\nX| |X")
                     a = input('move: ')
                     if a == '7':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                        print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 elif a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
-                    elif a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O| \n------\nO|O| \n------\nX|X|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X| |O\n------\nO|O| \n------\nX| |X")
-                a = input('move: ')
-                if a == '5':
                     print("X| |O\n------\nO|O|X\n------\nX| |X")
                     a = input('move: ')
                     if a == '1':
@@ -10053,239 +8081,91 @@ elif a == '0':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '1':
-                    print("X|X|O\n------\nO|O| \n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '1':
-        print("X|X|O\n------\n |O| \n------\n | | ")
-        a = input('move: ')
-        if a == '3':
-            print("X|X|O\n------\nX|O| \n------\nO| | ")
-        elif a == '7':
-            print("X|X|O\n------\nO|O| \n------\n |X| ")
-            a = input('move: ')
-            if a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
-            elif a == '8':
-                print("X|X|O\n------\nO|O| \n------\nO|X|X")
-            elif a == '6':
-                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-            else:
-                print('INVALID MOVE')
-        elif a == '8':
-            print("X|X|O\n------\nO|O| \n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("X|X|O\n------\nO|O| \n------\nO|X|X")
-            elif a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            elif a == '6':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X|X|O\n------\n |O|X\n------\n | |O")
-            a = input('move: ')
-            if a == '7':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '3':
-                print("X|X|O\n------\nX|O|X\n------\nO| |O")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("X|X|O\n------\nO|O| \n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
-            elif a == '5':
-                print("X|X|O\n------\nO|O|X\n------\nX| |O")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X|X|O\n------\nO|O| \n------\nX|O|X")
-                a = input('move: ')
-                if a == '5':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '5':
-        print("X| |O\n------\n |O|X\n------\n | | ")
-        a = input('move: ')
-        if a == '8':
-            print("X| |O\n------\nO|O|X\n------\n | |X")
-            a = input('move: ')
-            if a == '7':
-                print("X| |O\n------\nO|O|X\n------\nO|X|X")
-            elif a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
             elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            else:
-                print('INVALID MOVE')
-        elif a == '6':
-            print("X| |O\n------\nO|O|X\n------\nX| | ")
-            a = input('move: ')
-            if a == '7':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '8':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '7':
-            print("X| |O\n------\n |O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '3':
-                print("X| |O\n------\nX|O|X\n------\nO|X|O")
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X|O\n------\n |O|X\n------\n |O| ")
-            a = input('move: ')
-            if a == '3':
-                print("X|X|O\n------\nX|O|X\n------\nO|O| ")
-            elif a == '8':
-                print("X|X|O\n------\nO|O|X\n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
-                a = input('move: ')
-                if a == '8':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '3':
-            print("X| |O\n------\nX|O|X\n------\nO| | ")
-        else:
-            print('INVALID MOVE')
-    elif a == '7':
-        print("X| | \n------\nO|O| \n------\n |X| ")
-        a = input('move: ')
-        if a == '6':
-            print("X| | \n------\nO|O| \n------\nX|X| ")
-            a = input('move: ')
-            if a == '1':
-                print("X|O| \n------\nO|O| \n------\nX|X| ")
+                print("X|O| \n------\nO|O| \n------\nX| |X")
                 a = input('move: ')
                 if a == '2':
-                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
+                    print("X|O|X\n------\nO|O| \n------\nX| |X")
                     a = input('move: ')
-                    if a == '8':
-                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
-                        a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '5':
-                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+                    if a == '7':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
                     else:
                         print('INVALID MOVE')
                 elif a == '5':
-                    print("X|O| \n------\nO|O|X\n------\nX|X| ")
+                    print("X|O| \n------\nO|O|X\n------\nX| |X")
                     a = input('move: ')
                     if a == '2':
-                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
                         a = input('move: ')
-                        if a == '8':
+                        if a == '7':
                             print("X|O|O\n------\nO|O|X\n------\nX|X|X")
                         else:
                             print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O| \n------\nO|O| \n------\nX|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '7':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("X|X|O\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '5':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("X| | \n------\nO|O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("X| |O\n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|X|O\n------\nO|O|O\n------\nX|X| ")
                     elif a == '8':
-                        print("X|O| \n------\nO|O|X\n------\nX|X|O")
+                        print("X|X|O\n------\nO|O| \n------\nX|X|O")
                         a = input('move: ')
-                        if a == '2':
-                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        if a == '5':
+                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '2':
-                print("X| |O\n------\nO|O| \n------\nX|X| ")
-                a = input('move: ')
-                if a == '5':
+                elif a == '5':
                     print("X| |O\n------\nO|O|X\n------\nX|X| ")
                     a = input('move: ')
                     if a == '8':
@@ -10300,6 +8180,2199 @@ elif a == '0':
                         a = input('move: ')
                         if a == '8':
                             print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|O| \n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+                    elif a == '8':
+                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("X|O| \n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O| \n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X| | \n------\nO|O|X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print("X| | \n------\n |O|X\n------\n |O| ")
+        a = input('move: ')
+        if a == '1':
+            print("X|X|O\n------\n |O|X\n------\n |O| ")
+            a = input('move: ')
+            if a == '3':
+                print("X|X|O\n------\nX|O|X\n------\nO|O| ")
+            elif a == '6':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|X|O\n------\nO|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X| | \n------\nX|O|X\n------\nO|O| ")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nX|O|X\n------\nO|O| ")
+            elif a == '2':
+                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            elif a == '8':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X| | \n------\nO|O|X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            elif a == '2':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("X| | \n------\n |O|X\n------\n |O|X")
+            a = input('move: ')
+            if a == '3':
+                print("X| | \n------\nO|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X| \n------\nO|O|X\n------\n |O|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|X| \n------\nO|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("X|X|O\n------\nO|O|X\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("X| | \n------\nO|O|X\n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| | \n------\n |O|X\n------\nO|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X| | \n------\nX|O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("X|X| \n------\n |O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nO|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X| |X\n------\n |O|X\n------\n |O| ")
+            a = input('move: ')
+            if a == '8':
+                print("X| |X\n------\n |O|X\n------\n |O|O")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |X\n------\n |O|X\n------\nX|O|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X| |X\n------\nO|O|X\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|X\n------\nO|O|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("X| |X\n------\nX|O|X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X| |X\n------\nX|O|X\n------\nO|O|O")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| |X\n------\n |O|X\n------\nO|O| ")
+                a = input('move: ')
+                if a == '3':
+                    print("X| |X\n------\nX|O|X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X| |X\n------\nO|O|X\n------\n |O| ")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+                    elif a == '8':
+                        print("X| |X\n------\nO|O|X\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|X\n------\nO|O|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '1':
+        print("X|X|O\n------\n |O| \n------\n | | ")
+        a = input('move: ')
+        if a == '7':
+            print("X|X|O\n------\nO|O| \n------\n |X| ")
+            a = input('move: ')
+            if a == '5':
+                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("X|X|O\n------\nO|O| \n------\nO|X|X")
+            elif a == '6':
+                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X|X|O\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
+            elif a == '8':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X|X|O\n------\nX|O| \n------\nO| | ")
+        elif a == '5':
+            print("X|X|O\n------\nO|O|X\n------\n | | ")
+            a = input('move: ')
+            if a == '6':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+            elif a == '8':
+                print("X|X|O\n------\nO|O|X\n------\nO| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("X|X|O\n------\nO|O| \n------\n | |X")
+            a = input('move: ')
+            if a == '7':
+                print("X|X|O\n------\nO|O| \n------\nO|X|X")
+            elif a == '6':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|X|O\n------\nO|O|X\n------\nO| |X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print("X| | \n------\n |O| \n------\nO|X| ")
+        a = input('move: ')
+        if a == '8':
+            print("X| | \n------\nO|O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '2':
+                print("X| |X\n------\nO|O| \n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nO|X|X")
+            elif a == '5':
+                print("X| | \n------\nO|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("X|X| \n------\n |O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '3':
+                print("X|X| \n------\nO|O| \n------\nO|X| ")
+                a = input('move: ')
+                if a == '2':
+                    print("X|X|X\n------\nO|O| \n------\nO|X| ")
+                elif a == '5':
+                    print("X|X| \n------\nO|O|X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nO|O|X\n------\nO|X| ")
+                    elif a == '8':
+                        print("X|X| \n------\nO|O|X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("X|X| \n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X|O| \n------\n |O|X\n------\nO|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\n |O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O| \n------\n |O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X|O| \n------\nX|O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '8':
+                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X|O|X\n------\n |O| \n------\nO|X| ")
+            a = input('move: ')
+            if a == '5':
+                print("X|O|X\n------\n |O|X\n------\nO|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '8':
+    print(" | | \n------\n |O| \n------\n | |X")
+    a = input('move: ')
+    if a == '1':
+        print(" |X| \n------\n |O|O\n------\n | |X")
+        a = input('move: ')
+        if a == '0':
+            print("X|X| \n------\nO|O|O\n------\n | |X")
+        elif a == '6':
+            print(" |X| \n------\n |O|O\n------\nX|O|X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X| \n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nO|O|O\n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print(" |X| \n------\nX|O|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X| \n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X| \n------\nX|O|O\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |X| \n------\n |O|O\n------\n |X|X")
+            a = input('move: ')
+            if a == '2':
+                print(" |X|O\n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |X|O\n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|O\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|X|O\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X|O\n------\nO|O|O\n------\n |X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O|X| \n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X| \n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|X\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|X\n------\n |O|O\n------\n | |X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX| |X")
+            elif a == '7':
+                print("O|X|X\n------\nO|O|O\n------\n |X|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '2':
+        print(" | |X\n------\n |O|O\n------\n | |X")
+        a = input('move: ')
+        if a == '0':
+            print("X| |X\n------\nO|O|O\n------\n | |X")
+        elif a == '6':
+            print(" | |X\n------\n |O|O\n------\nX| |X")
+            a = input('move: ')
+            if a == '0':
+                print("O| |X\n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\nX| |X")
+                    elif a == '7':
+                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O|X\n------\n |O|O\n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print(" | |X\n------\nX|O|O\n------\nO| |X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|O|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X|X\n------\n |O|O\n------\n | |X")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nO|O|O\n------\n |X|X")
+            elif a == '6':
+                print("O|X|X\n------\nO|O|O\n------\nX| |X")
+            elif a == '3':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" | |X\n------\n |O|O\n------\n |X|X")
+            a = input('move: ')
+            if a == '0':
+                print("O| |X\n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |X\n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|X\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\n |X|X")
+                    elif a == '6':
+                        print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O|X\n------\n |O|O\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print(" |O|X\n------\nX|O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\n |O|O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X|O|X\n------\n |O|O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\n |X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print(" | |O\n------\n |O|X\n------\n | |X")
+        a = input('move: ')
+        if a == '3':
+            print("O| |O\n------\nX|O|X\n------\n | |X")
+            a = input('move: ')
+            if a == '7':
+                print("O| |O\n------\nX|O|X\n------\nO|X|X")
+            elif a == '6':
+                print("O|O|O\n------\nX|O|X\n------\nX| |X")
+            elif a == '1':
+                print("O|X|O\n------\nX|O|X\n------\nO| |X")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X|O\n------\n |O|X\n------\n | |X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|O\n------\nX|O|X\n------\nO| |X")
+            elif a == '6':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|O\n------\n |O|X\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print(" | |O\n------\n |O|X\n------\nX|O|X")
+            a = input('move: ')
+            if a == '0':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O| |O\n------\nX|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| |O\n------\nO|O|X\n------\n | |X")
+            a = input('move: ')
+            if a == '6':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nO| |X")
+            elif a == '7':
+                print("X| |O\n------\nO|O|X\n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" | |O\n------\n |O|X\n------\n |X|X")
+            a = input('move: ')
+            if a == '3':
+                print(" | |O\n------\nO|O|X\n------\n |X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X| |O\n------\nO|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X| |O\n------\nO|O|X\n------\nO|X|X")
+                    elif a == '1':
+                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print(" |X|O\n------\nO|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O|O\n------\n |O|X\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |O|O\n------\nX|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|O\n------\nX|O|X\n------\n |X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|O\n------\n |O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |O\n------\n |O|X\n------\n |X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |O\n------\nX|O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O| |O\n------\nX|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|O\n------\n |O|X\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print(" | | \n------\nX|O| \n------\n |O|X")
+        a = input('move: ')
+        if a == '6':
+            print("O| | \n------\nX|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            elif a == '1':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X| \n------\nX|O| \n------\n |O|X")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X| \n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |X\n------\nX|O|O\n------\n |O|X")
+            a = input('move: ')
+            if a == '6':
+                print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| |X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |X\n------\nX|O|O\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | | \n------\nX|O|X\n------\n |O|X")
+            a = input('move: ')
+            if a == '6':
+                print(" | | \n------\nX|O|X\n------\nO|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X| | \n------\nX|O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print(" |X| \n------\nX|O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| | \n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O| | \n------\nX|O|X\n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O| |O\n------\nX|O|X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X| \n------\nX|O|X\n------\n |O|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nX|O| \n------\nO|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nX|O| \n------\nO|O|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            elif a == '5':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '0':
+        print("X| | \n------\n |O| \n------\n |O|X")
+        a = input('move: ')
+        if a == '5':
+            print("X| | \n------\n |O|X\n------\n |O|X")
+            a = input('move: ')
+            if a == '3':
+                print("X| | \n------\nO|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X| | \n------\nO|O|X\n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("X|X| \n------\nO|O|X\n------\n |O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|X|O\n------\nO|O|X\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("X|X| \n------\nO|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| | \n------\n |O|X\n------\nO|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X| \n------\n |O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|X| \n------\nO|O|X\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|X|X\n------\nO|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("X| | \n------\nX|O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("X| |X\n------\n |O| \n------\n |O|X")
+            a = input('move: ')
+            if a == '3':
+                print("X| |X\n------\nO|O| \n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X| |X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("X| |X\n------\n |O| \n------\nO|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X| |X\n------\nX|O| \n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nX|O| \n------\nO|O|X")
+                    elif a == '5':
+                        print("X| |X\n------\nX|O|O\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X| |X\n------\n |O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("X| |X\n------\nX|O|O\n------\n |O|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("X| |X\n------\nX|O|O\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|X\n------\nX|O|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("X| |X\n------\n |O|O\n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X| |X\n------\nO|O|O\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("X| | \n------\nX|O| \n------\nO|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nX|O| \n------\nO|O|X")
+            elif a == '5':
+                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+            elif a == '2':
+                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("X| | \n------\nO|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            elif a == '5':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("X|X|O\n------\n |O| \n------\n |O|X")
+            a = input('move: ')
+            if a == '6':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X|X|O\n------\nO|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("X|X|O\n------\nX|O| \n------\nO|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print(" | | \n------\n |O| \n------\nO|X|X")
+        a = input('move: ')
+        if a == '2':
+            print(" | |X\n------\n |O|O\n------\nO|X|X")
+            a = input('move: ')
+            if a == '3':
+                print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| |X\n------\nO|O|O\n------\nO|X|X")
+            elif a == '1':
+                print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X| \n------\n |O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '5':
+                print("O|X| \n------\nO|O|X\n------\nO|X|X")
+            elif a == '2':
+                print("O|X|X\n------\nO|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O| | \n------\nX|O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|O\n------\nX|O| \n------\nO|X|X")
+            elif a == '5':
+                print("O| | \n------\nX|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|O| \n------\nX|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O| |X\n------\nX|O|O\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nO|O| \n------\nO|X|X")
+            a = input('move: ')
+            if a == '2':
+                print("X| |X\n------\nO|O| \n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nO|X|X")
+            elif a == '5':
+                print("X| | \n------\nO|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | | \n------\n |O|X\n------\nO|X|X")
+            a = input('move: ')
+            if a == '3':
+                print(" | | \n------\nO|O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X| | \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print(" |X| \n------\nO|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X| \n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |O| \n------\n |O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O| \n------\n |O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O| \n------\nO|O|X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print(" |O| \n------\nX|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| | \n------\n |O|X\n------\nO|X|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X| \n------\n |O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X| \n------\nO|O|X\n------\nO|X|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O| | \n------\nX|O|X\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O| \n------\nX|O|X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|O|X\n------\nX|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '6':
+        print(" | | \n------\n |O| \n------\nX|O|X")
+        a = input('move: ')
+        if a == '3':
+            print("O| | \n------\nX|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '2':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '5':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            elif a == '1':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X| \n------\n |O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |X\n------\n |O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '3':
+                print(" | |X\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X| |X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("O| |X\n------\n |O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |X\n------\nX|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
+                    elif a == '5':
+                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|X\n------\n |O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | |O\n------\n |O|X\n------\nX|O|X")
+            a = input('move: ')
+            if a == '3':
+                print("O| |O\n------\nX|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nO|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            elif a == '5':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '6':
+    print(" | | \n------\n |O| \n------\nX| | ")
+    a = input('move: ')
+    if a == '8':
+        print(" | | \n------\n |O| \n------\nX|O|X")
+        a = input('move: ')
+        if a == '3':
+            print("O| | \n------\nX|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '5':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" | |X\n------\n |O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '0':
+                print("O| |X\n------\n |O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O| |X\n------\nX|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O| |X\n------\nX|O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '1':
+                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '1':
+                    print("O|X|X\n------\n |O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" | |X\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print(" |X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X| |X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" | |O\n------\n |O|X\n------\nX|O|X")
+            a = input('move: ')
+            if a == '0':
+                print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O| |O\n------\nX|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print(" |X| \n------\nO|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |X|X\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X| | \n------\nO|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '1':
+        print(" |X| \n------\nO|O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '5':
+            print(" |X| \n------\nO|O|X\n------\nX| |O")
+            a = input('move: ')
+            if a == '7':
+                print("O|X| \n------\nO|O|X\n------\nX|X|O")
+            elif a == '2':
+                print("O|X|X\n------\nO|O|X\n------\nX| |O")
+            elif a == '0':
+                print("X|X|O\n------\nO|O|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|X|O\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '5':
+                print("X|X|O\n------\nO|O|X\n------\nX| |O")
+                a = input('move: ')
+                if a == '7':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |X| \n------\nO|O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '0':
+                print("O|X| \n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X| \n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |X|O\n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|X|O\n------\nO|O| \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|X|O\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print(" |X|O\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |X|O\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '8':
+                print("O|X|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |X| \n------\nO|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print(" |X|O\n------\nO|O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |X|X\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '0':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '0':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print("O| | \n------\nX|O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '8':
+            print("O| | \n------\nX|O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '1':
+                print("O|X| \n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '5':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|O| \n------\nX|O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|O\n------\nX|O|X\n------\nX|X| ")
+            elif a == '8':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            elif a == '2':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("O| | \n------\nX|O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("O| |O\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X|O\n------\nX|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O| |O\n------\nX|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O| | \n------\nX|O|O\n------\nX|X| ")
+                a = input('move: ')
+                if a == '1':
+                    print("O|X| \n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O| |X\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("O|O| \n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '2':
+                    print("O|O|X\n------\nX|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|O| \n------\nX|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|O|O\n------\nX|O|X\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '1':
+            print("O|X| \n------\nX|O| \n------\nX|O| ")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|O|X\n------\nX|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '5':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            elif a == '8':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '7':
+                print("O|O|X\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print(" | | \n------\n |O| \n------\nX|X|O")
+        a = input('move: ')
+        if a == '0':
+            print("X| | \n------\nO|O| \n------\nX|X|O")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("X| |O\n------\nO|O|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '1':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '1':
+                print("X|X|O\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O| |X\n------\n |O| \n------\nX|X|O")
+        elif a == '1':
+            print("O|X| \n------\n |O| \n------\nX|X|O")
+        elif a == '3':
+            print("O| | \n------\nX|O| \n------\nX|X|O")
+        elif a == '5':
+            print("O| | \n------\n |O|X\n------\nX|X|O")
+        else:
+            print('INVALID MOVE')
+    elif a == '0':
+        print("X| | \n------\nO|O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '7':
+            print("X| | \n------\nO|O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '2':
+                print("X| |O\n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("X| |O\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '1':
+                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("X| |O\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '1':
+                            print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
                     else:
@@ -10320,161 +10393,95 @@ elif a == '0':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X| \n------\nO|O| \n------\n |X| ")
-            a = input('move: ')
-            if a == '6':
-                print("X|X| \n------\nO|O| \n------\nO|X| ")
+            elif a == '1':
+                print("X|O| \n------\nO|O| \n------\nX|X| ")
                 a = input('move: ')
                 if a == '2':
-                    print("X|X|X\n------\nO|O| \n------\nO|X| ")
-                elif a == '5':
-                    print("X|X| \n------\nO|O|X\n------\nO|X| ")
+                    print("X|O|X\n------\nO|O| \n------\nX|X| ")
                     a = input('move: ')
                     if a == '8':
-                        print("X|X| \n------\nO|O|X\n------\nO|X|O")
+                        print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("X|O| \n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O| \n------\nO|O|X\n------\nX|X|O")
                         a = input('move: ')
                         if a == '2':
-                            print("X|X|X\n------\nO|O|X\n------\nO|X|O")
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
                         else:
                             print('INVALID MOVE')
                     elif a == '2':
-                        print("X|X|O\n------\nO|O|X\n------\nO|X| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("X|X| \n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nO|O| \n------\nO|X|X")
+                        print("X|O|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("X| | \n------\nO|O|X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '2':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '1':
+                print("X|X|O\n------\nO|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
             else:
                 print('INVALID MOVE')
         elif a == '2':
-            print("X|O|X\n------\nO|O| \n------\n |X| ")
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
             a = input('move: ')
-            if a == '8':
-                print("X|O|X\n------\nO|O| \n------\n |X|X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '5':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
+            if a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            elif a == '7':
                 print("X|O|X\n------\nO|O|O\n------\nX|X| ")
             else:
                 print('INVALID MOVE')
-        elif a == '8':
-            print("X| | \n------\nO|O| \n------\nO|X|X")
+        elif a == '1':
+            print("X|X|O\n------\nO|O| \n------\nX| | ")
             a = input('move: ')
-            if a == '2':
-                print("X| |X\n------\nO|O| \n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
+            if a == '7':
+                print("X|X|O\n------\nO|O|O\n------\nX|X| ")
             elif a == '5':
-                print("X| | \n------\nO|O|X\n------\nO|X|X")
+                print("X|X|O\n------\nO|O|X\n------\nX| |O")
                 a = input('move: ')
-                if a == '1':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O| \n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        elif a == '5':
-            print("X| | \n------\nO|O|X\n------\n |X|O")
-            a = input('move: ')
-            if a == '2':
-                print("X|O|X\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X|O| \n------\nO|O|X\n------\nX|X|O")
-                a = input('move: ')
-                if a == '2':
-                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O|X\n------\n |X|O")
-                a = input('move: ')
-                if a == '6':
+                if a == '7':
                     print("X|X|O\n------\nO|O|X\n------\nX|X|O")
                 else:
                     print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '8':
-        print("X| | \n------\nO|O| \n------\n | |X")
-        a = input('move: ')
-        if a == '7':
-            print("X| | \n------\nO|O| \n------\nO|X|X")
-            a = input('move: ')
-            if a == '5':
-                print("X| | \n------\nO|O|X\n------\nO|X|X")
+            elif a == '8':
+                print("X|X|O\n------\nO|O| \n------\nX|O|X")
                 a = input('move: ')
-                if a == '1':
-                    print("X|O| \n------\nO|O|X\n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
+                if a == '5':
+                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
-            elif a == '2':
-                print("X| |X\n------\nO|O| \n------\nO|X|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|O|X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '5':
-                        print("X|O|X\n------\nO|O|X\n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '1':
-                print("X|X|O\n------\nO|O| \n------\nO|X|X")
             else:
                 print('INVALID MOVE')
-        elif a == '6':
+        elif a == '8':
             print("X| | \n------\nO|O| \n------\nX| |X")
             a = input('move: ')
             if a == '1':
@@ -10487,47 +10494,28 @@ elif a == '0':
                         print("X|O|X\n------\nO|O| \n------\nX|O|X")
                     else:
                         print('INVALID MOVE')
-                elif a == '7':
-                    print("X|O| \n------\nO|O| \n------\nX|X|X")
                 elif a == '5':
                     print("X|O| \n------\nO|O|X\n------\nX| |X")
                     a = input('move: ')
-                    if a == '7':
-                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
-                    elif a == '2':
+                    if a == '2':
                         print("X|O|O\n------\nO|O|X\n------\nX| |X")
                         a = input('move: ')
                         if a == '7':
                             print("X|O|O\n------\nO|O|X\n------\nX|X|X")
                         else:
                             print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
                     else:
                         print('INVALID MOVE')
+                elif a == '7':
+                    print("X|O| \n------\nO|O| \n------\nX|X|X")
                 else:
                     print('INVALID MOVE')
             elif a == '2':
                 print("X| |O\n------\nO|O| \n------\nX| |X")
                 a = input('move: ')
-                if a == '5':
-                    print("X| |O\n------\nO|O|X\n------\nX| |X")
-                    a = input('move: ')
-                    if a == '7':
-                        print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                        a = input('move: ')
-                        if a == '1':
-                            print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    elif a == '1':
-                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
-                        a = input('move: ')
-                        if a == '7':
-                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '1':
+                if a == '1':
                     print("X|X|O\n------\nO|O| \n------\nX| |X")
                     a = input('move: ')
                     if a == '7':
@@ -10539,35 +10527,20 @@ elif a == '0':
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            else:
-                print('INVALID MOVE')
-        elif a == '1':
-            print("X|X| \n------\nO|O| \n------\n | |X")
-            a = input('move: ')
-            if a == '6':
-                print("X|X| \n------\nO|O| \n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("X|X| \n------\nO|O| \n------\nO|X|X")
+                elif a == '5':
+                    print("X| |O\n------\nO|O|X\n------\nX| |X")
                     a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nO|O| \n------\nO|X|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X|X| \n------\nO|O| \n------\n |O|X")
-                a = input('move: ')
-                if a == '6':
-                    print("X|X| \n------\nO|O| \n------\nX|O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nO|O| \n------\nX|O|X")
+                    if a == '1':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
                         a = input('move: ')
-                        if a == '5':
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X| |O\n------\nO|O|X\n------\nX|O|X")
+                        a = input('move: ')
+                        if a == '1':
                             print("X|X|O\n------\nO|O|X\n------\nX|O|X")
                         else:
                             print('INVALID MOVE')
@@ -10577,25 +10550,152 @@ elif a == '0':
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '2':
-            print("X| |X\n------\nO|O| \n------\n | |X")
+        else:
+            print('INVALID MOVE')
+    elif a == '2':
+        print(" |O|X\n------\n |O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '0':
+            print("X|O|X\n------\nO|O| \n------\nX| | ")
             a = input('move: ')
-            if a == '1':
-                print("X|O|X\n------\nO|O| \n------\n | |X")
+            if a == '7':
+                print("X|O|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '8':
+                print("X|O|X\n------\nO|O| \n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print(" |O|X\n------\n |O| \n------\nX|X|O")
+            a = input('move: ')
+            if a == '0':
+                print("X|O|X\n------\nO|O| \n------\nX|X|O")
+                a = input('move: ')
+                if a == '5':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|O|X\n------\nX|O| \n------\nX|X|O")
+            elif a == '5':
+                print("O|O|X\n------\n |O|X\n------\nX|X|O")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|O|X\n------\nX|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|X\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|O|X\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|O|X\n------\nX|O| \n------\nX|O|X")
+            elif a == '5':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print(" |O|X\n------\n |O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '0':
+                print("O|O|X\n------\n |O|X\n------\nX| | ")
                 a = input('move: ')
                 if a == '7':
-                    print("X|O|X\n------\nO|O| \n------\n |X|X")
+                    print("O|O|X\n------\n |O|X\n------\nX|X| ")
                     a = input('move: ')
-                    if a == '6':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                    if a == '3':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
                         a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '6':
+                elif a == '3':
+                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O|X\n------\nO|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '7':
+                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '0':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |O|X\n------\n |O| \n------\nX| |X")
+            a = input('move: ')
+            if a == '0':
+                print("O|O|X\n------\n |O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|O|X\n------\nX|O| \n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O| \n------\nX|O|X")
+                    elif a == '5':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
                     print("X|O|X\n------\nO|O| \n------\nX| |X")
                     a = input('move: ')
                     if a == '7':
@@ -10604,145 +10704,2502 @@ elif a == '0':
                         print('INVALID MOVE')
                 else:
                     print('INVALID MOVE')
-            elif a == '7':
-                print("X| |X\n------\nO|O| \n------\n |O|X")
+            elif a == '5':
+                print(" |O|X\n------\n |O|O\n------\nX| |X")
                 a = input('move: ')
-                if a == '6':
-                    print("X| |X\n------\nO|O| \n------\nX|O|X")
+                if a == '3':
+                    print(" |O|X\n------\nX|O|O\n------\nX| |X")
                     a = input('move: ')
-                    if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nX|O|X")
-                    else:
-                        print('INVALID MOVE')
-                else:
-                    print('INVALID MOVE')
-            elif a == '6':
-                print("X| |X\n------\nO|O| \n------\nO| |X")
-                a = input('move: ')
-                if a == '7':
-                    print("X| |X\n------\nO|O| \n------\nO|X|X")
-                    a = input('move: ')
-                    if a == '1':
-                        print("X|O|X\n------\nO|O| \n------\nO|X|X")
+                    if a == '0':
+                        print("O|O|X\n------\nX|O|O\n------\nX| |X")
                         a = input('move: ')
-                        if a == '5':
-                            print("X|O|X\n------\nO|O|X\n------\nO|X|X")
+                        if a == '7':
+                            print("O|O|X\n------\nX|O|O\n------\nX|X|X")
                         else:
                             print('INVALID MOVE')
                     else:
                         print('INVALID MOVE')
-                elif a == '1':
-                    print("X|X|X\n------\nO|O| \n------\nO| |X")
+                elif a == '0':
+                    print("X|O|X\n------\n |O|O\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|X\n------\nO|O|O\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print(" |O| \n------\n |O|X\n------\nX| | ")
+        a = input('move: ')
+        if a == '7':
+            print(" |O| \n------\n |O|X\n------\nX|X|O")
+            a = input('move: ')
+            if a == '0':
+                print("X|O| \n------\nO|O|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|O|X\n------\n |O|X\n------\nX|X|O")
+            elif a == '3':
+                print("O|O| \n------\nX|O|X\n------\nX|X|O")
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|O| \n------\nX|O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("O|O|O\n------\nX|O|X\n------\nX|X| ")
+            elif a == '8':
+                print("O|O| \n------\nX|O|X\n------\nX|O|X")
+            elif a == '2':
+                print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print(" |O|X\n------\n |O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '0':
+                print("O|O|X\n------\n |O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|O|X\n------\n |O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|O|X\n------\nX|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O|X\n------\nX|O|X\n------\nX|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print(" |O|X\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|X\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|O|X\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print(" |O|X\n------\nO|O|X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '0':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|X\n------\nO|O|X\n------\nX| | ")
+                    a = input('move: ')
+                    if a == '7':
+                        print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+                    elif a == '8':
+                        print("X|O|X\n------\nO|O|X\n------\nX| |O")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print(" |O| \n------\n |O|X\n------\nX| |X")
+            a = input('move: ')
+            if a == '0':
+                print("O|O| \n------\n |O|X\n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|O| \n------\nX|O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '7':
+                        print("O|O| \n------\nX|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print(" |O| \n------\nO|O|X\n------\nX| |X")
+                a = input('move: ')
+                if a == '0':
+                    print("X|O| \n------\nO|O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '7':
+                        print("X|O| \n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print(" |O|O\n------\n |O|X\n------\nX| |X")
+                a = input('move: ')
+                if a == '3':
+                    print(" |O|O\n------\nX|O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '0':
+                        print("O|O|O\n------\nX|O|X\n------\nX| |X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '0':
+                    print("X|O|O\n------\n |O|X\n------\nX| |X")
+                    a = input('move: ')
+                    if a == '3':
+                        print("X|O|O\n------\nO|O|X\n------\nX| |X")
+                        a = input('move: ')
+                        if a == '7':
+                            print("X|O|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '0':
+            print("X|O| \n------\nO|O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '7':
+                print("X|O| \n------\nO|O|X\n------\nX|X|O")
+                a = input('move: ')
+                if a == '2':
+                    print("X|O|X\n------\nO|O|X\n------\nX|X|O")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("X|O|X\n------\nO|O|X\n------\nX|O| ")
+            elif a == '8':
+                print("X|O| \n------\nO|O|X\n------\nX|O|X")
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    else:
+        print('INVALID MOVE')
+elif a == '1':
+    print("O|X| \n------\n | | \n------\n | | ")
+    a = input('move: ')
+    if a == '4':
+        print("O|X| \n------\n |X| \n------\n |O| ")
+        a = input('move: ')
+        if a == '8':
+            print("O|X| \n------\n |X|O\n------\n |O|X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|O\n------\n |X|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n |X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '5':
-            print("X| |O\n------\nO|O|X\n------\n | |X")
+            print("O|X| \n------\nO|X|X\n------\n |O| ")
             a = input('move: ')
-            if a == '1':
-                print("X|X|O\n------\nO|O|X\n------\nO| |X")
-            elif a == '6':
-                print("X| |O\n------\nO|O|X\n------\nX|O|X")
-                a = input('move: ')
-                if a == '1':
-                    print("X|X|O\n------\nO|O|X\n------\nX|O|X")
-                else:
-                    print('INVALID MOVE')
-            elif a == '7':
-                print("X| |O\n------\nO|O|X\n------\nO|X|X")
-            else:
-                print('INVALID MOVE')
-        else:
-            print('INVALID MOVE')
-    elif a == '3':
-        print("X| | \n------\nX|O| \n------\nO| | ")
-        a = input('move: ')
-        if a == '7':
-            print("X|O| \n------\nX|O| \n------\nO|X| ")
-            a = input('move: ')
-            if a == '5':
-                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '8':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+            if a == '8':
+                print("O|X| \n------\nO|X|X\n------\nO|O|X")
             elif a == '2':
-                print("X|O|X\n------\nX|O| \n------\nO|X|O")
+                print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+            elif a == '6':
+                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
                 a = input('move: ')
-                if a == '5':
-                    print("X|O|X\n------\nX|O|X\n------\nO|X|O")
+                if a == '8':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '1':
-            print("X|X| \n------\nX|O| \n------\nO| | ")
+        elif a == '6':
+            print("O|X|O\n------\n |X| \n------\nX|O| ")
             a = input('move: ')
-            if a == '7':
-                print("X|X| \n------\nX|O| \n------\nO|O| ")
+            if a == '3':
+                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\nO|X| \n------\nX|O|X")
                 a = input('move: ')
                 if a == '5':
-                    print("X|X| \n------\nX|O|X\n------\nO|O| ")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nX|O|X\n------\nO|O| ")
-                    else:
-                        print('INVALID MOVE')
-                elif a == '8':
-                    print("X|X| \n------\nX|O| \n------\nO|O|X")
-                    a = input('move: ')
-                    if a == '2':
-                        print("X|X|O\n------\nX|O| \n------\nO|O|X")
-                    elif a == '5':
-                        print("X|X| \n------\nX|O|O\n------\nO|O|X")
-                        a = input('move: ')
-                        if a == '2':
-                            print("X|X|X\n------\nX|O|O\n------\nO|O|X")
-                        else:
-                            print('INVALID MOVE')
-                    else:
-                        print('INVALID MOVE')
-                elif a == '2':
-                    print("X|X|X\n------\nX|O| \n------\nO|O| ")
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|X| \n------\nX|X|O\n------\n |O| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
                 else:
                     print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '2':
-            print("X|O|X\n------\nX|O| \n------\nO| | ")
+            print("O|X|X\n------\n |X| \n------\n |O| ")
             a = input('move: ')
-            if a == '7':
-                print("X|O|X\n------\nX|O|O\n------\nO|X| ")
+            if a == '3':
+                print("O|X|X\n------\nO|X| \n------\n |O| ")
                 a = input('move: ')
                 if a == '8':
-                    print("X|O|X\n------\nX|O|O\n------\nO|X|X")
+                    print("O|X|X\n------\nO|X| \n------\n |O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|X|O\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|X\n------\nO|X| \n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X|X\n------\nO|X|X\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|X\n------\nO|X| \n------\nX|O| ")
                 else:
                     print('INVALID MOVE')
             elif a == '5':
-                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+                print("O|X|X\n------\n |X|O\n------\n |O| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|X|O\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nX|X|O\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X|X\n------\n |X|O\n------\n |O|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\n |X|O\n------\nO|O|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nO|X|O\n------\n |O|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|O\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             elif a == '8':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
+                print("O|X|X\n------\n |X| \n------\n |O|O")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|X\n------\n |X|X\n------\n |O|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nX|X| \n------\n |O|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nX|X| \n------\nO|O|O")
+                    elif a == '5':
+                        print("O|X|X\n------\nX|X|O\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX|X|O\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
-        elif a == '5':
-            print("X|O| \n------\nX|O|X\n------\nO| | ")
+        else:
+            print('INVALID MOVE')
+    elif a == '3':
+        print("O|X| \n------\nX| | \n------\n |O| ")
+        a = input('move: ')
+        if a == '6':
+            print("O|X| \n------\nX| |O\n------\nX|O| ")
             a = input('move: ')
-            if a == '7':
-                print("X|O|O\n------\nX|O|X\n------\nO|X| ")
-            elif a == '2':
-                print("X|O|X\n------\nX|O|X\n------\nO|O| ")
+            if a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
             elif a == '8':
-                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                print("O|X| \n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         elif a == '8':
-            print("X|O| \n------\nX|O| \n------\nO| |X")
+            print("O|X| \n------\nX| |O\n------\n |O|X")
+            a = input('move: ')
+            if a == '6':
+                print("O|X| \n------\nX|O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|O\n------\nX|X|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX| |O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '4':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|X| \n------\nX|O|X\n------\n |O| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|X\n------\n |O| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '4':
+            print("O|X| \n------\nX|X|O\n------\n |O| ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X| \n------\nX|X|O\n------\nO|O|X")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|O\n------\nX|X|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|X|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|X\n------\nX| |O\n------\n |O| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|X\n------\nX|O|O\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|X\n------\nX|O|O\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|X\n------\nX|X|O\n------\nO|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\nX|X|O\n------\nO|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '5':
+        print("O|X| \n------\n | |X\n------\n |O| ")
+        a = input('move: ')
+        if a == '4':
+            print("O|X| \n------\nO|X|X\n------\n |O| ")
             a = input('move: ')
             if a == '2':
-                print("X|O|X\n------\nX|O| \n------\nO|O|X")
-            elif a == '5':
-                print("X|O| \n------\nX|O|X\n------\nO|O|X")
+                print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+            elif a == '8':
+                print("O|X| \n------\nO|X|X\n------\nO|O|X")
+            elif a == '6':
+                print("O|X|O\n------\nO|X|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("O|X| \n------\n |O|X\n------\nX|O| ")
+            a = input('move: ')
+            if a == '2':
+                print("O|X|X\n------\n |O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|X| \n------\nX|O|X\n------\n |O| ")
+            a = input('move: ')
+            if a == '6':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|X\n------\n |O| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|X\n------\n | |X\n------\n |O| ")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|X\n------\nO| |X\n------\n |O| ")
+                a = input('move: ')
+                if a == '4':
+                    print("O|X|X\n------\nO|X|X\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                    elif a == '8':
+                        print("O|X|X\n------\nO|X|X\n------\n |O|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|X\n------\nO| |X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO| |X\n------\nX|O|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|X|X\n------\nX|O|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|X\n------\n | |X\n------\nO|O| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX| |X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("O|X|X\n------\n |X|X\n------\nO|O| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|X|X\n------\nO|O| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|X\n------\n |O|X\n------\n |O| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|O|X\n------\n |O| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|X\n------\n |O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|X|O\n------\n | |X\n------\n |O|X")
+            a = input('move: ')
+            if a == '3':
+                print("O|X|O\n------\nX|O|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '4':
+                print("O|X|O\n------\nO|X|X\n------\n |O|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nO|X|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '8':
+        print("O|X| \n------\n | | \n------\nO| |X")
+        a = input('move: ')
+        if a == '4':
+            print("O|X| \n------\nO|X| \n------\nO| |X")
+        elif a == '7':
+            print("O|X| \n------\nO| | \n------\nO|X|X")
+        elif a == '3':
+            print("O|X| \n------\nX|O| \n------\nO| |X")
+            a = input('move: ')
+            if a == '5':
+                print("O|X| \n------\nX|O|X\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X| \n------\nX|O|X\n------\nO|O|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nX|O|X\n------\nO|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nX|O|O\n------\nO| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                else:
+                    print('INVALID MOVE')
             elif a == '7':
-                print("X|O|O\n------\nX|O| \n------\nO|X|X")
+                print("O|X|O\n------\nX|O| \n------\nO|X|X")
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|X| \n------\nO| |X\n------\nO| |X")
+        elif a == '2':
+            print("O|X|X\n------\nO| | \n------\nO| |X")
+        else:
+            print('INVALID MOVE')
+    elif a == '7':
+        print("O|X| \n------\n | | \n------\n |X| ")
+        a = input('move: ')
+        if a == '3':
+            print("O|X| \n------\nO| | \n------\n |X| ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X| \n------\nO| | \n------\n |X|X")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X| \n------\nO| | \n------\nO|X|X")
+                elif a == '4':
+                    print("O|X| \n------\nO|O| \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X| \n------\nO|O|X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                            a = input('move: ')
+                            if a == '6':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '6':
+                            print("O|X| \n------\nO|O|X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X| \n------\nO|O| \n------\nX|X|X")
+                    elif a == '2':
+                        print("O|X|X\n------\nO|O| \n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X| \n------\nO| |O\n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nO| |O\n------\nX|X|X")
+                    elif a == '2':
+                        print("O|X|X\n------\nO| |O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\nO| | \n------\n |X|X")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nO| | \n------\nX|X|X")
+                    elif a == '5':
+                        print("O|X|O\n------\nO| |X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                            a = input('move: ')
+                            if a == '6':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X| \n------\nO| | \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X| \n------\nO| |O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nO|X|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\nO| | \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nO|X| \n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X| \n------\nO| | \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nO|X| \n------\nX|X|O")
+                    elif a == '5':
+                        print("O|X| \n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
+                        elif a == '2':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("O|X| \n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X| \n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nO|O| \n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|X| \n------\nO| |X\n------\n |X| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X| \n------\nO| |X\n------\nO|X| ")
+                elif a == '2':
+                    print("O|X|O\n------\nO| |X\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nO| |X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                            a = input('move: ')
+                            if a == '6':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|O\n------\nO| |X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X| \n------\nO| |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
+                        elif a == '2':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\nO| | \n------\n |X| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\nO| | \n------\nO|X| ")
+                elif a == '5':
+                    print("O|X|X\n------\nO| |O\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                        elif a == '8':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|X\n------\nO| |O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X|X\n------\nO| | \n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '2':
+            print("O|X|O\n------\n | | \n------\n |X| ")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|O\n------\n | |X\n------\n |X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\n | |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|O\n------\nX| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|O\n------\n | |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|O\n------\n | |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|O\n------\nO| |X\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nO| |X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\nO| |X\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|O\n------\nO|O|X\n------\n |X|X")
+                            a = input('move: ')
+                            if a == '6':
+                                print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX| | \n------\n |X| ")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|O\n------\nX| | \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
+                    elif a == '5':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X|O\n------\nX| |O\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nX| |O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X|O\n------\nX| | \n------\n |X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\nX| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|O\n------\nX| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|X| \n------\n | |O\n------\n |X| ")
+            a = input('move: ')
+            if a == '3':
+                print("O|X| \n------\nX| |O\n------\n |X| ")
+                a = input('move: ')
+                if a == '4':
+                    print("O|X| \n------\nX|O|O\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nX|O|O\n------\n |X| ")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X| \n------\nX|O|O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O|O\n------\n |X|X")
+                            a = input('move: ')
+                            if a == '6':
+                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '6':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X| \n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X| \n------\nX| |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
+                    elif a == '8':
+                        print("O|X| \n------\nX| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\nX| |O\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nX| |O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '8':
+                    print("O|X| \n------\nX| |O\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nX| |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |O\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n | |O\n------\n |X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\n | |O\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nX| |O\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|X\n------\n | |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '6':
+                    print("O|X|X\n------\n | |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|X\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '3':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nO| |O\n------\n |X| ")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO| |O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|X\n------\nO| |O\n------\n |X|X")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '6':
+            print("O|X| \n------\n | | \n------\nO|X| ")
+            a = input('move: ')
+            if a == '5':
+                print("O|X| \n------\n | |X\n------\nO|X| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X| \n------\nO| |X\n------\nO|X| ")
+                elif a == '8':
+                    print("O|X| \n------\n | |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\n | |X\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X| \n------\nX| | \n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X| \n------\nX| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        elif a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|X| \n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X| \n------\nX| |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nX|X|O\n------\nO|X| ")
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '8':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X| \n------\nX| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\nX| | \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X|O\n------\nX|X| \n------\nO|X| ")
+                    elif a == '8':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|O\n------\nX| |X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        elif a == '8':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '4':
+                    print("O|X| \n------\nX|O| \n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X| \n------\nX|O|X\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O|X\n------\nO|X| ")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX|O| \n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '8':
+                        print("O|X| \n------\nX|O| \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        elif a == '5':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n | | \n------\nO|X| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|X\n------\n | | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nO| | \n------\nO|X| ")
+                elif a == '5':
+                    print("O|X|X\n------\n | |O\n------\nO|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        elif a == '4':
+                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '3':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nX| |O\n------\nO|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O|O\n------\nO|X| ")
+                            a = input('move: ')
+                            if a == '8':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X| \n------\n | | \n------\nO|X|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X| \n------\nO| | \n------\nO|X|X")
+                elif a == '5':
+                    print("O|X| \n------\n | |O\n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\n | |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\n |O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '3':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X| \n------\nX| |O\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '2':
+                                print("O|X|X\n------\nX|O|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\n | | \n------\nO|X|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\n | |X\n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nO|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|O\n------\nX| | \n------\nO|X|X")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nO|X|X")
+                        elif a == '5':
+                            print("O|X|O\n------\nX| |O\n------\nO|X|X")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|O\n------\nO|X|X")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|X| \n------\n | | \n------\n |X|O")
+            a = input('move: ')
+            if a == '5':
+                print("O|X| \n------\n | |X\n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X| \n------\n | |X\n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X| \n------\nO| |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\n | |X\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\n | |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|O\n------\nX| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n | | \n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X|X\n------\n | | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\n | |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|X\n------\nO| | \n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|X\n------\nO| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nO| |X\n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X|X\n------\n | |O\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nX| |O\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '6':
+                        print("O|X|X\n------\n | |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X| \n------\nX| | \n------\n |X|O")
+                a = input('move: ')
+                if a == '6':
+                    print("O|X| \n------\nX| | \n------\nO|X|O")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X| \n------\nX| |X\n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|X\n------\nO|X|O")
+                        elif a == '2':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| | \n------\nO|X|O")
+                        a = input('move: ')
+                        if a == '5':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X|X\n------\nX|O| \n------\nO|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '4':
+                        print("O|X| \n------\nX|X| \n------\nO|X|O")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\nX| | \n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X|O\n------\nX| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|O\n------\nX| |X\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|O\n------\nX| |X\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nX|X|X\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X| \n------\nX| |O\n------\n |X|O")
+                    a = input('move: ')
+                    if a == '6':
+                        print("O|X| \n------\nX| |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '2':
+                        print("O|X|X\n------\nX| |O\n------\n |X|O")
+                        a = input('move: ')
+                        if a == '6':
+                            print("O|X|X\n------\nX| |O\n------\nO|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nX|X|O\n------\nO|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '6':
+                print("O|X| \n------\n | | \n------\nX|X|O")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X| \n------\nO| | \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '4':
+                        print("O|X| \n------\nO|X| \n------\nX|X|O")
+                    elif a == '2':
+                        print("O|X|X\n------\nO| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|X\n------\nO|O| \n------\nX|X|O")
+                        elif a == '5':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X| \n------\nO| |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '2':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        elif a == '4':
+                            print("O|X| \n------\nO|O|X\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|O\n------\n | | \n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|O\n------\nX| | \n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X|O\n------\nX|O| \n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '5':
+                        print("O|X|O\n------\n | |X\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|O\n------\nO| |X\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|O\n------\nO|X|X\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X| \n------\n | |O\n------\nX|X|O")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|X\n------\n | |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '3':
+                            print("O|X|X\n------\nO| |O\n------\nX|X|O")
+                            a = input('move: ')
+                            if a == '4':
+                                print("O|X|X\n------\nO|X|O\n------\nX|X|O")
+                            else:
+                                print('INVALID MOVE')
+                        else:
+                            print('INVALID MOVE')
+                    elif a == '3':
+                        print("O|X| \n------\nX| |O\n------\nX|X|O")
+                        a = input('move: ')
+                        if a == '4':
+                            print("O|X| \n------\nX|O|O\n------\nX|X|O")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '6':
+        print("O|X| \n------\n |O| \n------\nX| | ")
+        a = input('move: ')
+        if a == '2':
+            print("O|X|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '8':
+                print("O|X|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            else:
+                print('INVALID MOVE')
+        elif a == '7':
+            print("O|X| \n------\n |O| \n------\nX|X| ")
+            a = input('move: ')
+            if a == '3':
+                print("O|X| \n------\nO|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '2':
+                    print("O|X|X\n------\nO|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                elif a == '5':
+                    print("O|X| \n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|O\n------\n |O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\n |O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '3':
+                    print("O|X|O\n------\nX|O| \n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|X| \n------\n |O|O\n------\nX|X| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X| \n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '2':
+                        print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                        a = input('move: ')
+                        if a == '8':
+                            print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                        else:
+                            print('INVALID MOVE')
+                    else:
+                        print('INVALID MOVE')
+                elif a == '2':
+                    print("O|X|X\n------\n |O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '3':
+                        print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '5':
+            print("O|X|O\n------\n |O|X\n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|O\n------\n |O|X\n------\nX|X| ")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nO|O|X\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nO|O|X\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '3':
+            print("O|X|O\n------\nX|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '5':
+                print("O|X|O\n------\nX|O|X\n------\nX|O| ")
+                a = input('move: ')
+                if a == '8':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|O\n------\nX|O| \n------\nX|X| ")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|O\n------\nX|X| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|O\n------\nX|O|O\n------\nX|X|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        elif a == '8':
+            print("O|X| \n------\n |O| \n------\nX|O|X")
+            a = input('move: ')
+            if a == '5':
+                print("O|X|O\n------\n |O|X\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '3':
+                print("O|X|O\n------\nX|O| \n------\nX|O|X")
+                a = input('move: ')
+                if a == '5':
+                    print("O|X|O\n------\nX|O|X\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            elif a == '2':
+                print("O|X|X\n------\n |O|O\n------\nX|O|X")
+                a = input('move: ')
+                if a == '3':
+                    print("O|X|X\n------\nX|O|O\n------\nX|O|X")
+                else:
+                    print('INVALID MOVE')
+            else:
+                print('INVALID MOVE')
+        else:
+            print('INVALID MOVE')
+    elif a == '2':
+        print("O|X|X\n------\nO| | \n------\n | | ")
+        a = input('move: ')
+        if a == '8':
+            print("O|X|X\n------\nO| | \n------\nO| |X")
+        elif a == '7':
+            print("O|X|X\n------\nO| | \n------\nO|X| ")
+        elif a == '4':
+            print("O|X|X\n------\nO|X| \n------\nO| | ")
+        elif a == '5':
+            print("O|X|X\n------\nO| |X\n------\nO| | ")
+        elif a == '6':
+            print("O|X|X\n------\nO|O| \n------\nX| | ")
+            a = input('move: ')
+            if a == '8':
+                print("O|X|X\n------\nO|O| \n------\nX| |X")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O| \n------\nX|O|X")
+                    a = input('move: ')
+                    if a == '5':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
+            elif a == '7':
+                print("O|X|X\n------\nO|O|O\n------\nX|X| ")
+            elif a == '5':
+                print("O|X|X\n------\nO|O|X\n------\nX| | ")
+                a = input('move: ')
+                if a == '7':
+                    print("O|X|X\n------\nO|O|X\n------\nX|O| ")
+                    a = input('move: ')
+                    if a == '8':
+                        print("O|X|X\n------\nO|O|X\n------\nX|O|X")
+                    else:
+                        print('INVALID MOVE')
+                else:
+                    print('INVALID MOVE')
             else:
                 print('INVALID MOVE')
         else:
