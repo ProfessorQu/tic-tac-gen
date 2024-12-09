@@ -7,5 +7,8 @@ fn main() {
     let mut gametree = GameTree::new();
 
     gametree.generate();
-    gametree.assert_correct_boards();
+    gametree.assert_correct();
+
+    let collapsed = gametree.collapse();
+    collapsed.assert_correct();
 }
