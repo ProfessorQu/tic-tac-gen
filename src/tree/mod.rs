@@ -1,4 +1,4 @@
+mod game_tree;
 mod node;
-mod minimax;
 
-pub use minimax::Minimax;
+pub use game_tree::GameTree;

@@ -1,16 +1,11 @@
-use tree::Minimax;
+use tree::GameTree;
 
 mod tictactoe;
 mod tree;
 
 fn main() {
-    let mut minimax = Minimax::new();
+    let mut gametree = GameTree::new();
 
-    minimax.generate();
-    minimax.collapse(tictactoe::Cell::O);
-
-    // println!("{:?}", minimax);
-    // minimax.print();
-
-    minimax.to_python("main.py");
+    gametree.generate();
+    gametree.assert_correct_boards();
 }

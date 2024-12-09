@@ -4,17 +4,7 @@ use std::fmt::Display;
 pub enum Cell {
     Empty,
     O,
-    X
-}
-
-impl Cell {
-    pub fn opponent(&self) -> Self {
-        match self {
-            Cell::O => Cell::X,
-            Cell::X => Cell::O,
-            Cell::Empty => panic!("'Empty' has no opponent")
-        }
-    }
+    X,
 }
 
 impl Display for Cell {
@@ -28,7 +18,7 @@ impl From<Cell> for &str {
         match value {
             Cell::O => "O",
             Cell::X => "X",
-            Cell::Empty => " "
+            Cell::Empty => " ",
         }
     }
 }

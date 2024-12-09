@@ -1,142 +1,71 @@
 use std::collections::HashMap;
 
-use crate::tictactoe::{Board, Cell};
+use crate::tictactoe::{Board, GameResult, Player};
 
 #[derive(Debug, Clone)]
 pub struct Node {
     board: Board,
-    turn: Cell,
-    winner: Option<Cell>,
-    moves: HashMap<(usize, usize), Box<Node>>,
+    turn: Player,
+    value: f32,
+    children: HashMap<(usize, usize), Box<Node>>,
 }
 
 impl Node {
-    pub fn new(board: Board, turn: Cell) -> Self {
+    pub fn new(board: Board, turn: Player) -> Self {
         Self {
             board,
             turn,
-            winner: None,
-            moves: HashMap::new(),
+            value: 0.0,
+            children: HashMap::new(),
         }
     }
 
     pub fn generate(&mut self) {
-        // Check if end state
         if let Some(result) = self.board.result() {
-            self.winner = Some(result);
+            match result {
+                GameResult::Draw => self.value = 0.0,
+                GameResult::XWon => self.value = 1.0,
+                GameResult::OWon => self.value = -1.0,
+            }
 
             return;
         }
 
-        for x in 0..3 {
-            for y in 0..3 {
-                if self.board.get(x, y) == Cell::Empty {
-                    let mut new_board = self.board.clone();
-                    new_board.set(x, y, self.turn);
+        let possible_moves = self.board.possible_moves();
 
-                    let mut new_cell = Node::new(new_board, self.turn.opponent());
-                    new_cell.generate();
+        let mut total_children_value = 0.0;
+        let total_children = possible_moves.len() as f32;
 
-                    if self.set_winner(&new_cell) {
-                        break;
-                    }
+        for (x, y) in possible_moves {
+            let mut child_board = self.board.clone();
+            child_board.set(x, y, self.turn.cell());
 
-                    self.moves.insert((x, y), Box::new(new_cell));
-                }
-            }
+            let mut child = Node::new(child_board, self.turn.opponent());
+            child.generate();
+
+            total_children_value += child.value;
+
+            self.children.insert((x, y), Box::new(child));
         }
+
+        self.value = total_children_value / total_children;
     }
 
-    pub fn collapse(&mut self, player: Cell) {
-        if self.board.result().is_some() {
-            return;
-        }
+    pub fn assert_correct_board(&self, turn_num: usize) {
+        let num_xs = self.board.count_xs();
+        let num_os = self.board.count_os();
 
-        let mut best_node = None;
-
-        if self.turn == player {
-            for node in self.moves.values() {
-                if let Some(node_winner) = node.winner {
-                    if node_winner == player {
-                        best_node = Some(node);
-                        break;
-                    } else if node_winner == Cell::Empty && best_node.is_none() {
-                        best_node = Some(node);
-                    }
-                }
-            }
-
-            if let Some(best_node) = best_node {
-                self.board = best_node.board.clone();
-                self.turn = best_node.turn;
-                self.winner = best_node.winner;
-                self.moves = best_node.moves.clone();
-
-                self.collapse(player);
+        assert!(num_xs == turn_num);
+        if self.turn == Player::X {
+            assert!(num_os == turn_num);
+            for child in self.children.values() {
+                child.assert_correct_board(turn_num + 1);
             }
         } else {
-            for node in self.moves.values_mut() {
-                node.collapse(player);
+            assert!(num_os + 1 == turn_num);
+            for child in self.children.values() {
+                child.assert_correct_board(turn_num);
             }
         }
-    }
-
-    pub fn code(&self, depth: usize) -> String {
-        let mut spaces = String::new();
-        for _ in 0..depth {
-            spaces += "    ";
-        }
-
-        if self.board.result().is_some() {
-            return "".to_string();
-        }
-
-        let mut code = String::new();
-
-        code += format!("{spaces}a = input('move: ')").as_str();
-
-        let mut first = true;
-
-        for ((x, y), node) in &self.moves {
-            code += format!(
-                "
-{spaces}{}if a == '{}':
-{spaces}    print({:?})
-{}",
-                if !first { "el" } else { "" },
-                x + y * 3,
-                node.board.board_string(),
-                node.code(depth + 1)
-            )
-            .as_str();
-
-            first = false;
-        }
-
-        code += format!(
-            "
-{spaces}else:
-{spaces}    print('INVALID MOVE')"
-        )
-        .as_str();
-
-        code
-    }
-
-    fn set_winner(&mut self, other: &Node) -> bool {
-        let other_winner = other.winner.expect("Previous nodes should have winners");
-
-        if let Some(own_winner) = self.winner {
-            if other_winner == self.turn {
-                self.winner = Some(other_winner);
-                return true;
-            } else if other_winner == Cell::Empty && own_winner == self.turn.opponent() {
-                self.winner = Some(other_winner)
-            }
-        } else {
-            self.winner = other.winner;
-        }
-
-        false
     }
 }
