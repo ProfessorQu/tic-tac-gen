@@ -1,3 +1,4 @@
+use tictactoe::Player;
 use tree::GameTree;
 
 mod tictactoe;
@@ -5,10 +6,8 @@ mod tree;
 
 fn main() {
     let mut gametree = GameTree::new();
-
-    gametree.generate();
     gametree.assert_correct();
 
-    let collapsed = gametree.collapse();
+    let collapsed = gametree.collapse(Player::O);
     collapsed.assert_correct();
 }

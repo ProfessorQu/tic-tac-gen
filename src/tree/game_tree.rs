@@ -14,12 +14,7 @@ impl GameTree {
         }
     }
 
-    pub fn generate(&mut self) {
-        self.root.generate();
-    }
-
-    pub fn collapse(&mut self) -> CollapsedGameTree {
-        let collapsed_player = Player::O;
+    pub fn collapse(&mut self, collapsed_player: Player) -> CollapsedGameTree {
         let mut new_root = self.root.clone();
         new_root.collapse(collapsed_player);
 

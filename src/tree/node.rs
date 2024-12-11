@@ -12,12 +12,15 @@ pub struct Node {
 
 impl Node {
     pub fn new(board: Board, turn: Player) -> Self {
-        Self {
+        let mut node = Self {
             board,
             turn,
             value: 0.0,
             children: HashMap::new(),
-        }
+        };
+
+        node.generate();
+        node
     }
 
     pub fn generate(&mut self) {
@@ -40,9 +43,7 @@ impl Node {
             let mut child_board = self.board.clone();
             child_board.set(x, y, self.turn.cell());
 
-            let mut child = Node::new(child_board, self.turn.opponent());
-            child.generate();
-
+            let child = Node::new(child_board, self.turn.opponent());
             total_children_value += child.value;
 
             self.children.insert((x, y), Box::new(child));
@@ -100,12 +101,7 @@ impl Node {
         self.value = best_move.value;
     }
 
-    fn create_info_string(
-        &self,
-        num_xs: usize,
-        num_os: usize,
-        turn_num: usize,
-    ) -> String {
+    fn create_info_string(&self, num_xs: usize, num_os: usize, turn_num: usize) -> String {
         let boards: String = self
             .children
             .iter()
@@ -113,7 +109,15 @@ impl Node {
             .collect::<Vec<String>>()
             .join("\n===========================\n");
 
-        format!("{} X's {} O's turn_num of {} and value {}, board:\n{}\nchildren boards:\n{}", num_xs, num_os, turn_num, self.value, self.board.board_string(), boards)
+        format!(
+            "{} X's {} O's turn_num of {} and value {}, board:\n{}\nchildren boards:\n{}",
+            num_xs,
+            num_os,
+            turn_num,
+            self.value,
+            self.board.board_string(),
+            boards
+        )
     }
 
     pub fn assert_collapsed_correct(&self, turn_num: usize, collapsed_player: Player) {
