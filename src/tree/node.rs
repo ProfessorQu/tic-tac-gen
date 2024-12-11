@@ -39,32 +39,39 @@ impl Node {
         let mut total_children_value = 0.0;
         let total_children = possible_moves.len() as f32;
 
+        let mut best_value = match self.turn {
+            Player::O => 1.0,
+            Player::X => -1.0
+        };
+
         for (x, y) in possible_moves {
             let mut child_board = self.board.clone();
             child_board.set(x, y, self.turn.cell());
 
             let child = Node::new(child_board, self.turn.opponent());
+            best_value = match self.turn {
+                Player::O => f32::min(best_value, child.value),
+                Player::X => f32::max(best_value, child.value)
+            };
             total_children_value += child.value;
 
             self.children.insert((x, y), Box::new(child));
         }
 
-        self.value = total_children_value / total_children;
+        self.value = best_value;
+
+        if best_value == 0.0 {
+            self.value = total_children_value / total_children;
+        }
     }
 
     pub fn collapse(&mut self, player: Player) {
-        if self.board.result().is_some() {
-            return;
-        } else if self.turn != player {
-            for child in self.children.values_mut() {
-                child.collapse(player);
-            }
-
-            return;
-        }
-
         for child in self.children.values_mut() {
             child.collapse(player);
+        }
+
+        if self.board.result().is_some() || self.turn != player {
+            return;
         }
 
         let mut best_move = self
@@ -105,7 +112,7 @@ impl Node {
         let boards: String = self
             .children
             .iter()
-            .map(|((_x, _y), child)| child.board.board_string())
+            .map(|((_x, _y), child)| child.board.board_string() + "\nVALUE: " + child.value.to_string().as_str())
             .collect::<Vec<String>>()
             .join("\n===========================\n");
 
@@ -120,6 +127,29 @@ impl Node {
         )
     }
 
+    pub fn python(&self, depth: usize) -> String {
+        let spaces = "    ".repeat(depth);
+        let mut code = format!("{spaces}print({:?})\n", self.board.board_string());
+
+        if let Some(result) = self.board.result() {
+            code += format!("{spaces}print(\"result: {}\")\n", result).as_str();
+            return code;
+        }
+
+        code += format!("{spaces}move = input(\"move: \")\n").as_str();
+
+        let mut first = true;
+        for ((x, y), child) in &self.children {
+            let el = if first { "" } else { "el" };
+            code += format!("{spaces}{}if move == \"{}\":\n", el, x + y * 3 + 1).as_str();
+            code += child.python(depth + 1).as_str();
+
+            first = false;
+        }
+
+        code
+    }
+
     pub fn assert_collapsed_correct(&self, turn_num: usize, collapsed_player: Player) {
         let num_xs = self.board.count_xs();
         let num_os = self.board.count_os();
@@ -131,7 +161,10 @@ impl Node {
         );
 
         match self.board.result() {
-            Some(GameResult::XWon) | Some(GameResult::Draw) => {
+            Some(GameResult::XWon) => {
+                panic!("{}", self.create_info_string(num_xs, num_os, turn_num))    
+            }
+            Some(GameResult::Draw) => {
                 assert!(
                     num_os + 1 == turn_num,
                     "{}",

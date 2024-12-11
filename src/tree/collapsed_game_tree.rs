@@ -19,4 +19,8 @@ impl CollapsedGameTree {
     pub fn assert_correct(&self) {
         self.root.assert_collapsed_correct(0, self.collapsed_player);
     }
+
+    pub fn python_code(&self) -> String {
+        self.root.python(0)
+    }
 }
