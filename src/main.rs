@@ -20,12 +20,15 @@ enum LanguageArg {
 
 #[derive(Parser)]
 struct Args {
+    /// What name to give the new file
     #[arg(short, long)]
     filename: String,
 
-    #[arg(short, long)]
+    /// Which player should be the opponent
+    #[arg(short, long, default_value="o")]
     player: PlayerArg,
 
+    /// What language should the code be generated in
     #[arg(short, long, default_value = "python")]
     language: LanguageArg,
 }
