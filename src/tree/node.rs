@@ -41,7 +41,7 @@ impl Node {
 
         let mut best_value = match self.turn {
             Player::O => 1.0,
-            Player::X => -1.0
+            Player::X => -1.0,
         };
 
         for (x, y) in possible_moves {
@@ -51,7 +51,7 @@ impl Node {
             let child = Node::new(child_board, self.turn.opponent());
             best_value = match self.turn {
                 Player::O => f32::min(best_value, child.value),
-                Player::X => f32::max(best_value, child.value)
+                Player::X => f32::max(best_value, child.value),
             };
             total_children_value += child.value;
 
@@ -108,20 +108,29 @@ impl Node {
         self.value = best_move.value;
     }
 
-    fn create_info_string(&self, num_xs: usize, num_os: usize, turn_num: usize) -> String {
+    fn create_info_string(
+        &self,
+        num_xs: usize,
+        num_os: usize,
+        turn_num: usize,
+        collapsed_player: Player,
+    ) -> String {
         let boards: String = self
             .children
             .iter()
-            .map(|((_x, _y), child)| child.board.board_string() + "\nVALUE: " + child.value.to_string().as_str())
+            .map(|((_x, _y), child)| {
+                child.board.board_string() + "\nVALUE: " + child.value.to_string().as_str()
+            })
             .collect::<Vec<String>>()
             .join("\n===========================\n");
 
         format!(
-            "{} X's {} O's turn_num of {} and value {}, board:\n{}\nchildren boards:\n{}",
+            "{} X's {} O's turn_num of {} and value {} player: {:?}, board:\n{}\nchildren boards:\n{}",
             num_xs,
             num_os,
             turn_num,
             self.value,
+            collapsed_player,
             self.board.board_string(),
             boards
         )
@@ -154,38 +163,37 @@ impl Node {
         let num_xs = self.board.count_xs();
         let num_os = self.board.count_os();
 
-        assert!(
-            num_xs == turn_num,
-            "{}",
-            self.create_info_string(num_xs, num_os, turn_num)
-        );
+        let info_string = self.create_info_string(num_xs, num_os, turn_num, collapsed_player);
 
         match self.board.result() {
             Some(GameResult::XWon) => {
-                panic!("{}", self.create_info_string(num_xs, num_os, turn_num))    
+                assert!(collapsed_player == Player::X, "{}", info_string);
+                assert!(num_xs == turn_num + 1, "{}", info_string);
+                assert!(num_os == turn_num, "{}", info_string);
             }
             Some(GameResult::Draw) => {
-                assert!(
-                    num_os + 1 == turn_num,
-                    "{}",
-                    self.create_info_string(num_xs, num_os, turn_num)
-                )
+                assert!(num_os == 4, "{}", info_string);
+                assert!(num_xs == 5, "{}", info_string);
             }
-            Some(GameResult::OWon) | None => {
-                assert!(
-                    num_os == turn_num,
-                    "{}",
-                    self.create_info_string(num_xs, num_os, turn_num)
-                )
+            Some(GameResult::OWon) => {
+                assert!(collapsed_player == Player::O, "{}", info_string);
+                assert!(num_xs == turn_num, "{}", info_string);
+                assert!(num_os == turn_num, "{}", info_string);
             }
+            None => match collapsed_player {
+                Player::O => {
+                    assert!(num_xs == turn_num, "{}", info_string);
+                    assert!(num_os == turn_num, "{}", info_string);
+                }
+                Player::X => {
+                    assert!(num_xs == turn_num + 1, "{}", info_string);
+                    assert!(num_os == turn_num, "{}", info_string);
+                }
+            },
         }
 
         if self.turn == collapsed_player {
-            assert!(
-                self.board.result().is_some(),
-                "{}",
-                self.create_info_string(num_xs, num_os, turn_num)
-            )
+            assert!(self.board.result().is_some(), "{}", info_string)
         }
 
         for child in self.children.values() {
@@ -197,26 +205,16 @@ impl Node {
         let num_xs = self.board.count_xs();
         let num_os = self.board.count_os();
 
-        assert!(
-            num_xs == turn_num,
-            "{}",
-            self.create_info_string(num_xs, num_os, turn_num)
-        );
+        let info_string = self.create_info_string(num_xs, num_os, turn_num, Player::X);
+
+        assert!(num_xs == turn_num, "{}", info_string);
         if self.turn == Player::X {
-            assert!(
-                num_os == turn_num,
-                "{}",
-                self.create_info_string(num_xs, num_os, turn_num)
-            );
+            assert!(num_os == turn_num, "{}", info_string);
             for child in self.children.values() {
                 child.assert_correct(turn_num + 1);
             }
         } else {
-            assert!(
-                num_os + 1 == turn_num,
-                "{}",
-                self.create_info_string(num_xs, num_os, turn_num)
-            );
+            assert!(num_os + 1 == turn_num, "{}", info_string);
             for child in self.children.values() {
                 child.assert_correct(turn_num);
             }
