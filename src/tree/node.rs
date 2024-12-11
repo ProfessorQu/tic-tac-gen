@@ -40,8 +40,8 @@ impl Node {
         let total_children = possible_moves.len() as f32;
 
         let mut best_value = match self.turn {
-            Player::O => 1.0,
-            Player::X => -1.0,
+            Player::X => f32::MIN,
+            Player::O => f32::MAX,
         };
 
         for (x, y) in possible_moves {
@@ -60,9 +60,11 @@ impl Node {
 
         self.value = best_value;
 
-        if best_value == 0.0 {
+        if best_value.abs() < 0.5 {
             self.value = total_children_value / total_children;
         }
+
+        self.value *= 0.99;
     }
 
     pub fn collapse(&mut self, player: Player) {
@@ -74,12 +76,7 @@ impl Node {
             return;
         }
 
-        let mut best_move = self
-            .children
-            .values()
-            .next()
-            .expect("Should have children")
-            .clone();
+        let mut best_move = None;
         let mut best_value = match player {
             Player::X => f32::MIN,
             Player::O => f32::MAX,
@@ -90,22 +87,21 @@ impl Node {
                 Player::X => {
                     if child.value > best_value {
                         best_value = child.value;
-                        best_move = child.clone();
+                        best_move = Some(child.clone());
                     }
                 }
                 Player::O => {
                     if child.value < best_value {
                         best_value = child.value;
-                        best_move = child.clone();
+                        best_move = Some(child.clone());
                     }
                 }
             }
         }
 
-        self.children = best_move.children;
-        self.board = best_move.board;
-        self.turn = best_move.turn;
-        self.value = best_move.value;
+        if let Some(best_move) = best_move {
+            *self = *best_move;
+        }
     }
 
     fn create_info_string(

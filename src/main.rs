@@ -25,7 +25,7 @@ struct Args {
     filename: String,
 
     /// Which player should be the opponent
-    #[arg(short, long, default_value="o")]
+    #[arg(short, long, default_value = "o")]
     player: PlayerArg,
 
     /// What language should the code be generated in
@@ -41,7 +41,7 @@ fn main() {
         PlayerArg::X => Player::X,
     };
 
-    let mut gametree = GameTree::new();
+    let gametree = GameTree::new();
     gametree.assert_correct();
 
     let collapsed = gametree.collapse(player);

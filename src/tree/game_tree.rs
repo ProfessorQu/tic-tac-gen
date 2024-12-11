@@ -14,7 +14,7 @@ impl GameTree {
         }
     }
 
-    pub fn collapse(&mut self, collapsed_player: Player) -> CollapsedGameTree {
+    pub fn collapse(&self, collapsed_player: Player) -> CollapsedGameTree {
         let mut new_root = self.root.clone();
         new_root.collapse(collapsed_player);
 
