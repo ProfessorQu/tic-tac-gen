@@ -16,6 +16,9 @@ enum PlayerArg {
 #[derive(ValueEnum, Clone)]
 enum LanguageArg {
     Python,
+    Java,
+    C,
+    Rust
 }
 
 #[derive(Parser)]
@@ -49,6 +52,9 @@ fn main() {
 
     let code = match args.language {
         LanguageArg::Python => collapsed.python_code(),
+        LanguageArg::Java => collapsed.java_code(),
+        LanguageArg::C => collapsed.c_code(),
+        LanguageArg::Rust => collapsed.rust_code()
     };
 
     let mut file = File::create(args.filename).unwrap();

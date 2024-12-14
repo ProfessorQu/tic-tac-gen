@@ -2,6 +2,8 @@ use std::collections::HashMap;
 
 use crate::tictactoe::{Board, GameResult, Player};
 
+use super::constants::{MOVE_STRING, RESULT_STRING, MOVE_VAR_NAME};
+
 #[derive(Debug, Clone)]
 pub struct Node {
     board: Board,
@@ -137,17 +139,91 @@ impl Node {
         let mut code = format!("{spaces}print({:?})\n", self.board.board_string());
 
         if let Some(result) = self.board.result() {
-            code += format!("{spaces}print(\"result: {}\")\n", result).as_str();
+            code += format!("{spaces}print(\"{RESULT_STRING}{}\")\n", result).as_str();
             return code;
         }
 
-        code += format!("{spaces}move = input(\"move: \")\n").as_str();
+        code += format!("{spaces}{MOVE_VAR_NAME} = input(\"{MOVE_STRING}\")\n").as_str();
 
         let mut first = true;
         for ((x, y), child) in &self.children {
             let el = if first { "" } else { "el" };
-            code += format!("{spaces}{}if move == \"{}\":\n", el, x + y * 3 + 1).as_str();
+            code += format!("{spaces}{}if {MOVE_VAR_NAME} == \"{}\":\n", el, x + y * 3 + 1).as_str();
             code += child.python(depth + 1).as_str();
+
+            first = false;
+        }
+
+        code
+    }
+
+    pub fn java(&self, depth: usize) -> String {
+        let tabs = "\t".repeat(depth);
+        let mut code = format!("{tabs}System.out.println({:?});\n", self.board.board_string());
+
+        if let Some(result) = self.board.result() {
+            code += format!("{tabs}System.out.println(\"{RESULT_STRING}{}\");\n", result).as_str();
+            return code;
+        }
+
+        code += format!("{tabs}{MOVE_VAR_NAME} = scanner.nextInt();\n").as_str();
+
+        let mut first = true;
+        for ((x, y), child) in &self.children {
+            let el = if first { "" } else { "else " };
+            code += format!("{tabs}{}if ({MOVE_VAR_NAME} == {}) {{\n", el, x + y * 3 + 1).as_str();
+            code += child.java(depth + 1).as_str();
+            code += format!("{tabs}}}\n").as_str();
+
+            first = false;
+        }
+
+        code
+    }
+
+    pub fn c(&self, depth: usize) -> String {
+        let tabs = "\t".repeat(depth);
+        let mut code = format!("{tabs}printf({:?});\n", self.board.board_string());
+
+        if let Some(result) = self.board.result() {
+            code += format!("{tabs}printf(\"{RESULT_STRING}{}\");\n", result).as_str();
+            return code;
+        }
+
+        code += format!("{tabs}scanf(\"%d\", {MOVE_VAR_NAME});\n").as_str();
+
+        let mut first = true;
+        for ((x, y), child) in &self.children {
+            let el = if first { "" } else { "else " };
+            code += format!("{tabs}{}if ({MOVE_VAR_NAME} == {}) {{\n", el, x + y * 3 + 1).as_str();
+            code += child.c(depth + 1).as_str();
+            code += format!("{tabs}}}\n").as_str();
+
+            first = false;
+        }
+
+        code
+    }
+
+    pub fn rust(&self, depth: usize) -> String {
+        let tabs = "\t".repeat(depth);
+        let mut code = format!("{tabs}println!({:?});\n", self.board.board_string());
+        code += format!("{tabs}stdout().flush().expect(\"Failed to flush stdout\");\n").as_str();
+
+        if let Some(result) = self.board.result() {
+            code += format!("{tabs}println!(\"{RESULT_STRING}{}\");\n", result).as_str();
+            return code;
+        }
+
+        code += format!("{tabs}{MOVE_VAR_NAME}.clear();\n").as_str();
+        code += format!("{tabs}stdin().read_line(&mut {MOVE_VAR_NAME}).expect(\"Failed to read line\");\n").as_str();
+
+        let mut first = true;
+        for ((x, y), child) in &self.children {
+            let el = if first { "" } else { "else " };
+            code += format!("{tabs}{}if {MOVE_VAR_NAME}.trim() == \"{}\" {{\n", el, x + y * 3 + 1).as_str();
+            code += child.rust(depth + 1).as_str();
+            code += format!("{tabs}}}\n").as_str();
 
             first = false;
         }
